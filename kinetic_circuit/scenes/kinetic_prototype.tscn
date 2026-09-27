@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dvkf11kexlxmh"]
+
+[ext_resource type="Script" uid="uid://l7wsvxfi7yr5" path="res://scripts/kinetic_prototype.gd" id="1_prototype"]
+
+[node name="KineticPrototype" type="Node2D" unique_id=1032874091]
+script = ExtResource("1_prototype")

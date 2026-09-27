@@ -6,6 +6,17 @@ revisions because the repository may be moved or forked.
 
 ## Unreleased
 
+- Added a separate playable *Clockwork Tower: Kinetic Circuit* project in
+  `kinetic_circuit/`, with a folded Intake, Pressure, Signal, and central Core
+  route built from the retained Guard, Shooter, strike, reflection, and socket
+  systems. The existing Clockwork Relay launch project remains available.
+- Made Guard charges power Pressure and later the shared Core, and made reflected
+  Shooter shots power Signal and the Core. Retracting teeth interrupt the first
+  Guard charge while leaving it available for later use.
+- Added physical manual recovery when either source is destroyed, saved circuit
+  and source state at checkpoints, and a safe exit climb after Core alignment.
+- Added a tower diagram title, world conductors and state cues, a lower-left
+  integrity dial, contextual strike hint, and synchronization ending.
 - Restored a short directional dash guide and kinetic target cue from the old
   aimed-dash experiment, adapted to the free dash without homing or target order.
 - Added an optional upper approach above the opposing ram, reached by rebounding
