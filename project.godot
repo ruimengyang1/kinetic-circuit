@@ -11,16 +11,16 @@ config_version=5
 [application]
 
 config/name="Foundry / Future States"
-run/main_scene="res://scenes/foundry.tscn"
+run/main_scene="res://scenes/final_demo.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=384
-window/size/viewport_height=216
-window/size/window_width_override=1152
-window/size/window_height_override=648
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="viewport"
 
 [physics]

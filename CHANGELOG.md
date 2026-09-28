@@ -6,6 +6,21 @@ revisions because the repository may be moved or forked.
 
 ## Unreleased
 
+- Retuned beam/ledge clearance and Fan placement, fixed powered-path waypoint
+  progression and rebound top-contact damage, and made exits require an
+  intentional landing and walk into their visible alcoves. Added current-level
+  retry history, rapid death recovery and a 640×360 factory view.
+- Replaced the default launch with the focused four-level demo: Redirect, Weight, Timing and Combine,
+  preserving the committed third yard and earlier prototypes as legacy scenes.
+- Added a shared Can routine with a distinct preview/lock cue, straight charge,
+  continuing-charge rebound and physical moving-platform support; all four
+  levels use the same behavior and player abilities.
+- Added deterministic force-driven Boulder rolling, continuous weight buttons,
+  responsive Fan airflow, an occupancy-driven laser rotator, solid beam
+  blocking, optical sensors and shared powered platform paths.
+- Added two visible causal surprises: the weight button also starts a hanging
+  sweep across the Fan, and the final sensor also lifts Can into an upper lane.
+  Current-level failure/retry is quick and preserves completed-level progress.
 - Replaced the four reset bays with one persistent, fully visible factory yard:
   one Can, one three-position Cart, a cycling press, upper catwalk, shallow
   maintenance loop, fractured partition and a physical escape destination.

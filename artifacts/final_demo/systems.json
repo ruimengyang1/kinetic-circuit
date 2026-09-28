@@ -1,0 +1,28 @@
+{
+	"checks": [
+		"A telegraph precedes charge",
+		"B visible direction locks",
+		"C moving after lock cannot redirect charge",
+		"D signed force operates a generic physical receiver",
+		"E generous actual falling rebound is consistent",
+		"E rebound preserves committed Can motion",
+		"normal stomp reuses Can within half a second",
+		"F one committed force rolls Boulder without repeated impulses",
+		"G deterministic Boulder settling position",
+		"H Boulder physically holds weight switch",
+		"I one visible pressure circuit powers Fan and linked sweep",
+		"J Fan applies real readable upward force",
+		"K pressure and Fan deactivate when weight leaves",
+		"L sustained physical weight rotates continuously at fixed rate",
+		"M leaving freezes actual angle without snap or completion flag",
+		"N ray physically contacts optical sensor",
+		"O sensor moves platform quickly to visible destination",
+		"optical mechanism follows beam contact continuously",
+		"L4 powered platform physically carries Can into upper environment",
+		"L4 same sensor has two visible consequences",
+		"Boulder is generic optical cover as well as weight",
+		"L4 identical force/weight/Fan rule, no new mechanic",
+		"visible world rules determine sensor state"
+	],
+	"failures": []
+}

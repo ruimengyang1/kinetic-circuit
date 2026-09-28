@@ -1,0 +1,21 @@
+{
+	"failures": [],
+	"outcomes": [
+		{
+			"bait_started_angle": -2.53333333333286,
+			"can": "(301.3336, 305.9253)",
+			"late": true,
+			"sensor_active": false,
+			"sensor_angle": 4.11646237832607,
+			"stopped_angle": 23.1333333333338
+		},
+		{
+			"bait_started_angle": -21.6666666666662,
+			"can": "(301.3336, 305.9253)",
+			"late": false,
+			"sensor_active": true,
+			"sensor_angle": 4.11646237832607,
+			"stopped_angle": 4.00000000000048
+		}
+	]
+}
