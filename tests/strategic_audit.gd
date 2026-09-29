@@ -24,7 +24,7 @@ func check(value: bool, label: String) -> void:
 	if not value: failures.append(label)
 	print("PASS " if value else "FAIL ", label)
 func run() -> void:
-	DirAccess.make_dir_recursive_absolute("res://artifacts/strategic_depth")
+	DirAccess.make_dir_recursive_absolute("res://artifacts/level_progression/revision2/checks")
 	for index in 4:
 		var behaviors := ["forward", "forward_jump", "one_bait_forward"]
 		if index == 1: behaviors.append_array(["left", "left_jump"])
@@ -44,7 +44,12 @@ func run() -> void:
 				"can": game.can.position, "boulder": game.boulder.position if game.boulder != null else Vector2.ZERO,
 				"deaths": game.total_deaths, "current": game.metrics()}
 			cases.append(entry)
-			check(not entry.completed, "L%d %s needs deliberate follow-up" % [index + 1, behavior])
+			if index == 1 and entry.completed:
+				# A shallow input can legitimately choose the new covered fork.
+				# Verify physical force use, not an invented mandatory sequence.
+				check(game.completed[0].impacts > 0, "L2 %s uses real Can force rather than bypassing both routes" % behavior)
+			else:
+				check(not entry.completed, "L%d %s needs deliberate follow-up" % [index + 1, behavior])
 	# Controlled floor/door fixtures: exits are actual destinations, never flags.
 	for index in 4:
 		await spawn(index)
@@ -77,7 +82,7 @@ func run() -> void:
 	game.player.kill()
 	for i in 22: await step()
 	check(game.level_index == 2 and game.mode == "play" and game.player.health == 3 and game.completed.size() == 2, "death recovery under one second preserves progression")
-	var file := FileAccess.open("res://artifacts/strategic_depth/audit.json", FileAccess.WRITE)
+	var file := FileAccess.open("res://artifacts/level_progression/revision2/checks/audit.json", FileAccess.WRITE)
 	file.store_string(JSON.stringify({"bounded_input_attempts": cases, "failures": failures}, "\t"))
 	game.free()
 	for action in ["move_right", "move_left", "jump", "attack", "restart"]: Input.action_release(action)

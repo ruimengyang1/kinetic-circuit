@@ -1,0 +1,75 @@
+{
+  "game_sources": {
+    "scripts/final_demo.gd": "bac8b715860c66da66dd53b38df27d772c48b2c517069333746887f503fdb206",
+    "scripts/demo_can.gd": "a72bdef476bcd6355502c96c2c6a190d5fdb8b078b4a46c18015181e7be79027",
+    "scripts/demo_machine.gd": "ac1b42461f440b3f9f74d44f4d6661936341d37368162e439667ab5bb11693b1",
+    "scripts/demo_player.gd": "c734d012777298fb33d7502d21c7ff73302bbb1f0a80dae15496862c8b752d05",
+    "scripts/demo_platform.gd": "7c4e8d390617ad916381ea896f0e02dcb346d88243611228ab69b5a6a9bf678d"
+  },
+  "videos": [
+    {
+      "file": "artifacts/final_rescue/full_expert_playthrough.mp4",
+      "bytes": 1699301,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 360,
+          "r_frame_rate": "60/1"
+        },
+        {
+          "codec_name": "aac",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "34.116667"
+      }
+    },
+    {
+      "file": "artifacts/final_rescue/full_intended_playthrough.mp4",
+      "bytes": 2112657,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 360,
+          "r_frame_rate": "60/1"
+        },
+        {
+          "codec_name": "aac",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "42.766667"
+      }
+    },
+    {
+      "file": "artifacts/final_rescue/full_novice_playthrough.mp4",
+      "bytes": 2362108,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 360,
+          "r_frame_rate": "60/1"
+        },
+        {
+          "codec_name": "aac",
+          "r_frame_rate": "0/0"
+        }
+      ],
+      "format": {
+        "duration": "44.183333"
+      }
+    }
+  ],
+  "evidence": "Normal-input rehearsals and explicitly labelled actor/geometry fixtures. Not human experience measurements."
+}

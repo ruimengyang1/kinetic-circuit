@@ -11,7 +11,7 @@
 
 
 The active Kinetic Clockwork prototype began on a safe island. The player
-do
+doç
 
 
 

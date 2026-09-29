@@ -1,0 +1,125 @@
+{
+	"checks": [
+		"L1 tracking preview before lock",
+		"L1 stable position-selected lock",
+		"L1 later position cannot redirect committed charge",
+		"L1 impact uses shared recovery",
+		"L1 recovery has no added delay",
+		"L2 tracking preview before lock",
+		"L2 stable position-selected lock",
+		"L2 later position cannot redirect committed charge",
+		"L2 impact uses shared recovery",
+		"L2 recovery has no added delay",
+		"L3 tracking preview before lock",
+		"L3 stable position-selected lock",
+		"L3 later position cannot redirect committed charge",
+		"L3 impact uses shared recovery",
+		"L3 recovery has no added delay",
+		"L4 tracking preview before lock",
+		"L4 stable position-selected lock",
+		"L4 later position cannot redirect committed charge",
+		"L4 impact uses shared recovery",
+		"L4 recovery has no added delay",
+		"repeated signed force has deterministic endpoints",
+		"left force leaves Boulder left of both nozzle and emitter",
+		"L2 initial Boulder is physical beam cover and nozzle obstruction",
+		"L2 relationships require no object-to-key circuit",
+		"L2 moving cover opens the running airflow",
+		"L2 exposed beam warns before harming the lower approach",
+		"L2 preparation changes damage outcome without faster input",
+		"L2 initial Boulder is physical beam cover and nozzle obstruction",
+		"L2 relationships require no object-to-key circuit",
+		"L2 moving cover opens the running airflow",
+		"L2 exposed beam warns before harming the lower approach",
+		"L2 preparation changes damage outcome without faster input",
+		"L3 optical window remains broad after real geometry occlusion",
+		"L4 optical window remains broad after real geometry occlusion",
+		"L3 lead -2 exposes delay with forgiving early starts",
+		"L3 lead 0 exposes delay with forgiving early starts",
+		"L3 lead 8 exposes delay with forgiving early starts",
+		"L3 lead 12 exposes delay with forgiving early starts",
+		"L3 lead 18 exposes delay with forgiving early starts",
+		"L3 lead 24 exposes delay with forgiving early starts",
+		"L3 lead 28 exposes delay with forgiving early starts",
+		"L4 retains the physical cover/nozzle relationship learned in L2",
+		"L4 does not solve withdrawal with an automatic new linkage",
+		"L4 kept Can availability continuously changes future beam state",
+		"L4 spending Can position freezes actual angle without a solved flag"
+	],
+	"controlled_fixtures": true,
+	"deterministic_endpoints": [
+		223.198181152344,
+		223.198181152344,
+		223.198181152344
+	],
+	"failures": [],
+	"states": [
+		{
+			"boulder": "(223.1982, 301.9338)",
+			"can": "(251.2784, 305.9984)",
+			"health": 2,
+			"level": 2,
+			"prepared": false
+		},
+		{
+			"boulder": "(223.1982, 301.9338)",
+			"can": "(251.2784, 305.9984)",
+			"health": 3,
+			"level": 2,
+			"prepared": true
+		}
+	],
+	"windows": [
+		{
+			"level": 3,
+			"maximum_degrees": 19.75,
+			"minimum_degrees": -11.5,
+			"seconds_at_rate": 1.73611111111111,
+			"width_degrees": 31.25
+		},
+		{
+			"level": 4,
+			"maximum_degrees": 18.0,
+			"minimum_degrees": -9.0,
+			"seconds_at_rate": 1.6875,
+			"width_degrees": 27.0
+		}
+	],
+	"withdrawals": [
+		{
+			"lead_degrees": -2.0,
+			"stopped_degrees": 22.8000000000001,
+			"sustained": false
+		},
+		{
+			"lead_degrees": 0.0,
+			"stopped_degrees": 20.7000000000001,
+			"sustained": false
+		},
+		{
+			"lead_degrees": 8.0,
+			"stopped_degrees": 12.9000000000001,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 12.0,
+			"stopped_degrees": 8.70000000000005,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 18.0,
+			"stopped_degrees": 2.70000000000005,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 24.0,
+			"stopped_degrees": -3.29999999999995,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 28.0,
+			"stopped_degrees": -7.19999999999995,
+			"sustained": true
+		}
+	]
+}

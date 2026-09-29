@@ -49,6 +49,18 @@ func weight() -> void:
 	await leap(590, 124)
 	await walk(616)
 
+func timing() -> void:
+	await place_can_on_rotator(351, 281)
+	if game.boulder != null: fail("L3 must not keep a compulsory landing Boulder")
+	await withdraw(18, 297)
+	await walk(365)
+	await leap(407, 286)
+	await leap(472, 249)
+	await leap(515, 222)
+	await walk(547)
+	await leap(598, 194)
+	await walk(617)
+
 func combine() -> void:
 	if expert: await preserved_cover_order()
 	else: await cleared_cover_order()

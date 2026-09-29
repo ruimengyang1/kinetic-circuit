@@ -1,0 +1,16 @@
+{
+	"compared": [
+		"player",
+		"Can",
+		"platforms",
+		"laser angle",
+		"all machine power/occupancy/illumination",
+		"mode",
+		"level"
+	],
+	"completed": 4,
+	"differences": [],
+	"exact_position_state_match": true,
+	"frames_compared": 2022,
+	"open_loop": true
+}

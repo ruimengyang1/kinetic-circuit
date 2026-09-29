@@ -1,0 +1,9612 @@
+{
+	"completed": [
+		{
+			"boulder_impacts": 0,
+			"chained_interactions": 0,
+			"charge_effects": {
+				"1": [
+					"force"
+				]
+			},
+			"charges": 2,
+			"charging_rebounds": 0,
+			"deaths": 0,
+			"events": [
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(160.0, 306.0)",
+					"can_state": "lock",
+					"charge_id": 0,
+					"event": "locked",
+					"laser_angle": 0,
+					"player": "(184.4526, 238.3555)",
+					"seconds": 0.78,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(160.0, 306.0)",
+					"can_state": "charging",
+					"charge_id": 1,
+					"event": "charge",
+					"laser_angle": 0,
+					"player": "(175.3832, 238.9626)",
+					"seconds": 0.92,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(219.9253, 305.924)",
+					"can_state": "charging",
+					"charge_id": 1,
+					"event": "shutter moving",
+					"laser_angle": 0,
+					"player": "(175.3832, 238.9626)",
+					"seconds": 1.13,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(219.9253, 305.924)",
+					"can_state": "charging",
+					"charge_id": 1,
+					"event": "force",
+					"laser_angle": 0,
+					"player": "(175.3832, 238.9626)",
+					"seconds": 1.13,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(219.9253, 305.924)",
+					"can_state": "impact",
+					"charge_id": 1,
+					"event": "charge endpoint",
+					"laser_angle": 0,
+					"player": "(175.3832, 238.9626)",
+					"seconds": 1.13,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(219.9253, 305.924)",
+					"can_state": "lock",
+					"charge_id": 1,
+					"event": "locked",
+					"laser_angle": 0,
+					"player": "(113.7163, 308.9626)",
+					"seconds": 2.27,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(219.9253, 305.924)",
+					"can_state": "charging",
+					"charge_id": 2,
+					"event": "charge",
+					"laser_angle": 0,
+					"player": "(126.1053, 286.6009)",
+					"seconds": 2.4,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(98.07532, 305.9253)",
+					"can_state": "charging",
+					"charge_id": 2,
+					"event": "ascent moving",
+					"laser_angle": 0,
+					"player": "(183.6748, 261.2954)",
+					"seconds": 2.83,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(98.07532, 305.9253)",
+					"can_state": "charging",
+					"charge_id": 2,
+					"event": "button on",
+					"laser_angle": 0,
+					"player": "(183.6748, 261.2954)",
+					"seconds": 2.83,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(24.00103, 305.9267)",
+					"can_state": "impact",
+					"charge_id": 2,
+					"event": "charge endpoint",
+					"laser_angle": 0,
+					"player": "(166.2582, 232.2551)",
+					"seconds": 3.08,
+					"sensor": false
+				},
+				{
+					"air_blocked": false,
+					"beam_covered": false,
+					"boulder": "(0.0, 0.0)",
+					"can": "(24.00103, 305.9267)",
+					"can_state": "idle",
+					"charge_id": 2,
+					"event": "exit",
+					"laser_angle": 0,
+					"player": "(601.2863, 204.9626)",
+					"seconds": 6.27,
+					"sensor": false
+				}
+			],
+			"hits": 0,
+			"idle_seconds": 0.533333333333333,
+			"impacts": 1,
+			"level": 2,
+			"rebounds": 0,
+			"resets": 0,
+			"rotator_hold_seconds": 0.0,
+			"rotor_state_recreations": 0,
+			"seconds": 6.27,
+			"sensor_activations": 0,
+			"useful_cover_losses": 0
+		}
+	],
+	"failures": [],
+	"input_only": true,
+	"notes": [
+		{
+			"can": "(160.0, 306.0)",
+			"level": 2,
+			"note": "room start",
+			"player": "(185.0, 272.0)",
+			"seconds": 0.0
+		}
+	],
+	"rehearsed": true,
+	"style": "anticipate / preposition / chain",
+	"trace": [
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 1,
+			"feet": 281.0,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.0, 272.0)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.0,
+			"sensor": false,
+			"state": "idle",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 2,
+			"feet": 281.0,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.0, 272.0)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.0166666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 3,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.5, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.0333333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(30.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 4,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(186.5, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.05,
+			"sensor": false,
+			"state": "idle",
+			"v": "(60.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 5,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(188.0, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.0666666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(90.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 6,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(190.0, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.0833333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(120.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 7,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(192.5, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.1,
+			"sensor": false,
+			"state": "idle",
+			"v": "(150.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 8,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(195.0833, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.116666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 9,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(197.1389, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.133333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(123.3333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 10,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(198.6667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.15,
+			"sensor": false,
+			"state": "idle",
+			"v": "(91.66667, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 11,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(199.6667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.166666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(60.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 12,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(200.1667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.183333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(30.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 13,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(200.1667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.2,
+			"sensor": false,
+			"state": "idle",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 14,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(199.6667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.216666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-30.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 15,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(198.6667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.233333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-60.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 16,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(197.1667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.25,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-90.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 17,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(195.1667, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.266666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-120.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 18,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(193.6945, 271.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.283333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-88.33334, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 19,
+			"feet": 277.226013183594,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(191.722, 268.226)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.3,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-118.3333, -224.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 20,
+			"feet": 273.670471191406,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(189.2775, 264.6705)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.316666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-146.6667, -213.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 21,
+			"feet": 270.295471191406,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(186.6942, 261.2955)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.333333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, -202.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 22,
+			"feet": 267.101013183594,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(184.1109, 258.101)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.35,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, -191.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 23,
+			"feet": 264.087127685547,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(181.5276, 255.0871)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.366666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, -180.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 24,
+			"feet": 261.253799438477,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(178.9442, 252.2538)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.383333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, -170.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 25,
+			"feet": 258.601013183594,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(176.3609, 249.601)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.4,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, -159.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 26,
+			"feet": 256.128784179688,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(173.7776, 247.1288)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.416666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, -148.3334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 27,
+			"feet": 253.837112426758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(171.3748, 244.8371)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.433333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-144.1667, -137.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 28,
+			"feet": 251.725997924805,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(169.1526, 242.726)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.45,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-133.3333, -126.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 29,
+			"feet": 249.795440673828,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(167.4026, 240.7954)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.466666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-105.0, -115.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 30,
+			"feet": 248.045440673828,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(166.1248, 239.0454)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.483333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-76.66667, -105.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 31,
+			"feet": 246.411071777344,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.2859, 237.4111)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.5,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-48.33334, -94.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 32,
+			"feet": 245.022186279297,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(164.9526, 236.0222)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.516666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-20.00001, -83.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 33,
+			"feet": 243.813858032227,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.0915, 234.8139)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.533333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(8.333327, -72.50003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 34,
+			"feet": 242.786087036133,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.7026, 233.7861)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.55,
+			"sensor": false,
+			"state": "windup",
+			"v": "(36.66666, -61.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 35,
+			"feet": 241.938858032227,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(166.7859, 232.9389)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.566666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(64.99999, -50.83337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 36,
+			"feet": 241.272186279297,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(168.3415, 232.2722)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.583333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(93.33333, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 37,
+			"feet": 240.786071777344,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(170.3692, 231.7861)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.6,
+			"sensor": false,
+			"state": "windup",
+			"v": "(121.6667, -29.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 38,
+			"feet": 240.480514526367,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(172.8692, 231.4805)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.616666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(150.0, -18.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 39,
+			"feet": 240.355514526367,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.4526, 231.3555)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.633333333333334,
+			"sensor": false,
+			"state": "windup",
+			"v": "(155.0, -7.500033)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 40,
+			"feet": 240.411071777344,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(177.8553, 231.4111)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.65,
+			"sensor": false,
+			"state": "windup",
+			"v": "(144.1667, 3.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 41,
+			"feet": 240.647186279297,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(180.0776, 231.6472)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.666666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(133.3333, 14.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 42,
+			"feet": 241.063858032227,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(182.1192, 232.0639)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.683333333333334,
+			"sensor": false,
+			"state": "windup",
+			"v": "(122.5, 24.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 43,
+			"feet": 241.661087036133,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.6887, 232.6611)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.700000000000001,
+			"sensor": false,
+			"state": "windup",
+			"v": "(94.16667, 35.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 44,
+			"feet": 242.438858032227,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(184.7859, 233.4389)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.716666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(65.83334, 46.66663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 45,
+			"feet": 243.397186279297,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.4109, 234.3972)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.733333333333334,
+			"sensor": false,
+			"state": "windup",
+			"v": "(37.5, 57.49997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 46,
+			"feet": 244.536071777344,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.5637, 235.5361)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.750000000000001,
+			"sensor": false,
+			"state": "windup",
+			"v": "(9.166671, 68.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 47,
+			"feet": 245.855514526367,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.2442, 236.8555)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.766666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-19.16666, 79.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 48,
+			"feet": 247.355514526367,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(184.4526, 238.3555)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.783333333333334,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-47.5, 89.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 49,
+			"feet": 247.962600708008,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.1887, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.800000000000001,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-75.83333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 50,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(181.4248, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.816666666666668,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-105.8333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 51,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(179.1609, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.833333333333334,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-135.8333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 52,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(177.4248, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.850000000000001,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-104.1667, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 53,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(176.2165, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.866666666666668,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-72.5, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 54,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.5359, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.883333333333334,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-40.83333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 55,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.900000000000001,
+			"sensor": false,
+			"state": "lock",
+			"v": "(-9.166665, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(160.0, 306.0)",
+			"f": 56,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.916666666666668,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(163.4931, 305.9253)",
+			"f": 57,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.933333333333335,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(167.4722, 305.9253)",
+			"f": 58,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.950000000000001,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(171.9375, 305.9253)",
+			"f": 59,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.966666666666668,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(176.85, 305.9253)",
+			"f": 60,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 0.983333333333335,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(181.85, 305.9253)",
+			"f": 61,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.0,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(186.85, 305.9253)",
+			"f": 62,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.01666666666667,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(191.85, 305.9253)",
+			"f": 63,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.03333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(196.85, 305.9253)",
+			"f": 64,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.05,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(201.85, 305.9253)",
+			"f": 65,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.06666666666667,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(206.85, 305.9253)",
+			"f": 66,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.08333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(211.85, 305.9253)",
+			"f": 67,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.1,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(216.85, 305.9253)",
+			"f": 68,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.11666666666667,
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 69,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.13333333333333,
+			"sensor": false,
+			"state": "impact",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 70,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.15,
+			"sensor": false,
+			"state": "impact",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 71,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.16666666666667,
+			"sensor": false,
+			"state": "impact",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 72,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 224.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.18333333333333,
+			"sensor": false,
+			"state": "impact",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 73,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(174.8832, 238.9626)",
+			"platforms": [
+				"(241.0, 220.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.2,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-30.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 74,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(173.8832, 238.9626)",
+			"platforms": [
+				"(241.0, 216.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.21666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-60.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 75,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(172.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 212.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.23333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-90.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 76,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(170.3832, 238.9626)",
+			"platforms": [
+				"(241.0, 208.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.25,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-120.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 77,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(167.8832, 238.9626)",
+			"platforms": [
+				"(241.0, 204.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.26666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-150.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 78,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.2998, 238.9626)",
+			"platforms": [
+				"(241.0, 200.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.28333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 79,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(162.7165, 238.9626)",
+			"platforms": [
+				"(241.0, 196.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.3,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 80,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(160.1331, 238.9626)",
+			"platforms": [
+				"(241.0, 192.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.31666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 81,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(157.5498, 238.9626)",
+			"platforms": [
+				"(241.0, 188.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.33333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 82,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(154.9664, 238.9626)",
+			"platforms": [
+				"(241.0, 184.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.35,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 83,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(152.3831, 238.9626)",
+			"platforms": [
+				"(241.0, 180.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.36666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 84,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(149.7998, 238.9626)",
+			"platforms": [
+				"(241.0, 176.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.38333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 85,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(147.2164, 238.9626)",
+			"platforms": [
+				"(241.0, 172.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.4,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 86,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(144.6331, 238.9626)",
+			"platforms": [
+				"(241.0, 168.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.41666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 87,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(142.0497, 238.9626)",
+			"platforms": [
+				"(241.0, 164.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.43333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 88,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(139.4664, 238.9626)",
+			"platforms": [
+				"(241.0, 160.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.45,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 89,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(136.883, 238.9626)",
+			"platforms": [
+				"(241.0, 156.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.46666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 90,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(134.2997, 238.9626)",
+			"platforms": [
+				"(241.0, 152.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.48333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 91,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(131.7164, 238.9626)",
+			"platforms": [
+				"(241.0, 148.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.5,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 92,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(129.133, 238.9626)",
+			"platforms": [
+				"(241.0, 144.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.51666666666667,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 93,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(126.5497, 238.9626)",
+			"platforms": [
+				"(241.0, 140.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.53333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 94,
+			"feet": 248.143188476562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(123.9663, 239.1432)",
+			"platforms": [
+				"(241.0, 136.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.55,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 10.83333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 95,
+			"feet": 248.504302978516,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(121.383, 239.5043)",
+			"platforms": [
+				"(241.0, 132.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.56666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 21.66667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 96,
+			"feet": 249.045974731445,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(118.7997, 240.046)",
+			"platforms": [
+				"(241.0, 128.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.58333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 32.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 97,
+			"feet": 249.768203735352,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(116.2163, 240.7682)",
+			"platforms": [
+				"(241.0, 124.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.6,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 43.33333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 98,
+			"feet": 250.670974731445,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.633, 241.671)",
+			"platforms": [
+				"(241.0, 120.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.61666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 54.16666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 99,
+			"feet": 251.754302978516,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(111.0497, 242.7543)",
+			"platforms": [
+				"(241.0, 116.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.63333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 65.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 100,
+			"feet": 253.018188476562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(108.4663, 244.0182)",
+			"platforms": [
+				"(241.0, 112.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.65,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-155.0, 75.83334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 101,
+			"feet": 254.462631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(106.0635, 245.4626)",
+			"platforms": [
+				"(241.0, 108.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.66666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-144.1667, 86.66667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 102,
+			"feet": 256.087631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(103.8413, 247.0876)",
+			"platforms": [
+				"(241.0, 104.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.68333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-133.3333, 97.50001)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 103,
+			"feet": 257.893188476562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(102.0913, 248.8932)",
+			"platforms": [
+				"(241.0, 100.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.7,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-105.0, 108.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 104,
+			"feet": 259.879302978516,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(100.8135, 250.8793)",
+			"platforms": [
+				"(241.0, 96.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.71666666666667,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-76.66667, 119.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 105,
+			"feet": 262.045974731445,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(100.008, 253.046)",
+			"platforms": [
+				"(241.0, 92.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.73333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(-48.33334, 130.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 106,
+			"feet": 264.393203735352,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(99.67464, 255.3932)",
+			"platforms": [
+				"(241.0, 88.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.75,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-20.00001, 140.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 107,
+			"feet": 266.920989990234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(99.81353, 257.921)",
+			"platforms": [
+				"(241.0, 84.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.76666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(8.333327, 151.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 108,
+			"feet": 269.629333496094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(100.4246, 260.6293)",
+			"platforms": [
+				"(241.0, 80.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.78333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(36.66666, 162.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 109,
+			"feet": 272.518218994141,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(101.508, 263.5182)",
+			"platforms": [
+				"(241.0, 76.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.8,
+			"sensor": false,
+			"state": "windup",
+			"v": "(64.99999, 173.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 110,
+			"feet": 275.587677001953,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(103.0635, 266.5877)",
+			"platforms": [
+				"(241.0, 72.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.81666666666667,
+			"sensor": false,
+			"state": "windup",
+			"v": "(93.33333, 184.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 111,
+			"feet": 278.837677001953,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(105.0913, 269.8377)",
+			"platforms": [
+				"(241.0, 68.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.83333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(121.6667, 195.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 112,
+			"feet": 282.268218994141,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(107.5913, 273.2682)",
+			"platforms": [
+				"(241.0, 64.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.85,
+			"sensor": false,
+			"state": "windup",
+			"v": "(150.0, 205.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 113,
+			"feet": 285.879333496094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(110.1747, 276.8793)",
+			"platforms": [
+				"(241.0, 60.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.86666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(155.0, 216.6666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 114,
+			"feet": 289.670989990234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(112.5774, 280.671)",
+			"platforms": [
+				"(241.0, 56.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.88333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(144.1667, 227.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 115,
+			"feet": 293.643218994141,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(114.7997, 284.6432)",
+			"platforms": [
+				"(241.0, 52.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.9,
+			"sensor": false,
+			"state": "windup",
+			"v": "(133.3333, 238.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 116,
+			"feet": 297.795989990234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(116.8413, 288.796)",
+			"platforms": [
+				"(241.0, 48.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.91666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(122.5, 249.1666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 117,
+			"feet": 302.129333496094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(118.4108, 293.1293)",
+			"platforms": [
+				"(241.0, 44.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.93333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(94.16667, 260.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 118,
+			"feet": 306.643218994141,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(119.508, 297.6432)",
+			"platforms": [
+				"(241.0, 40.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.95,
+			"sensor": false,
+			"state": "windup",
+			"v": "(65.83334, 270.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 119,
+			"feet": 311.337677001953,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(120.133, 302.3377)",
+			"platforms": [
+				"(241.0, 36.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.96666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(37.5, 281.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 120,
+			"feet": 316.212677001953,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(120.2858, 307.2127)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 1.98333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(9.166671, 292.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 121,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(119.9663, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.0,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-19.16666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 122,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(119.1469, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.01666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-49.16666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 123,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(117.8274, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.03333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-79.16666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 124,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(116.008, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.05,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-109.1667, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 125,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(114.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.06666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-77.5, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 126,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.9524, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.08333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-45.83333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 127,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.1,
+			"sensor": false,
+			"state": "windup",
+			"v": "(-14.16667, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 128,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.11666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 129,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.13333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 130,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.15,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 131,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.16666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 132,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.18333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 133,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.2,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 134,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.21666666666666,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 135,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.23333333333333,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 136,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.25,
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 137,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.26666666666666,
+			"sensor": false,
+			"state": "lock",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 138,
+			"feet": 317.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(113.7163, 308.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.28333333333333,
+			"sensor": false,
+			"state": "lock",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 139,
+			"feet": 314.225891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(114.2164, 305.2259)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.3,
+			"sensor": false,
+			"state": "lock",
+			"v": "(30.0, -224.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 140,
+			"feet": 310.670349121094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(115.1886, 301.6703)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.31666666666666,
+			"sensor": false,
+			"state": "lock",
+			"v": "(58.33333, -213.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 141,
+			"feet": 307.295349121094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(116.6331, 298.2953)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.33333333333333,
+			"sensor": false,
+			"state": "lock",
+			"v": "(86.66666, -202.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 142,
+			"feet": 304.100891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(118.5497, 295.1009)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.35,
+			"sensor": false,
+			"state": "lock",
+			"v": "(115.0, -191.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 143,
+			"feet": 301.087005615234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(120.9386, 292.087)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.36666666666666,
+			"sensor": false,
+			"state": "lock",
+			"v": "(143.3333, -180.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 144,
+			"feet": 298.253662109375,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(123.522, 289.2537)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.38333333333333,
+			"sensor": false,
+			"state": "lock",
+			"v": "(155.0, -170.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(219.9253, 305.924)",
+			"f": 145,
+			"feet": 295.600891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(126.1053, 286.6009)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.4,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -159.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(216.4323, 305.9253)",
+			"f": 146,
+			"feet": 293.128662109375,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(128.6886, 284.1287)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.41666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -148.3334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(212.4531, 305.9253)",
+			"f": 147,
+			"feet": 290.837005615234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(131.272, 281.837)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.43333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -137.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(207.9878, 305.9253)",
+			"f": 148,
+			"feet": 288.725891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(133.8553, 279.7259)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.45,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -126.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(203.0753, 305.9253)",
+			"f": 149,
+			"feet": 286.795349121094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(136.4386, 277.7953)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.46666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -115.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(198.0753, 305.9253)",
+			"f": 150,
+			"feet": 285.045349121094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(139.0219, 276.0453)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.48333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -105.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(193.0753, 305.9253)",
+			"f": 151,
+			"feet": 283.475891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(141.6053, 274.4759)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.5,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -94.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(188.0753, 305.9253)",
+			"f": 152,
+			"feet": 282.087005615234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(144.1886, 273.087)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.51666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -83.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(183.0753, 305.9253)",
+			"f": 153,
+			"feet": 280.878662109375,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(146.7719, 271.8787)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.53333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -72.50003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(178.0753, 305.9253)",
+			"f": 154,
+			"feet": 279.850891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(149.3553, 270.8509)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.55,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -61.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(173.0753, 305.9253)",
+			"f": 155,
+			"feet": 279.003662109375,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(151.9386, 270.0037)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.56666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -50.83337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(168.0753, 305.9253)",
+			"f": 156,
+			"feet": 278.337005615234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(154.5219, 269.337)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.58333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(163.0753, 305.9253)",
+			"f": 157,
+			"feet": 277.850891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(157.1052, 268.8509)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.6,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -29.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(158.0753, 305.9253)",
+			"f": 158,
+			"feet": 277.545349121094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(159.6886, 268.5453)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.61666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -18.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(153.0753, 305.9253)",
+			"f": 159,
+			"feet": 277.420349121094,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(162.2719, 268.4203)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.63333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -7.500033)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(148.0753, 305.9253)",
+			"f": 160,
+			"feet": 277.475891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(164.8552, 268.4759)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.65,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 3.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(143.0753, 305.9253)",
+			"f": 161,
+			"feet": 277.712005615234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(167.4386, 268.712)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.66666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 14.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(138.0753, 305.9253)",
+			"f": 162,
+			"feet": 278.128662109375,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(170.0219, 269.1287)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.68333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 24.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(133.0753, 305.9253)",
+			"f": 163,
+			"feet": 278.725891113281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(172.6052, 269.7259)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.7,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 35.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(128.0753, 305.9253)",
+			"f": 164,
+			"feet": 279.503662109375,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.1885, 270.5037)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.71666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 46.66663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(123.0753, 305.9253)",
+			"f": 165,
+			"feet": 280.462005615234,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(177.5913, 271.462)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.73333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(144.1667, 57.49997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(118.0753, 305.9253)",
+			"f": 166,
+			"feet": 280.962585449219,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(179.8135, 271.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.75,
+			"sensor": false,
+			"state": "charging",
+			"v": "(133.3333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(113.0753, 305.9253)",
+			"f": 167,
+			"feet": 280.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(181.508, 271.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.76666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(101.6667, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(108.0753, 305.9253)",
+			"f": 168,
+			"feet": 277.225952148438,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(182.7026, 268.226)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.78333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(71.66668, -224.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(103.0753, 305.9253)",
+			"f": 169,
+			"feet": 273.67041015625,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.4248, 264.6704)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.79999999999999,
+			"sensor": false,
+			"state": "charging",
+			"v": "(43.33335, -213.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(98.07532, 305.9253)",
+			"f": 170,
+			"feet": 270.29541015625,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.6748, 261.2954)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.81666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(15.00001, -202.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(93.07532, 305.9253)",
+			"f": 171,
+			"feet": 267.100952148438,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.4526, 258.101)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.83333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-13.33332, -191.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(93.07532, 305.9253)",
+			"f": 172,
+			"feet": 267.100952148438,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.4526, 258.101)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 323.0)"
+			],
+			"seconds": 2.84999999999999,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-13.33332, -191.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(88.07532, 305.9253)",
+			"f": 173,
+			"feet": 264.087066650391,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(182.7582, 255.0871)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 320.3333)"
+			],
+			"seconds": 2.86666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-41.66665, -180.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(83.07532, 305.9253)",
+			"f": 174,
+			"feet": 261.25373840332,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(181.5915, 252.2537)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 317.6667)"
+			],
+			"seconds": 2.88333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-69.99998, -170.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(78.07532, 305.9253)",
+			"f": 175,
+			"feet": 258.600952148438,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(179.9526, 249.601)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 315.0)"
+			],
+			"seconds": 2.89999999999999,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-98.33332, -159.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(73.07532, 305.9253)",
+			"f": 176,
+			"feet": 256.128723144531,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(177.8415, 247.1287)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 312.3334)"
+			],
+			"seconds": 2.91666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-126.6667, -148.3334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(68.07532, 305.9253)",
+			"f": 177,
+			"feet": 253.837051391602,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(175.2582, 244.8371)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 309.6667)"
+			],
+			"seconds": 2.93333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-155.0, -137.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(63.07532, 305.9253)",
+			"f": 178,
+			"feet": 251.725936889648,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(172.8554, 242.7259)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 307.0001)"
+			],
+			"seconds": 2.94999999999999,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-144.1667, -126.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(58.07533, 305.9253)",
+			"f": 179,
+			"feet": 249.795379638672,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(170.6332, 240.7954)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 304.3334)"
+			],
+			"seconds": 2.96666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-133.3333, -115.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(53.07533, 305.9253)",
+			"f": 180,
+			"feet": 248.045379638672,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(168.5915, 239.0454)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 301.6667)"
+			],
+			"seconds": 2.98333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-122.5, -105.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(48.07533, 305.9253)",
+			"f": 181,
+			"feet": 246.393966674805,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(167.022, 237.394)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 299.0001)"
+			],
+			"seconds": 2.99999999999999,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-94.16666, -94.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(43.07534, 305.9253)",
+			"f": 182,
+			"feet": 245.005081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.9248, 236.0051)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 296.3334)"
+			],
+			"seconds": 3.01666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-65.83332, -83.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(38.07534, 305.9253)",
+			"f": 183,
+			"feet": 243.796752929688,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.2998, 234.7968)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 293.6668)"
+			],
+			"seconds": 3.03333333333333,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-37.49999, -72.50003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(33.07534, 305.9253)",
+			"f": 184,
+			"feet": 242.768981933594,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.147, 233.769)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 291.0001)"
+			],
+			"seconds": 3.04999999999999,
+			"sensor": false,
+			"state": "charging",
+			"v": "(-9.166656, -61.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(28.07534, 305.9253)",
+			"f": 185,
+			"feet": 241.921752929688,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(165.4665, 232.9218)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 288.3335)"
+			],
+			"seconds": 3.06666666666666,
+			"sensor": false,
+			"state": "charging",
+			"v": "(19.16668, -50.83337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 186,
+			"feet": 241.255081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(166.2582, 232.2551)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 285.6668)"
+			],
+			"seconds": 3.08333333333333,
+			"sensor": false,
+			"state": "impact",
+			"v": "(47.50001, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 187,
+			"feet": 241.255081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(166.2582, 232.2551)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 285.6668)"
+			],
+			"seconds": 3.09999999999999,
+			"sensor": false,
+			"state": "impact",
+			"v": "(47.50001, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 188,
+			"feet": 241.255081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(166.2582, 232.2551)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 285.6668)"
+			],
+			"seconds": 3.11666666666666,
+			"sensor": false,
+			"state": "impact",
+			"v": "(47.50001, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 189,
+			"feet": 241.255081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(166.2582, 232.2551)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 285.6668)"
+			],
+			"seconds": 3.13333333333333,
+			"sensor": false,
+			"state": "impact",
+			"v": "(47.50001, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 190,
+			"feet": 240.768966674805,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(167.522, 231.769)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 283.0002)"
+			],
+			"seconds": 3.14999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(75.83334, -29.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 191,
+			"feet": 240.463409423828,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(169.2582, 231.4634)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 280.3335)"
+			],
+			"seconds": 3.16666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(104.1667, -18.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 192,
+			"feet": 240.338409423828,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(171.4665, 231.3384)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 277.6668)"
+			],
+			"seconds": 3.18333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(132.5, -7.500033)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 193,
+			"feet": 240.393966674805,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(174.0498, 231.394)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 275.0002)"
+			],
+			"seconds": 3.19999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(155.0, 3.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 194,
+			"feet": 240.630081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(176.6331, 231.6301)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 272.3335)"
+			],
+			"seconds": 3.21666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(155.0, 14.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 195,
+			"feet": 241.046752929688,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(179.0359, 232.0468)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 269.6669)"
+			],
+			"seconds": 3.23333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(144.1667, 24.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 196,
+			"feet": 241.643981933594,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(181.2581, 232.644)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 267.0002)"
+			],
+			"seconds": 3.24999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(133.3333, 35.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 197,
+			"feet": 242.421752929688,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.0081, 233.4218)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 264.3336)"
+			],
+			"seconds": 3.26666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(105.0, 46.66663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 198,
+			"feet": 243.380081176758,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(184.2859, 234.3801)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 261.6669)"
+			],
+			"seconds": 3.28333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(76.66667, 57.49997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 199,
+			"feet": 244.518966674805,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.0915, 235.519)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 259.0002)"
+			],
+			"seconds": 3.29999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(48.33334, 68.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 200,
+			"feet": 245.838409423828,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.4248, 236.8384)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 256.3336)"
+			],
+			"seconds": 3.31666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(20.00001, 79.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 201,
+			"feet": 247.338409423828,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.2859, 238.3384)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.33333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-8.333327, 89.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 202,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(184.6748, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.34999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-36.66666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 203,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.5637, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.36666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-66.66666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 204,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": true,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(181.9526, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.38333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-96.66666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 205,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(179.8415, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.39999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-126.6667, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 206,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(178.2304, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.41666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-96.66666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 207,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(177.1192, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.43333333333333,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-66.66666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 208,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(176.5081, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.44999999999999,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-36.66666, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 209,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(176.397, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.46666666666666,
+			"sensor": false,
+			"state": "recover",
+			"v": "(-6.666656, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 210,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(176.7859, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.48333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(23.33334, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 211,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(177.6748, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.49999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(53.33334, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 212,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(179.0637, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.51666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(83.33334, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 213,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(180.9526, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.53333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(113.3333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 214,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(183.3414, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.54999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(143.3333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 215,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(185.9248, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.56666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 216,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(188.5081, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.58333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 217,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(191.0915, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.59999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 218,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(193.6748, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.61666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 219,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(196.2582, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.63333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 220,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(198.8415, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.64999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 221,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(201.4249, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.66666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 222,
+			"feet": 244.226104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(204.0085, 235.2261)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.68333333333333,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -224.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 223,
+			"feet": 240.670547485352,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(206.5918, 231.6705)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.69999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -213.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 224,
+			"feet": 237.295547485352,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(209.1751, 228.2955)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.71666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -202.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 225,
+			"feet": 234.101104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(211.7585, 225.1011)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.73333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -191.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 226,
+			"feet": 231.087219238281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(214.3418, 222.0872)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.74999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -180.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 227,
+			"feet": 228.253890991211,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(216.9251, 219.2539)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.76666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -170.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 228,
+			"feet": 225.601104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(219.5084, 216.6011)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.78333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -159.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 229,
+			"feet": 223.128875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(222.0918, 214.1289)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.79999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -148.3334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 230,
+			"feet": 220.837203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(224.6751, 211.8372)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.81666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -137.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 231,
+			"feet": 218.726089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(227.2584, 209.7261)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.83333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -126.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 232,
+			"feet": 216.795532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(229.8418, 207.7955)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.84999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -115.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 233,
+			"feet": 215.045532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(232.4251, 206.0455)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.86666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -105.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 234,
+			"feet": 213.476089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(235.0084, 204.4761)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.88333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -94.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 235,
+			"feet": 212.087203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(237.5917, 203.0872)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.89999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -83.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 236,
+			"feet": 210.878875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(240.1751, 201.8789)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.91666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -72.50003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 237,
+			"feet": 209.851104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(242.7584, 200.8511)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.93333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -61.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 238,
+			"feet": 209.003875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(245.3417, 200.0039)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.94999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -50.83337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 239,
+			"feet": 208.337203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(247.925, 199.3372)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.96666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 240,
+			"feet": 207.851089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(250.5084, 198.8511)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.98333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -29.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 241,
+			"feet": 207.545532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(253.0917, 198.5455)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 3.99999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -18.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 242,
+			"feet": 207.420532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(255.675, 198.4205)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.01666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -7.500033)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 243,
+			"feet": 207.476089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(258.2584, 198.4761)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.03333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 3.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 244,
+			"feet": 207.712203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(260.8417, 198.7122)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.04999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 14.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 245,
+			"feet": 208.128875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(263.425, 199.1289)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.06666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 24.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 246,
+			"feet": 208.726104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(266.0084, 199.7261)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.08333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 35.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 247,
+			"feet": 209.503875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(268.5917, 200.5039)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.09999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 46.66663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 248,
+			"feet": 210.462203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(271.1751, 201.4622)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.11666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 57.49997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 249,
+			"feet": 211.601089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(273.7584, 202.6011)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.13333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 68.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 250,
+			"feet": 212.920532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(276.3418, 203.9205)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.14999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 79.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 251,
+			"feet": 214.420532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(278.9251, 205.4205)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.16666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 89.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 252,
+			"feet": 216.101089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(281.5085, 207.1011)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.18333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 100.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 253,
+			"feet": 217.962203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(284.0918, 208.9622)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.19999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 111.6666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 254,
+			"feet": 220.003875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(286.6751, 211.0039)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.21666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 122.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 255,
+			"feet": 222.226104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(289.2585, 213.2261)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.23333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 133.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 256,
+			"feet": 224.628875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(291.8418, 215.6289)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.24999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 144.1666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 257,
+			"feet": 227.212203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(294.4252, 218.2122)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.26666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 155.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 258,
+			"feet": 229.976089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(297.0085, 220.9761)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.28333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 165.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 259,
+			"feet": 232.920532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(299.5919, 223.9205)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.29999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 176.6666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 260,
+			"feet": 236.045532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(302.1752, 227.0455)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.31666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 187.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 261,
+			"feet": 239.351089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(304.7585, 230.3511)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.33333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 198.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 262,
+			"feet": 242.837203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(307.3419, 233.8372)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.34999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 209.1666)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 263,
+			"feet": 246.503875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(309.9252, 237.5039)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.36666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 219.9999)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 264,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": false
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(312.5086, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.38333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 265,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(314.5641, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.39999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(123.3333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 266,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(317.1197, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.41666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(153.3333, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 267,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(319.703, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.43333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 268,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(322.2863, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.44999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 269,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(324.8697, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.46666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 270,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(327.453, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.48333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 271,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(330.0363, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.49999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 272,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(332.6196, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.51666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 273,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(335.2029, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.53333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 274,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(337.7862, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.54999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 275,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(340.3695, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.56666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 276,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(342.9529, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.58333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 277,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(345.5362, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.59999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 278,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(348.1195, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.61666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 279,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(350.7028, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.63333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 280,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(353.2861, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.64999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 281,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(355.8694, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.66666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 282,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(358.4527, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.68333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 283,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(361.036, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.69999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 284,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(363.6194, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.71666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 285,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(366.2027, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.73333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 286,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(368.786, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.74999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 287,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(371.3693, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.76666666666666,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 288,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(373.9526, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.78333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 289,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(376.5359, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.79999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 290,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(379.1192, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.81666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 291,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(381.7025, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.83333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 292,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(384.2859, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.84999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 293,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(386.8692, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.86666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 294,
+			"feet": 247.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(389.4525, 238.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.88333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 295,
+			"feet": 249.994750976562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(392.0358, 240.9948)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.89999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 296,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(394.6191, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.91666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 297,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(397.2024, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.93333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 298,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(399.7857, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.94999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 299,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(402.369, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.96666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 300,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(404.9523, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.98333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 301,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(407.5356, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 4.99999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 302,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(410.119, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.01666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 303,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(412.7023, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.03333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 304,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(415.2856, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.04999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 305,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(417.8689, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.06666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 306,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(420.4522, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.08333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 307,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(423.0355, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.09999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 308,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(425.6188, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.11666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 309,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(428.2021, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.13333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 310,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(430.7855, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.14999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 311,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(433.3688, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.16666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 312,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(435.9521, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.18333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 313,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(438.5354, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.19999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 314,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(441.1187, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.21666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 315,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(443.702, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.23333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 316,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(446.2853, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.24999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 317,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(448.8687, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.26666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 318,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(451.452, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.28333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 319,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(454.0353, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.29999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 320,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(456.6186, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.31666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 321,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(459.2019, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.33333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 322,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(461.7852, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.34999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 323,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(464.3685, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.36666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 324,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(466.9518, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.38333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 325,
+			"feet": 249.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(469.5352, 240.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.39999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 326,
+			"feet": 246.226104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(472.1188, 237.2261)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.41666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -224.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 327,
+			"feet": 242.670547485352,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(474.7021, 233.6705)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.43333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -213.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 328,
+			"feet": 239.295547485352,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(477.2855, 230.2955)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.44999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -202.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 329,
+			"feet": 236.101104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(479.8688, 227.1011)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.46666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -191.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 330,
+			"feet": 233.087219238281,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(482.4521, 224.0872)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.48333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -180.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 331,
+			"feet": 230.253890991211,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(485.0355, 221.2539)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.49999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -170.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 332,
+			"feet": 227.601104736328,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(487.6188, 218.6011)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.51666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -159.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 333,
+			"feet": 225.128875732422,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(490.2022, 216.1289)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.53333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -148.3334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 334,
+			"feet": 222.837203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(492.7855, 213.8372)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.54999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -137.5)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 335,
+			"feet": 220.726089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(495.3689, 211.7261)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.56666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -126.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 336,
+			"feet": 218.795532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(497.9522, 209.7955)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.58333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -115.8334)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 337,
+			"feet": 217.045532226562,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(500.5356, 208.0455)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.59999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -105.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 338,
+			"feet": 215.476089477539,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(503.1189, 206.4761)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.61666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -94.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 339,
+			"feet": 214.087203979492,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(505.7022, 205.0872)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.63333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -83.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 340,
+			"feet": 212.755783081055,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(508.2856, 203.7558)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.64999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -72.50003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 341,
+			"feet": 211.728012084961,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(510.8689, 202.728)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.66666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -61.6667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 342,
+			"feet": 210.880783081055,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(513.4523, 201.8808)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.68333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -50.83337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 343,
+			"feet": 210.214111328125,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(516.0356, 201.2141)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.69999999999999,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -40.00003)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 344,
+			"feet": 209.727996826172,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(518.6189, 200.728)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.71666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -29.1667)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 345,
+			"feet": 209.422439575195,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(521.2022, 200.4224)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.73333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -18.33337)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 346,
+			"feet": 209.297439575195,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(523.7855, 200.2974)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.74999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -7.500033)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 347,
+			"feet": 209.352996826172,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": true,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(526.3688, 200.353)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.76666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 3.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 348,
+			"feet": 209.589111328125,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(528.9521, 200.5891)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.78333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 14.16663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 349,
+			"feet": 210.005783081055,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(531.5355, 201.0058)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.79999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 24.99997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 350,
+			"feet": 210.603012084961,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(534.1188, 201.603)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.81666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 35.8333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 351,
+			"feet": 211.380783081055,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(536.7021, 202.3808)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.83333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 46.66663)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 352,
+			"feet": 212.339111328125,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(539.2854, 203.3391)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.84999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 57.49997)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 353,
+			"feet": 213.477996826172,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(541.8687, 204.478)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.86666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 68.3333)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 354,
+			"feet": 213.962615966797,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(544.452, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.88333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 355,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(547.0354, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.89999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 356,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(549.6188, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.91666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 357,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(552.2021, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.93333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 358,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(554.7855, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.94999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 359,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(557.3689, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.96666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 360,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(559.9523, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.98333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 361,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(562.5356, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 5.99999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 362,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(565.119, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.01666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 363,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(567.7024, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.03333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 364,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(570.2858, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.04999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 365,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(572.8691, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.06666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 366,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(575.4525, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.08333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 367,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(578.0359, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.09999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 368,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(580.6193, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.11666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 369,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(583.2026, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.13333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 370,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(585.786, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.14999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 371,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(588.3694, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.16666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 372,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(590.9528, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.18333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 373,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(593.5361, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.19999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 374,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(596.1195, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.21666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 375,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(598.7029, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.23333333333332,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 376,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "play",
+			"p": "(601.2863, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.24999999999998,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(0.0, 0.0)",
+			"angle": 0,
+			"can": "(24.00103, 305.9267)",
+			"f": 377,
+			"feet": 213.962631225586,
+			"health": 3,
+			"input": {
+				"attack": false,
+				"jump": false,
+				"left": false,
+				"right": true
+			},
+			"level": 2,
+			"mode": "clear",
+			"p": "(601.2863, 204.9626)",
+			"platforms": [
+				"(241.0, 32.0)",
+				"(434.0, 255.0)"
+			],
+			"seconds": 6.26666666666665,
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		}
+	]
+}

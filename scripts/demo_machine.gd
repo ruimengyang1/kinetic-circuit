@@ -21,6 +21,7 @@ var near_alignment := false
 var approach_glow := 0.0
 var withdrawal_lead := 0.0
 var has_stop_preview := false
+var stop_previews: Dictionary = {}
 var entry_time := 0.0
 const AIR_ENTRY := 0.18
 var flow_top := 0.0
@@ -86,10 +87,7 @@ func _physics_process(delta: float) -> void:
 			else:
 				set_power(occupied)
 				if occupied:
-					angle += rotation_rate * delta
-					if angle >= sweep_max or angle <= sweep_min:
-						angle = clampf(angle, sweep_min, sweep_max)
-						rotation_rate *= -1
+					_advance_sweep(delta)
 				exposure_time = maxf(0, exposure_time - delta)
 				_update_beam()
 		"laser":
@@ -122,7 +120,8 @@ func _physics_process(delta: float) -> void:
 	queue_redraw()
 
 var mast_height := 152.0
-func beam_origin() -> Vector2: return global_position - Vector2(0, mast_height)
+var mast_offset_x := 0.0
+func beam_origin() -> Vector2: return global_position + Vector2(mast_offset_x, -mast_height)
 
 func _update_airflow() -> void:
 	# A narrow physical nozzle supplies the wider plume. A solid panel or heavy
@@ -167,11 +166,22 @@ func _update_beam() -> void:
 	near_alignment = false
 	withdrawal_lead = 0
 	has_stop_preview = false
+	stop_previews.clear()
 	if occupied:
 		var pedal := Rect2(global_position + rect.position, rect.size)
 		for object in get_tree().get_nodes_in_group("foundry_can"):
 			if pedal.intersects(object.weight_rect()):
-				var remaining: float = object.withdrawal_delay(pedal)
+				var worker := get_tree().get_first_node_in_group("player") as Node2D
+				# Waiting above Can is a choice, not a repetition of its old
+				# direction. Show both possibilities before acquisition starts.
+				var choices: Array = [-1, 1] if object.state in ["idle", "recover", "impact", "stagger"] else [object.facing]
+				for side in choices:
+					var seconds: float = object.withdrawal_delay(pedal, side)
+					if is_finite(seconds): stop_previews[side] = predicted_angle(seconds)
+				var selected: int = object.facing
+				if choices.size() == 2 and worker != null:
+					selected = -1 if worker.position.x < object.position.x else 1
+				var remaining: float = object.withdrawal_delay(pedal, selected)
 				if is_finite(remaining):
 					withdrawal_lead = remaining
 					has_stop_preview = true
@@ -187,9 +197,17 @@ func _update_beam() -> void:
 		if gap < tolerance: near_alignment = true
 		sensor.approach_glow = clampf(1 - maxf(0, gap - tolerance) / deg_to_rad(12), 0, 1)
 
+func _advance_sweep(seconds: float) -> void:
+	var span := sweep_max - sweep_min
+	var phase := angle - sweep_min if rotation_rate >= 0 else span * 2 - (angle - sweep_min)
+	phase = fposmod(phase + absf(rotation_rate) * seconds, span * 2)
+	angle = sweep_min + (phase if phase <= span else span * 2 - phase)
+	rotation_rate = absf(rotation_rate) if phase < span else -absf(rotation_rate)
+
 func predicted_angle(seconds: float) -> float:
 	var span := sweep_max - sweep_min
-	var phase := fposmod(angle - sweep_min + rotation_rate * seconds, span * 2)
+	var phase := angle - sweep_min if rotation_rate >= 0 else span * 2 - (angle - sweep_min)
+	phase = fposmod(phase + absf(rotation_rate) * seconds, span * 2)
 	return sweep_min + (phase if phase <= span else span * 2 - phase)
 
 func _draw() -> void:
@@ -202,10 +220,11 @@ func _draw() -> void:
 				draw_rect(Rect2(x, top + 1, 4, 1), Color("496b69"))
 		"fan":
 			var floor_at := Vector2(0, rect.end.y)
-			draw_rect(Rect2(floor_at + Vector2(-33, -6), Vector2(66, 10)), Color("101b29"))
-			draw_rect(Rect2(floor_at + Vector2(-30, -3), Vector2(60, 5)), Color("46737b"))
-			for i in 5:
-				var x := -23 + i * 12
+			var half_width := rect.size.x / 2
+			draw_rect(Rect2(floor_at + Vector2(-half_width - 3, -6), Vector2(rect.size.x + 6, 10)), Color("101b29"))
+			draw_rect(Rect2(floor_at + Vector2(-half_width + 3, -3), Vector2(rect.size.x - 6, 5)), Color("46737b"))
+			for i in maxi(5, int(rect.size.x / 12)):
+				var x := -half_width + 10 + i * 12
 				var spin := clock * (2 + spool * 22) + i
 				draw_line(floor_at + Vector2(x, -1), floor_at + Vector2(x + sin(spin) * 6, -3 - cos(spin) * 4), Color("a9f4dd") if active else Color("6b8f95"), 2)
 			# The nozzle stays visibly running even when its outlet is obstructed.
@@ -214,28 +233,37 @@ func _draw() -> void:
 				var local_top := flow_top - global_position.y
 				var height := maxf(1, rect.end.y - local_top)
 				for i in 20:
-					var x := -28 + fmod(i * 17.0, 56)
+					var x := -half_width + 5 + fmod(i * 17.0, rect.size.x - 10)
 					var y := rect.end.y - fmod(clock * 170 + i * 23, height)
 					draw_line(Vector2(x, y), Vector2(x + sin(clock * 4 + i) * 3, y - 9 * spool), Color("9de7dc", spool * 0.55), 1)
-				draw_line(Vector2(-32, rect.end.y - 14), Vector2(-32, local_top), Color("75c9c6", 0.17), 1)
-				draw_line(Vector2(32, rect.end.y - 14), Vector2(32, local_top), Color("75c9c6", 0.17), 1)
+				draw_line(Vector2(-half_width + 1, rect.end.y - 14), Vector2(-half_width + 1, local_top), Color("75c9c6", 0.17), 1)
+				draw_line(Vector2(half_width - 1, rect.end.y - 14), Vector2(half_width - 1, local_top), Color("75c9c6", 0.17), 1)
 				for i in 3:
 					var y := rect.end.y - 8 - fmod(clock * 75 + i * 65, maxf(1, height - 16))
 					draw_line(Vector2(-6, y + 6), Vector2(0, y), Color("a9f4dd", spool * 0.42), 1)
 					draw_line(Vector2(0, y), Vector2(6, y + 6), Color("a9f4dd", spool * 0.42), 1)
 			elif spool > 0:
+				# The dormant shaft stays legible while a solid blocks its mouth.
+				# Same physical nozzle/column, no extra switch or promise of power.
+				for side in [-1, 1]:
+					for y in range(int(rect.position.y), int(rect.end.y - 20), 16):
+						draw_line(Vector2(side * (half_width - 2), y), Vector2(side * (half_width - 2), y + 6), Color("75c9c6", 0.23), 1)
 				for side in [-1, 1]:
 					var at := Vector2(side * (12 + fmod(clock * 20, 12)), rect.end.y - 6)
 					draw_line(at, at + Vector2(side * 5, -4), Color("ffb074", 0.55), 2)
 		"rotator", "laser":
 			if kind == "rotator":
-				draw_rect(Rect2(-31, 1, 62, 7), Color("101b29"))
-				draw_rect(Rect2(-28, 1 if occupied else -2, 56, 5), Color("a9f4dd") if occupied else Color("edb374"))
+				# Draw the real weight footprint: a broad parking choice must look
+				# broad, rather than behaving like an invisible extended button.
+				draw_rect(Rect2(rect.position.x - 3, 1, rect.size.x + 6, 7), Color("101b29"))
+				draw_rect(Rect2(rect.position.x, 1 if occupied else -2, rect.size.x, 5), Color("a9f4dd") if occupied else Color("edb374"))
+				for x in range(int(rect.position.x + 5), int(rect.end.x), 12):
+					draw_line(Vector2(x, 2), Vector2(x + 5, 5), Color("496b69"), 1)
 				draw_line(Vector2(-22, 0), Vector2(-22, -mast_height), Color("517a87"), 4)
-				draw_line(Vector2(-22, -mast_height), Vector2(0, -mast_height), Color("517a87"), 4)
+				draw_line(Vector2(-22, -mast_height), Vector2(mast_offset_x, -mast_height), Color("517a87"), 4)
 			else:
 				draw_line(Vector2(0, 10), Vector2(0, -mast_height), Color("517a87"), 5)
-			var origin := Vector2(0, -mast_height)
+			var origin := Vector2(mast_offset_x, -mast_height)
 			for sensor in get_tree().get_nodes_in_group("laser_sensors"):
 				var goal: float = (sensor.global_position - beam_origin()).angle()
 				var tolerance := asin(minf(0.95, sensor.optical_radius / beam_origin().distance_to(sensor.global_position)))
@@ -243,10 +271,16 @@ func _draw() -> void:
 			draw_circle(origin, 15, Color("101b29"))
 			draw_arc(origin, 13, 0, TAU, 24, Color("edb374"), 2)
 			draw_line(origin, origin + Vector2.from_angle(angle) * 13, Color("fff1b3"), 3)
-			# The small lead diamond is a mechanical dial mark, not a solution
-			# label. It visualizes approximately one withdrawal delay ahead.
-			var lead := origin + Vector2.from_angle(predicted_angle(withdrawal_lead)) * 20
-			if occupied and has_stop_preview: draw_rect(Rect2(lead - Vector2(3, 3), Vector2(6, 6)), Color("fff1b3") if near_alignment else Color("a9f4dd"), false, 2 if near_alignment else 1)
+			# Directional dial marks forecast actual clearance delay. They display
+			# consequences without steering or snapping the physical beam.
+			if occupied:
+				for side in stop_previews:
+					var lead := origin + Vector2.from_angle(stop_previews[side]) * (34 if side < 0 else 43)
+					var color := Color("edb374") if side < 0 else Color("a9f4dd")
+					draw_circle(lead, 3, color, false, 1)
+					draw_line(lead + Vector2(-side * 3, 0), lead + Vector2(side * 9, 0), color, 1)
+					draw_line(lead + Vector2(side * 9, 0), lead + Vector2(side * 5, -3), color, 1)
+					draw_line(lead + Vector2(side * 9, 0), lead + Vector2(side * 5, 3), color, 1)
 			if occupied: draw_arc(origin, 18, angle - 0.4, angle + 0.4, 8, Color("a9f4dd"), 2)
 			if beam_end != Vector2.ZERO:
 				var endpoint := beam_end - global_position
@@ -260,7 +294,7 @@ func _draw() -> void:
 					var length := beam_end.distance_to(far)
 					for offset in range(8, int(length), 16):
 						var at := endpoint + Vector2.from_angle(angle) * offset
-						draw_line(at, at + Vector2.from_angle(angle) * minf(6, length - offset), Color("ff7d85", 0.22), 1)
+						draw_line(at, at + Vector2.from_angle(angle) * minf(6, length - offset), Color("ff7d85", 0.40), 1)
 				var beam_color := Color("fff1b3") if exposure_time > 0 else Color("ff7d85")
 				if beam_hit != null and is_instance_valid(beam_hit) and beam_hit.has_meta("sensor_owner"): beam_color = Color("a9f4dd")
 				draw_line(origin, endpoint, Color(beam_color, 0.22), 7)

@@ -1,0 +1,27 @@
+{
+	"cases": [
+		{
+			"case": "L2 crossing-only",
+			"completed": false,
+			"controlled_fixture": true
+		},
+		{
+			"case": "L3 final-beam-only",
+			"completed": false,
+			"controlled_fixture": true
+		},
+		{
+			"case": "L4 final-beam-only",
+			"completed": false,
+			"controlled_fixture": true
+		},
+		{
+			"case": "L4 wrong final endpoint",
+			"completed": false,
+			"controlled_fixture": true,
+			"exit_weight": false
+		}
+	],
+	"counterfactual_fixtures": true,
+	"failures": []
+}

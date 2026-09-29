@@ -9,6 +9,7 @@ var speed := 150.0
 var powered := false
 var suspended := false
 var force_operated := false
+var one_way := false
 var force_direction := 1
 var impact_return := -0.18
 var activation_delay := 0.0
@@ -37,6 +38,8 @@ func _ready() -> void:
 	shape.size = size
 	var collision := CollisionShape2D.new()
 	collision.shape = shape
+	collision.one_way_collision = one_way
+	collision.one_way_collision_margin = 4
 	add_child(collision)
 
 func set_power(value: bool) -> void:
@@ -76,7 +79,7 @@ func receive_impact(momentum: float, _source: Node2D = null) -> float:
 	return momentum * impact_return
 
 func impact_enabled() -> bool: return force_operated
-func impact_rect() -> Rect2: return Rect2(global_position - size / 2, size).grow(2)
+func impact_rect() -> Rect2: return Rect2(global_position - size / 2, size)
 
 func _draw() -> void:
 	if not path.is_empty():

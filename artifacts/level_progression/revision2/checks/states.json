@@ -1,0 +1,22 @@
+{
+	"checks": [
+		"L1 Boulder only where cover and airflow trade off",
+		"L2 Boulder only where cover and airflow trade off",
+		"L2 initial Boulder has two physical jobs",
+		"L3 Boulder only where cover and airflow trade off",
+		"L4 Boulder only where cover and airflow trade off",
+		"L4 initial Boulder has two physical jobs",
+		"L3 withdrawal position locks selected side -1",
+		"L3 both withdrawal sides can preserve useful angle -1",
+		"L3 withdrawal side changes future Can availability -1",
+		"L3 height preserves persistent angle -1",
+		"L3 withdrawal position locks selected side 1",
+		"L3 both withdrawal sides can preserve useful angle 1",
+		"L3 withdrawal side changes future Can availability 1",
+		"L3 height preserves persistent angle 1",
+		"L3 careless low return spends angle and recreates rotor occupancy",
+		"state recreation is recorded rather than hidden by a completion latch"
+	],
+	"controlled_fixtures": true,
+	"failures": []
+}

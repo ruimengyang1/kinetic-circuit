@@ -6,6 +6,99 @@ revisions because the repository may be moved or forked.
 
 ## Unreleased
 
+- Final rescue: L2 now permits boarding before opening the force shutter;
+  its visible crossing footprint includes the impact endpoint. Both orders
+  work, but anticipating that endpoint saves one whole Can charge and return.
+- Corrected prospective Can/laser previews to show both possible departure
+  directions while choosing, then only the selected/locked direction. Preview
+  queries never change intent; impact-state estimates include short recovery.
+  Added directional stop marks and clear live beam/held-state feedback with
+  a brief help legend, and named the stages Direction / End position / Timing /
+  Planning; kept existing movement, timing margins and broad bays.
+- Separated L3's final collector from a late reaction to the boarding beam:
+  that reactive move could accidentally board and freeze the other receiver
+  in one action. Moved the visible collector and broadened its radius, keeping
+  a forgiving timing window and deliberate first-pass boarding available.
+  Extended its reflection range so consecutive passing beams cannot accumulate
+  enough crossing height to substitute for deliberately held alignment.
+
+- Revised the precision pass after player feedback found flat strategy,
+  difficulty and enjoyment: L2 now spends a lowered boarding setup to lift
+  the player while the next Can endpoint supplies an upper crossing. L3 uses
+  two separate optical setups and requires preserving boarding position
+  before changing the beam. L4 inherits both stages and permits early or late
+  shutter clearance, with different return origins and withdrawal delays.
+  Kept shared movement/Can tuning and broad surfaces; no new ability or hazard.
+- Connected L4's final Can parking footprint to the exit lift: a useful beam
+  and an opened shutter no longer substitute for the required final weight.
+  Early shutter clearance changes the return origin and the next withdrawal's
+  travel delay. Experienced players can board the first beam's passing setup
+  and freeze the second, saving a full return cycle while preserving the rules.
+- Kept live beams clear of upper traversal and separated the two collectors'
+  physical angle windows. Lowered the optical crossing's resting position so
+  it cannot serve as a fixed shortcut to boarding height; increased boarding
+  platform travel to shorten empty waiting without changing player/Can tuning.
+- Widened L3's boarding bay so its overlap with Can's neutral acquisition
+  position is broad, avoiding an unintended ten-pixel waiting-position test.
+- Placed each collector's role label beside its own body so the reversed
+  boarding/crossing order in L4 is readable without overlapping labels.
+- Fixed Can immediately ending a new charge when departing a room-end bumper:
+  only the bound ahead of its committed direction can stop it. A parked Can
+  can now reliably supply the next setup instead of becoming stranded.
+
+- Replaced the current branching curriculum with Direction → Position → Timing
+  → Combination: opposite opening lures, useful weight parking, anticipated
+  rotor withdrawal, then timed withdrawal combined with a familiar shutter.
+  Removed compulsory bounce, optional opening detours and redundant Boulder /
+  Fan cover puzzles from the four current rooms; preserved historical scenes.
+- Made Can search stationary, preparation and fixed lock distinct, charges fast
+  with a fixed distance budget, receiver contact exact, recovery readable and
+  drawn endpoints collision-aware. Rebounds preserve committed preparation;
+  visual recoil does not move collision. All rooms share the same Can tuning.
+- Corrected negative rotor prediction/reflection and gave timing rooms safe
+  observation shelves, visible broad collectors and crossings that require
+  retained beam alignment. Added visible room-end collision bumpers. Preserved
+  responsive movement, buffered/coyote jumps, impact feedback and fast retries.
+- Corrected the opening spawn to start on a safe step without triggering
+  a charge before the player moves, refined the
+  stopping marker to actual collision contact, and moved collectors away from
+  exit artwork.
+- Changed the final shutter to retract into the floor so opening it cannot
+  intercept an otherwise valid frozen beam. This fixes a failure exposed by
+  testing a reasonable later departure, and removes the brief crossing reversal.
+- Updated room titles immediately at transitions and kept mechanism rails
+  behind the UI header for clear learning cues.
+- Made thin non-force platforms accept jumps from below, removed a narrow
+  catwalk gap, and gave ordinary landings more margin without changing jump
+  height or adding mandatory bounce. Added short level-specific learning cues.
+- Removed elastic force rejection from controlled Boulder movement in the
+  retained actor, so rejected impacts stop rather than reverse unpredictably.
+
+- Rebuilt Level 2 as a visible route choice: use Can to raise the familiar
+  shutter while keeping Boulder cover, or move Boulder to open an upper Fan
+  route and expose the ground approach. Replaced its former single ascent.
+- Rebuilt Level 4 around parking Can before Boulder, then choosing early
+  airflow access and a later control return, or preserving rotation and chaining
+  alignment with clearance. Removed the long air shaft and stair stack; kept
+  shared Can tuning and broad traversal. Rotator artwork now shows its actual
+  weight footprint. These layouts replace the prior test-supported versions
+  after human play found their strategic differences imperceptible.
+- Made the covered approach and blocked air shaft visible before commitment.
+  Widened the final airflow approach and placed its crossing below the landing
+  so reaching a good setup uses broad landings rather than precision jumps.
+  Fan artwork follows its actual plume width; the beam shadow disappears when
+  physical cover is lost.
+
+- Removed Level 3's compulsory landing Boulder and replaced it with a broad
+  service step. Can can now withdraw to either side of the rotator: leave it
+  away from traversal for safety, or park it beside the crossing for a rebound
+  setup. Kept the existing charge speed, telegraph, rotation and optical margins.
+- Kept Boulder only in Levels 2 and 4, where its initial beam cover also seals
+  airflow. Added charge endpoints, cover-loss, rotor-state recreation and
+  combined-interaction observations for comparing action orders without
+  changing win conditions. Audited the four-level learning curve and retained
+  both final-room orders using established mechanics.
+
 - Redesigned the current four-stage demo around How → Consequence →
   Anticipation → Planning. Kept shared Can behavior and Player abilities;
   raised the opening shutter, introduced Boulder laser cover and its loss in

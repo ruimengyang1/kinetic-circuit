@@ -29,8 +29,18 @@ func _physics_process(delta: float) -> void:
 	var before := global_position.x
 	velocity.x = move_toward(velocity.x, 0, 325 * delta)
 	velocity.y = minf(velocity.y + 650 * delta, 420)
-	if absf(velocity.x) >= 80: _transfer_force(delta)
+	var impact_speed := velocity.x
+	var receiver: Node2D = _transfer_force(delta) if absf(velocity.x) >= 80 else null
 	move_and_slide()
+	if receiver != null:
+		var bounds: Rect2 = receiver.impact_rect()
+		var edge := bounds.position.x - 16 if impact_speed > 0 else bounds.end.x + 16
+		if absf(position.x - edge) < 0.25:
+			hit_receivers.append(receiver)
+			var response: float = receiver.receive_impact(impact_speed, self)
+			transferred.emit(receiver, impact_speed)
+			impact_flash = 0.10
+			if response * impact_speed <= 0: velocity.x = 0
 	spin += (global_position.x - before) / 16
 	if roll_voice != null:
 		roll_voice.volume_db = -40 + 17 * minf(1, absf(velocity.x) / 280)
@@ -42,7 +52,7 @@ func _physics_process(delta: float) -> void:
 	queue_redraw()
 
 func receive_impact(momentum: float, _source: Node2D = null) -> float:
-	if absf(momentum) < 80: return -momentum * 0.15
+	if absf(momentum) < 80: return 0.0
 	velocity.x = clampf(momentum * 1.22, -300, 300)
 	rolling = true
 	impact_flash = 0.10
@@ -50,21 +60,21 @@ func receive_impact(momentum: float, _source: Node2D = null) -> float:
 	rolled.emit(momentum)
 	return momentum * 0.8
 
-func _transfer_force(delta: float) -> void:
+func _transfer_force(delta: float) -> Node2D:
 	var side := signf(velocity.x)
+	var distance := absf(velocity.x) * delta
+	var receiver: Node2D
 	for object in get_tree().get_nodes_in_group("force_receivers"):
 		if object == self or object in hit_receivers or not object.impact_enabled(): continue
 		var bounds: Rect2 = object.impact_rect()
-		if bounds.position.y > global_position.y + 16 or bounds.end.y < global_position.y - 16: continue
+		if bounds.position.y >= global_position.y + 16 or bounds.end.y <= global_position.y - 16: continue
 		var edge := bounds.position.x - 16 if side > 0 else bounds.end.x + 16
 		var ahead := (edge - global_position.x) * side
-		if ahead < -4 or ahead > absf(velocity.x) * delta + 2: continue
-		hit_receivers.append(object)
-		var response: float = object.receive_impact(velocity.x, self)
-		transferred.emit(object, velocity.x)
-		impact_flash = 0.10
-		if response * side < 0: velocity.x = response
-		return
+		if ahead >= -0.2 and ahead <= distance + 0.08:
+			distance = maxf(0, ahead)
+			receiver = object
+	if receiver != null: velocity.x = side * distance / delta
+	return receiver
 
 func impact_enabled() -> bool: return true
 func impact_rect() -> Rect2: return Rect2(global_position - Vector2(16, 16), Vector2(32, 32))

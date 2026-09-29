@@ -1,0 +1,139 @@
+{
+  "rehearsed_not_human_measurements": true,
+  "novice": {
+    "levels": [
+      {
+        "level": 1,
+        "seconds": 6.0,
+        "charges": 2,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 672.53,
+        "stationary_seconds": 1.483,
+        "longest_stationary_seconds": 0.767,
+        "force_endpoints": [
+          "(219.9253, 305.924)",
+          "(146.0747, 305.924)"
+        ]
+      },
+      {
+        "level": 2,
+        "seconds": 10.43,
+        "charges": 3,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 1209.85,
+        "stationary_seconds": 2.45,
+        "longest_stationary_seconds": 0.8,
+        "force_endpoints": [
+          "(219.9253, 305.924)",
+          "(24.00103, 305.9267)",
+          "(272.001, 305.9253)"
+        ]
+      },
+      {
+        "level": 3,
+        "seconds": 12.18,
+        "charges": 4,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 1445.0,
+        "stationary_seconds": 2.75,
+        "longest_stationary_seconds": 0.883,
+        "force_endpoints": [
+          "(338.0, 305.9253)",
+          "(90.0, 305.9253)",
+          "(338.0, 305.9253)",
+          "(90.0, 305.9253)"
+        ]
+      },
+      {
+        "level": 4,
+        "seconds": 12.67,
+        "charges": 4,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 1495.97,
+        "stationary_seconds": 2.567,
+        "longest_stationary_seconds": 0.85,
+        "force_endpoints": [
+          "(272.1, 305.9253)",
+          "(24.10001, 305.9253)",
+          "(272.1, 305.9253)",
+          "(417.9253, 305.924)"
+        ]
+      }
+    ],
+    "seconds": 41.28,
+    "charges": 13,
+    "stationary_seconds": 9.25,
+    "setup_cycles": 2,
+    "first_pass_boardings": 0
+  },
+  "expert": {
+    "levels": [
+      {
+        "level": 1,
+        "seconds": 5.33,
+        "charges": 2,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 661.72,
+        "stationary_seconds": 1.083,
+        "longest_stationary_seconds": 0.75,
+        "force_endpoints": [
+          "(219.9253, 305.924)",
+          "(146.0747, 305.924)"
+        ]
+      },
+      {
+        "level": 2,
+        "seconds": 9.48,
+        "charges": 3,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 1202.62,
+        "stationary_seconds": 1.583,
+        "longest_stationary_seconds": 0.8,
+        "force_endpoints": [
+          "(219.9253, 305.924)",
+          "(24.00103, 305.9267)",
+          "(272.001, 305.9253)"
+        ]
+      },
+      {
+        "level": 3,
+        "seconds": 8.52,
+        "charges": 2,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 935.97,
+        "stationary_seconds": 2.183,
+        "longest_stationary_seconds": 1.633,
+        "force_endpoints": [
+          "(338.0, 305.9253)",
+          "(90.0, 305.9253)"
+        ]
+      },
+      {
+        "level": 4,
+        "seconds": 8.78,
+        "charges": 2,
+        "hits": 0,
+        "rebounds": 0,
+        "path_distance": 993.19,
+        "stationary_seconds": 2.067,
+        "longest_stationary_seconds": 1.783,
+        "force_endpoints": [
+          "(272.1, 305.9253)",
+          "(417.9253, 305.924)"
+        ]
+      }
+    ],
+    "seconds": 32.11,
+    "charges": 9,
+    "stationary_seconds": 6.916,
+    "setup_cycles": 0,
+    "first_pass_boardings": 2
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "evidence_type": "same-spawn, authored input-only strategies; not observed novice/expert people",
+  "annotation_rules": {
+    "unnecessary": "L2 charge 2 adds no required mechanism change after clearance; L4 clearance-first charge 2 re-hits already-cleared Boulder",
+    "corrective": "L4 clearance-first charge 3 returns Can to rotor after early displacement; prepared initial left charge is intentional setup, not waste",
+    "chains": "force and aligned rotor withdrawal in the same charge; an unaligned transient crossing does not count",
+    "decisions": "one tested branch per compared state, manually annotated; not a count of inputs or hesitations",
+    "cover": "a loss can be deliberate; this is not automatically a mistake"
+  },
+  "level_2_same_spawn": {
+    "observe_after_immediate_clearance": {
+      "seconds": 6.73,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 1,
+      "unnecessary_charge_ids": [
+        2
+      ],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 1,
+      "rebounds": 0,
+      "endpoints": [
+        "(301.2574, 305.924)",
+        "(561.0611, 305.9253)"
+      ]
+    },
+    "preserve_until_staged": {
+      "seconds": 6.18,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 1,
+      "unnecessary_charge_ids": [
+        2
+      ],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(301.2574, 305.924)",
+        "(561.0611, 305.9253)"
+      ]
+    },
+    "immediate_clearance_continue": {
+      "seconds": 5.3,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 1,
+      "unnecessary_charge_ids": [
+        2
+      ],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(301.2574, 305.924)",
+        "(561.0611, 305.9253)"
+      ]
+    }
+  },
+  "level_3_same_spawn": {
+    "left_withdrawal": {
+      "seconds": 8.28,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "useful_cover_losses": 0,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(342.804, 305.9253)",
+        "(82.99983, 305.9253)"
+      ]
+    },
+    "right_withdrawal": {
+      "seconds": 7.65,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "useful_cover_losses": 0,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 1,
+      "endpoints": [
+        "(342.804, 305.9253)",
+        "(429.0, 305.9253)"
+      ]
+    }
+  },
+  "level_4_same_spawn": {
+    "clearance_first": {
+      "seconds": 14.3,
+      "charges": 4,
+      "unnecessary_can_charges_annotated": 1,
+      "unnecessary_charge_ids": [
+        2
+      ],
+      "corrective_repositionings_annotated": 1,
+      "corrective_charge_ids": [
+        3
+      ],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 1,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 1,
+      "rebounds": 0,
+      "endpoints": [
+        "(340.8303, 305.9253)",
+        "(548.4732, 306.0265)",
+        "(288.67, 305.9253)",
+        "(548.4735, 305.9253)"
+      ]
+    },
+    "preserved_cover_first": {
+      "seconds": 11.23,
+      "charges": 3,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 1,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(24.0, 305.9253)",
+        "(283.8044, 305.9253)",
+        "(432.7217, 305.9984)"
+      ]
+    }
+  },
+  "first_time_duration_seconds": null,
+  "independent_learning_observed": false
+}

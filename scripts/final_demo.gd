@@ -9,7 +9,7 @@ const Effects = preload("res://scripts/effects.gd")
 const Sound = preload("res://scripts/sfx.gd")
 const PixelUI = preload("res://scripts/pixel_ui.gd")
 const InputSetup = preload("res://scripts/foundry.gd")
-const TITLES := ["1 — HOW", "2 — CONSEQUENCE", "3 — ANTICIPATE", "4 — PLAN"]
+const TITLES := ["1 — DIRECTION", "2 — END POSITION", "3 — TIMING", "4 — PLANNING"]
 
 @export var start_level := 0
 var level_index := 0
@@ -37,11 +37,17 @@ var attempts: Array[Dictionary] = []
 var total_resets := 0
 var total_deaths := 0
 var events: Array[Dictionary] = []
+var observed_can_state := "idle"
+var observed_rotor_occupied := false
+var rotor_visits := 0
+var charge_effects: Dictionary = {}
+var observed_air_blocked := false
 var sound: Node
 var effects: Node2D
 var camera: Camera2D
 var hud: Label
 var controls: Label
+var lesson: Label
 var overlay: Label
 var font: Font
 
@@ -49,7 +55,7 @@ func _ready() -> void:
 	# Apply impact pauses at a frame boundary, before moving supports. Freezing
 	# midway through a force-transfer callback can strand Boulder on a panel.
 	process_physics_priority = -20
-	get_window().title = "Foundry / Future States — Intent and Consequence"
+	get_window().title = "Foundry — Direction / End position / Timing / Planning"
 	get_window().content_scale_size = Vector2i(640, 360)
 	var setup := InputSetup.new()
 	setup._setup_inputs()
@@ -83,6 +89,11 @@ func _build_level(index: int) -> void:
 	level_time = 0
 	stats = {"charges": 0, "impacts": 0, "boulder_impacts": 0, "rebounds": 0, "charging_rebounds": 0, "hits": 0, "resets": 0, "deaths": 0, "sensor_activations": 0, "idle_seconds": 0.0, "rotator_hold_seconds": 0.0}
 	events.clear()
+	observed_can_state = "idle"
+	observed_rotor_occupied = false
+	rotor_visits = 0
+	charge_effects.clear()
+	observed_air_blocked = false
 	pause_frames = 0
 	shake = 0
 	camera.offset = Vector2.ZERO
@@ -91,14 +102,18 @@ func _build_level(index: int) -> void:
 	_block(Rect2(640, -10, 20, 410))
 	_block(Rect2(0, 50, 640, 10))
 	_block(Rect2(0, 318, 640, 60))
+	_block(Rect2(0, 290, 12, 28))
+	_block(Rect2(628, 290, 12, 28))
 	match index:
 		0: _redirect()
 		1: _weight()
 		2: _timing()
 		3: _combine()
 	player = Player.new()
-	player.position = Vector2(110 if index == 0 else (594 if index == 1 else 46), 309)
+	player.position = [Vector2(185, 272), Vector2(185, 272), Vector2(116, 309), Vector2(50, 309)][index]
 	player.air_acceleration = 1700
+	player.floor_snap_length = 4
+	player.safe_margin = 0.04
 	player.jumped.connect(func(_at: Vector2) -> void: sound.play("jump"))
 	player.rebounded.connect(func(at: Vector2) -> void:
 		stats.rebounds += 1
@@ -116,9 +131,9 @@ func _build_level(index: int) -> void:
 	room.add_child(player)
 	player.strike_shape.size = Vector2(22, 14)
 	can = Can.new()
-	can.position = Vector2(160 if index == 0 else (550 if index == 1 else 90), 306)
-	can.rail_left = 90 if index == 1 else 24
-	can.rail_right = [526.0, 616.0, 355.0, 610.0][index]
+	can.position = [Vector2(160, 306), Vector2(160, 306), Vector2(90, 306), Vector2(24.1, 305.9)][index]
+	can.rail_left = 24
+	can.rail_right = 616
 	can.telegraphed.connect(func() -> void: sound.play("telegraph"))
 	can.direction_locked.connect(func(_side: int) -> void:
 		sound.play("lock")
@@ -136,78 +151,96 @@ func _build_level(index: int) -> void:
 	)
 	can.wall_impacted.connect(func(at: Vector2) -> void: _feedback(at, "clunk", Color("edb374"), 8, 3, 1.2))
 	room.add_child(can)
-	exit_rect = Rect2(601, exit_floor - 37, 33, 37)
+	exit_rect = Rect2(428 if index == 0 else 601, exit_floor - 37, 33, 37)
+	hud.text = TITLES[index] + "     ●●●"
+	lesson.text = ["STAND TO AIM. WHITE ARROW = LOCKED. THEN MOVE.", "DOOR FIRST? OR BOARD FIRST AND MAKE THE IMPACT USEFUL?", "BEGIN BEFORE ALIGNMENT. LEFT / RIGHT STOP MARKS DIFFER.", "PREPARE THE NEXT POSITION BEFORE THE CURRENT SETUP ENDS."][index]
 	mode = "play"
 	overlay.hide()
 	_freeze(false)
 	queue_redraw()
 
 func _redirect() -> void:
-	# The opening has two understandable force directions. The rightward
-	# shutter keeps Can near freight; the service route changes its height.
-	var service := _platform("service", Rect2(26, 318, 92, 10), [Vector2(105, 323), Vector2(105, 225)], 140, true)
+	# Two opposite lures; both visible mechanisms are needed for the high route.
+	_platform("shutter", Rect2(232, 130, 18, 188), [Vector2(241, 32)], 240, true)
+	var service := _platform("service", Rect2(66, 308, 68, 10), [Vector2(100, 255)], 160, true)
 	service.force_direction = -1
-	_platform("shutter", Rect2(232, 240, 18, 78), [Vector2(241, 180)], 210, true)
-	_platform("freight", Rect2(410, 216, 76, 102), [Vector2(536, 263)], 180, true)
-	_block(Rect2(145, 220, 285, 8), true)
-	_block(Rect2(410, 248, 56, 8), true)
-	_block(Rect2(566, 174, 74, 12), true)
-	exit_floor = 174
+	_block(Rect2(20, 281, 46, 8), true)
+	_block(Rect2(134, 281, 74, 8), true)
+	_block(Rect2(134, 248, 74, 8), true)
+	_block(Rect2(86, 214, 386, 10), true)
+	exit_floor = 214
 
 func _weight() -> void:
-	# The obstruction is doing two jobs before the first impact: sealing the
-	# nozzle and protecting the lower approach. Bait from the staging shelf to
-	# spend cover safely; leftward force also parks Can away from the ascent.
-	_add_boulder(Vector2(342, 302))
-	var laser := _machine("laser", "laser", Rect2(255, 303, 16, 9))
-	laser.mast_height = 0
-	laser.angle = 0
-	var fan := _machine("fan", "fan", Rect2(309, 82, 66, 236))
-	fan.set_power(true)
-	_block(Rect2(385, 280, 105, 8), true)
-	_block(Rect2(195, 146, 345, 9), true)
-	_block(Rect2(574, 124, 66, 12), true)
-	exit_floor = 124
+	# First lower the boarding lift. Spend that position only after boarding:
+	# departure lifts the player, and the next endpoint powers the crossing.
+	_platform("shutter", Rect2(232, 130, 18, 188), [Vector2(241, 32)], 240, true)
+	var pedal := _machine("button", "button", Rect2(14, 312, 78, 9))
+	var boarding := _platform("boarding", Rect2(84, 180, 92, 10), [Vector2(130, 286)], 130)
+	pedal.targets.assign([boarding])
+	# Both orders work. Opening first leaves x220, then needs a left/right
+	# boarding cycle. Preparing boarding first combines the impact with useful
+	# final weight at x220. The plate is drawn at its full physical width.
+	var next_pedal := _machine("crossing_button", "button", Rect2(210, 312, 98, 9))
+	var crossing := _platform("crossing", Rect2(371, 180, 88, 10), [Vector2(548, 185)], 90)
+	next_pedal.targets.assign([crossing])
+	_block(Rect2(134, 281, 74, 8), true)
+	_block(Rect2(134, 248, 74, 8), true)
+	_block(Rect2(164, 180, 266, 10), true)
+	_block(Rect2(584, 144, 56, 12), true)
+	exit_floor = 144
 
 func _timing() -> void:
-	_add_boulder(Vector2(310, 302))
-	var rotator := _machine("rotator", "rotator", Rect2(325, 312, 60, 9))
-	rotator.angle = deg_to_rad(-48)
-	rotator.rotation_rate = deg_to_rad(18)
-	rotator.sweep_min = deg_to_rad(-52)
-	rotator.sweep_max = deg_to_rad(32)
-	var sensor := _machine("sensor", "sensor", Rect2(471, 158, 32, 32), 36)
-	var crossing := _platform("crossing", Rect2(385, 222, 76, 10), [Vector2(521, 227)], 170)
+	# The first beam lowers boarding. Return Can while aboard, then time a
+	# second departure as the lift rises. The upper crossing alone gives no height.
+	var rotor := _machine("rotator", "rotator", Rect2(316, 312, 78, 9))
+	rotor.mast_height = 220
+	rotor.angle = deg_to_rad(-22)
+	rotor.rotation_rate = deg_to_rad(14)
+	rotor.sweep_min = deg_to_rad(-28)
+	# Passing final illumination must fully release before the reflected sweep
+	# comes back; otherwise two pulses can accidentally accumulate lift height.
+	rotor.sweep_max = deg_to_rad(62)
+	var boarding_sensor := _machine("boarding_sensor", "sensor", Rect2(414, 99, 32, 32), 17)
+	var boarding := _platform("boarding", Rect2(210, 214, 140, 10), [Vector2(280, 286)], 80)
+	boarding_sensor.targets.assign([boarding])
+	# A late reaction to the boarding beam must not happen to freeze this
+	# different useful state too. Keep the circle broad; separate the angles.
+	var sensor := _machine("sensor", "sensor", Rect2(414, 146, 32, 32), 14)
+	var crossing := _platform("crossing", Rect2(371, 281, 88, 10), [Vector2(548, 185)], 75)
 	sensor.targets.assign([crossing])
-	_block(Rect2(281, 281, 94, 8), true)
-	_block(Rect2(450, 249, 44, 8), true)
-	_block(Rect2(584, 194, 56, 12), true)
-	exit_floor = 194
+	_block(Rect2(318, 281, 64, 8), true)
+	_block(Rect2(402, 281, 64, 8), true)
+	_block(Rect2(310, 214, 120, 10), true)
+	_block(Rect2(584, 144, 56, 12), true)
+	exit_floor = 144
 
 func _combine() -> void:
-	_add_boulder(Vector2(342, 302))
-	var fan := _machine("fan", "fan", Rect2(309, 82, 66, 236))
-	fan.set_power(true)
-	var rotator := _machine("rotator", "rotator", Rect2(240, 312, 60, 9))
-	rotator.mast_height = 172
-	rotator.angle = deg_to_rad(65)
-	rotator.rotation_rate = deg_to_rad(-16)
-	rotator.sweep_min = deg_to_rad(-12)
-	rotator.sweep_max = deg_to_rad(70)
-	var sensor := _machine("sensor", "sensor", Rect2(448, 144, 32, 32), 46)
-	var crossing := _platform("crossing", Rect2(400, 222, 72, 10), [Vector2(542, 227)], 170)
+	# Two valid plans: clear the force shutter early and return to x170, or
+	# reserve it for the final departure and return to x272. Both must board.
+	var rotor := _machine("rotator", "rotator", Rect2(145, 312, 160, 9))
+	rotor.mast_height = 220
+	rotor.mast_offset_x = 130
+	rotor.angle = deg_to_rad(72)
+	rotor.rotation_rate = deg_to_rad(-14)
+	rotor.sweep_min = deg_to_rad(-16)
+	rotor.sweep_max = deg_to_rad(76)
+	var boarding_sensor := _machine("boarding_sensor", "sensor", Rect2(414, 139, 32, 32), 17)
+	var boarding := _platform("boarding", Rect2(260, 214, 100, 10), [Vector2(310, 286)], 80)
+	var other_boarding := _platform("other_boarding", Rect2(90, 214, 140, 10), [Vector2(160, 286)], 80)
+	boarding_sensor.targets.assign([boarding, other_boarding])
+	var sensor := _machine("sensor", "sensor", Rect2(414, 99, 32, 32), 11)
+	var crossing := _platform("crossing", Rect2(371, 281, 88, 10), [Vector2(548, 185)], 75)
 	sensor.targets.assign([crossing])
-	# High observation is outside Can's acquisition lane. The low, wide shelf
-	# to the right baits a withdrawal that can also move Boulder. No automatic
-	# lift removes the weight: the player chooses when to spend Can availability.
-	_block(Rect2(180, 280, 76, 8), true)
-	_block(Rect2(180, 248, 76, 8), true)
-	_block(Rect2(374, 280, 80, 8), true)
-	_block(Rect2(317, 224, 48, 8), true)
-	_block(Rect2(446, 249, 48, 8), true)
-	_block(Rect2(574, 182, 66, 8), true)
-	_block(Rect2(588, 142, 52, 12), true)
-	exit_floor = 142
+	_platform("shutter", Rect2(430, 146, 18, 172), [Vector2(439, 404)], 240, true)
+	var exit_pedal := _machine("exit_button", "button", Rect2(394, 312, 50, 9))
+	var exit_lift := _platform("exit_lift", Rect2(514, 214, 68, 10), [Vector2(548, 149)], 130)
+	exit_pedal.targets.assign([exit_lift])
+	_block(Rect2(70, 281, 190, 8), true)
+	_block(Rect2(338, 281, 82, 8), true)
+	_block(Rect2(180, 214, 250, 10), true)
+	_block(Rect2(448, 214, 18, 10), true)
+	_block(Rect2(584, 108, 56, 12), true)
+	exit_floor = 108
 
 func _add_boulder(at: Vector2) -> void:
 	boulder = Boulder.new()
@@ -268,6 +301,7 @@ func _platform(id: String, area: Rect2, path: Array[Vector2], speed: float, forc
 	var platform := Platform.new()
 	platform.configure(area, path, speed)
 	platform.force_operated = force
+	platform.one_way = not force and area.size.y <= 12
 	platform.started.connect(func() -> void: sound.play("motor"))
 	platform.arrived.connect(func() -> void: sound.play("clunk"))
 	platform.started.connect(func() -> void: _record(id + " moving"))
@@ -319,6 +353,7 @@ func _physics_process(delta: float) -> void:
 			else: _reload(level_index + 1 if mode == "clear" else level_index)
 		return
 	if mode != "play": return
+	_observe_strategy()
 	elapsed += delta
 	level_time += delta
 	controls_time = maxf(0, controls_time - delta)
@@ -326,7 +361,7 @@ func _physics_process(delta: float) -> void:
 	if pause_frames > 0:
 		pause_frames -= 1
 		_freeze(pause_frames > 0, true)
-	if absf(player.velocity.x) < 8 and absf(player.velocity.y) < 8: stats.idle_seconds += delta
+	if player.get_real_velocity().length() < 8: stats.idle_seconds += delta
 	if machines.has("rotator") and machines.rotator.occupied: stats.rotator_hold_seconds += delta
 	if boulder != null and absf(boulder.velocity.x) > 35 and int(clock * 18) != int((clock - delta) * 18):
 		effects.burst(boulder.position + Vector2(0, 13), Color("8c7e6d"), 2)
@@ -398,24 +433,61 @@ func _record(event: String) -> void:
 	if event == "hurt":
 		events.back()["velocity_before_hit"] = player.velocity
 		events.back()["previous_feet"] = player.previous_feet
+	events.back()["charge_id"] = stats.charges
+	if stats.charges > 0 and event in ["force", "rotator off", "rotator on", "sensor on", "airway opened", "exit_button on"]:
+		if not charge_effects.has(stats.charges): charge_effects[stats.charges] = []
+		if event not in charge_effects[stats.charges]: charge_effects[stats.charges].append(event)
+
+func _observe_strategy() -> void:
+	# Observation only: no puzzle flags, steering or success prerequisites.
+	if observed_can_state == "charging" and can.state != "charging":
+		_record("charge endpoint")
+	observed_can_state = can.state
+	if machines.has("fan"):
+		if observed_air_blocked and not machines.fan.flow_blocked: _record("airway opened")
+		observed_air_blocked = machines.fan.flow_blocked
+	if machines.has("rotator"):
+		var occupied: bool = machines.rotator.occupied
+		if occupied and not observed_rotor_occupied:
+			rotor_visits += 1
+		observed_rotor_occupied = occupied
 
 func metrics() -> Dictionary:
 	var result := stats.duplicate()
+	var cover_losses := 0
+	var chains := 0
+	var aligned_withdrawals: Dictionary = {}
+	for event in events:
+		if event.event == "beam cover removed": cover_losses += 1
+		if event.event == "rotator off" and event.sensor: aligned_withdrawals[event.charge_id] = true
+	for charge_id in charge_effects:
+		if "force" in charge_effects[charge_id] and "exit_button on" in charge_effects[charge_id] and aligned_withdrawals.has(charge_id): chains += 1
+	# These are observations, not an assertion that a planned sacrifice was bad.
+	result.merge({"useful_cover_losses": cover_losses, "rotor_state_recreations": maxi(0, rotor_visits - 1), "chained_interactions": chains, "charge_effects": charge_effects.duplicate(true)})
 	result.merge({"level": level_index + 1, "seconds": snappedf(level_time, 0.01), "events": events.duplicate(true)})
 	return result
 
 func _create_ui() -> void:
 	var layer := CanvasLayer.new()
 	add_child(layer)
+	var backing := ColorRect.new()
+	backing.size = Vector2(640, 50)
+	backing.color = Color("101e2b")
+	backing.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	layer.add_child(backing)
 	hud = Label.new()
 	hud.position = Vector2(12, 10)
 	PixelUI.style_label(hud, font, 11, Color("edc27a"))
 	layer.add_child(hud)
 	controls = Label.new()
 	controls.position = Vector2(12, 29)
-	controls.text = "A/D MOVE   SPACE JUMP   J/X STOMP   R RETRY   ESC PAUSE"
+	controls.text = "A/D MOVE   SPACE JUMP   R RETRY   H HELP   ESC PAUSE"
 	PixelUI.style_label(controls, font, 9, Color("9ac6c7"))
 	layer.add_child(controls)
+	lesson = Label.new()
+	lesson.position = Vector2(12, 43)
+	PixelUI.style_label(lesson, font, 8, Color("a9f4dd"))
+	layer.add_child(lesson)
 	overlay = Label.new()
 	overlay.position = Vector2(182, 112)
 	overlay.size = Vector2(276, 110)
@@ -438,17 +510,33 @@ func _draw() -> void:
 		draw_rect(area, Color("2c4554"))
 		draw_rect(Rect2(area.position, Vector2(area.size.x, 3)), Color("c59762"))
 		for x in range(int(area.position.x + 8), int(area.end.x), 20): draw_rect(Rect2(x, area.position.y + 1, 2, 2), Color("f0ca8a"))
+	if boulder != null and machines.has("laser"):
+		var emitter: Node2D = machines.laser
+		if emitter != null and emitter.beam_hit == boulder:
+			# This stationary horizontal ray protects the ground approach. A
+			# rotating ray can leave that lane, so do not imply the same shadow.
+			var edge := boulder.position.x + 17
+			draw_rect(Rect2(edge, 287, 640 - edge, 30), Color("a9f4dd", 0.06))
+			for x in range(int(edge), 634, 12):
+				draw_line(Vector2(x, 315), Vector2(x + 6, 315), Color("a9f4dd", 0.48), 2)
 	if can != null:
 		draw_line(Vector2(can.rail_left, 321), Vector2(can.rail_right, 321), Color("657e83"), 2)
 		for x in [can.rail_left, can.rail_right]:
 			draw_rect(Rect2(x - 4, 318, 8, 7), Color("e3b774"))
-		if can.state in ["windup", "charging"]:
+		if level_index in [1, 3] and can.state in ["idle", "recover"]:
+			for side in [-1, 1]:
+				var end: float = can.predicted_endpoint(side)
+				var tint := Color("edb374", 0.6) if side < 0 else Color("a9f4dd", 0.6)
+				draw_rect(Rect2(end - 12, can.position.y - 12, 24, 24), tint, false, 1)
+				draw_string(font, Vector2(end - 4, can.position.y - 17), "←" if side < 0 else "→", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, tint)
+		if can.state in ["windup", "lock", "charging"]:
 			var color := Color("fff1b3", 0.5) if can.intent_locked else Color("ff785e", 0.4)
-			var end := clampf(can.position.x + can.facing * can.remaining_charge_distance(), can.rail_left, can.rail_right)
+			var end: float = can.predicted_endpoint()
 			for x in range(int(minf(can.position.x, end)), int(maxf(can.position.x, end)), 13):
 				draw_line(Vector2(x, can.position.y + 15), Vector2(x + 6, can.position.y + 15), color, 1)
-	if machines.has("button"):
-		var button: Node2D = machines.button
+			draw_rect(Rect2(end - 12, can.position.y - 12, 24, 24), color, false, 1)
+	for button in machines.values():
+		if button.kind != "button": continue
 		var tint := Color("a9f4dd") if button.active else Color("5d747c")
 		for target in button.targets:
 			var base := Vector2(button.position.x, 335)
@@ -456,20 +544,40 @@ func _draw() -> void:
 			draw_line(button.position + Vector2(0, 8), base, tint, 2)
 			draw_line(base, Vector2(tip.x, 335), tint, 2)
 			draw_line(Vector2(tip.x, 335), tip, tint, 2)
-	if machines.has("sensor"):
-		var sensor: Node2D = machines.sensor
+	for sensor in machines.values():
+		if sensor.kind != "sensor": continue
 		var tint := Color("a9f4dd") if sensor.active else Color("5d747c")
 		for target in sensor.targets:
 			draw_circle(Vector2(target.home.x, sensor.position.y), 4, tint)
 			draw_line(sensor.position + Vector2(sensor.optical_radius, 0), Vector2(target.home.x, sensor.position.y), tint, 2)
 			draw_line(Vector2(target.home.x, sensor.position.y), target.home, tint, 1)
+	if level_index in [0, 1]:
+		draw_string(font, Vector2(201, 122), "FORCE →", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a"))
 	if level_index == 0:
-		draw_string(font, Vector2(28, 295), "← FORCE", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a"))
-		draw_string(font, Vector2(207, 232), "FORCE →", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a"))
+		draw_string(font, Vector2(72, 296), "← FORCE", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a"))
+	if level_index == 1:
+		draw_string(font, Vector2(17, 287), "BOARDING", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("a9f4dd"))
+		draw_string(font, Vector2(214, 341), "CROSSING", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("a9f4dd"))
+	if level_index == 3:
+		draw_string(font, Vector2(388, 341), "EXIT WEIGHT", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("a9f4dd"))
+	if machines.has("boarding_sensor"):
+		var receiver: Node2D = machines.boarding_sensor
+		draw_string(font, receiver.position + Vector2(receiver.optical_radius + 9, 3), "BOARDING", HORIZONTAL_ALIGNMENT_LEFT, -1, 8, Color("edc27a"))
+		var receiver_b: Node2D = machines.sensor
+		draw_string(font, receiver_b.position + Vector2(receiver_b.optical_radius + 9, 3), "CROSSING", HORIZONTAL_ALIGNMENT_LEFT, -1, 8, Color("a9f4dd"))
+	if machines.has("rotator"):
+		var rotor: Node2D = machines.rotator
+		draw_string(font, Vector2(rotor.position.x - 29, 341), "PARK / TURN", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("a9f4dd"))
+		var beam_status := "TURNING — AIM EARLY" if rotor.occupied else "HELD — RETURN CAN TO TURN"
+		if not rotor.occupied and machines.sensor.illuminated: beam_status = "CROSSING HELD — KEEP FINAL POSITION"
+		elif not rotor.occupied and machines.boarding_sensor.illuminated: beam_status = "BOARDING HELD — BOARD BEFORE MOVING CAN"
+		draw_string(font, Vector2(15, 73), beam_status, HORIZONTAL_ALIGNMENT_LEFT, -1, 8, Color("a9f4dd"))
+		if controls_time > 0:
+			draw_string(font, Vector2(15, 85), "STOP MARKS: AMBER ←   MINT →   WHITE = COMMITTED", HORIZONTAL_ALIGNMENT_LEFT, -1, 8, Color("edc27a"))
 	if machines.has("fan"):
 		var fan: Node2D = machines.fan
 		draw_string(font, Vector2(fan.position.x - 27, 344), "AIR DUCT", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a") if fan.flow_blocked else Color("a9f4dd"))
-	var entry := Vector2(598, exit_floor - 38)
+	var entry := Vector2(exit_rect.position.x - 3, exit_floor - 38)
 	draw_rect(Rect2(entry, Vector2(38, 38)), Color("416d83"))
 	draw_rect(Rect2(entry + Vector2(5, 5), Vector2(28, 33)), Color("a9f4dd"))
 	draw_rect(Rect2(entry + Vector2(9, 8), Vector2(20, 30)), Color("203c46"))

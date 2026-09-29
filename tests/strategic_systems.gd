@@ -4,7 +4,7 @@ extends "res://tests/rebalance_systems.gd"
 var states: Array[Dictionary] = []
 
 func run() -> void:
-	DirAccess.make_dir_recursive_absolute("res://artifacts/strategic_depth")
+	DirAccess.make_dir_recursive_absolute("res://artifacts/level_progression/revision2/checks")
 	# The same stable acquisition, lock, charge and recovery in every room.
 	for index in 4:
 		await spawn(index)
@@ -51,7 +51,7 @@ func run() -> void:
 		game.player.position = Vector2(407, 271 if prepared else 309)
 		game.player.active = true
 		game.player.set_physics_process(false)
-		game.can.position = Vector2(380, 306)
+		game.can.position = Vector2(330, 306)
 		game.can.state = "charging"
 		game.can.state_time = 1.1
 		game.can.facing = -1
@@ -67,7 +67,7 @@ func run() -> void:
 	# Actual collision rays, not mathematical tolerance labels.
 	for index in [2, 3]:
 		await spawn(index)
-		game.boulder.position.x = 590
+		if game.boulder != null: game.boulder.position.x = 590
 		game.player.position = Vector2(46, 100)
 		await tick(3)
 		var rotor: Node2D = game.machines.rotator
@@ -84,7 +84,6 @@ func run() -> void:
 	# Wide early-start range, but a center-angle reaction is genuinely too late.
 	for lead in [-2.0, 0.0, 8.0, 12.0, 18.0, 24.0, 28.0]:
 		await spawn(2)
-		game.boulder.position = Vector2(429, 302)
 		game.player.position = Vector2(351, 272)
 		game.player.velocity = Vector2.ZERO
 		game.player.active = true
@@ -130,7 +129,7 @@ func run() -> void:
 	before = game.machines.rotator.angle
 	await tick(20)
 	check(not game.machines.rotator.occupied and is_equal_approx(before, game.machines.rotator.angle), "L4 spending Can position freezes actual angle without a solved flag")
-	var file := FileAccess.open("res://artifacts/strategic_depth/systems.json", FileAccess.WRITE)
+	var file := FileAccess.open("res://artifacts/level_progression/revision2/checks/systems.json", FileAccess.WRITE)
 	file.store_string(JSON.stringify({"controlled_fixtures": true, "checks": checks, "failures": failures, "windows": windows, "withdrawals": withdrawals, "states": states, "deterministic_endpoints": endpoints}, "\t"))
 	game.free()
 	print("STRATEGIC SYSTEMS ", checks.size(), " checks; failures ", failures)

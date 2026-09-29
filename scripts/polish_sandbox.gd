@@ -18,6 +18,7 @@ func _build_level(_index: int) -> void:
 	can.rail_right = 616
 	exit_rect = Rect2()
 	hud.hide()
+	lesson.hide()
 	controls.text = "A/D MOVE   SPACE JUMP   J/X STOMP   R RESET   ESC PAUSE"
 	controls_time = 9999
 

@@ -1,0 +1,149 @@
+{
+  "evidence_type": "same-spawn, authored input-only strategies; not observed novice/expert people",
+  "annotation_rules": {
+    "unnecessary": "No whole charge is redundant in these routes given its current state. Early-air charge 4 re-hits already-cleared Boulder, but is necessary to withdraw Can in that state. Do not count the whole charge as useless.",
+    "avoidable": "Early-air charges 3 and 4 are absent in the prepared order. This contextual comparison is separate from unnecessary charges.",
+    "corrective": "Early-air charge 3 returns Can to control after the premature withdrawal; charge 4 finishes that corrected setup. The common first right charge parks Can intentionally.",
+    "chains": "A single charge must withdraw from an aligned rotor AND transfer force AND actually open previously blocked air. Re-hitting an already-cleared Boulder does not count.",
+    "decisions": "one tested branch per compared state, manually annotated; not a count of inputs or hesitations",
+    "cover": "A loss can be deliberate. In L4 the rotating beam leaves Boulder cover during aiming, before Boulder moves. Preserved state in the shared choice is rotor occupancy, not uninterrupted cover."
+  },
+  "level_2_same_spawn": {
+    "spend_cover_open_upper_route": {
+      "seconds": 4.68,
+      "charges": 1,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "avoidable_charges_relative_to_prepared_order": 0,
+      "avoidable_charge_ids": [],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(209.2787, 305.9984)"
+      ]
+    },
+    "preserve_cover_open_ground_route": {
+      "seconds": 3.12,
+      "charges": 1,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "avoidable_charges_relative_to_prepared_order": 0,
+      "avoidable_charge_ids": [],
+      "useful_cover_losses": 0,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 1,
+      "endpoints": [
+        "(467.8704, 305.9253)"
+      ]
+    }
+  },
+  "level_3_same_spawn": {
+    "left_withdrawal": {
+      "seconds": 8.28,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "avoidable_charges_relative_to_prepared_order": 0,
+      "avoidable_charge_ids": [],
+      "useful_cover_losses": 0,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(342.804, 305.9253)",
+        "(82.99983, 305.9253)"
+      ]
+    },
+    "right_withdrawal": {
+      "seconds": 7.65,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "avoidable_charges_relative_to_prepared_order": 0,
+      "avoidable_charge_ids": [],
+      "useful_cover_losses": 0,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 1,
+      "endpoints": [
+        "(342.804, 305.9253)",
+        "(429.0, 305.9253)"
+      ]
+    }
+  },
+  "level_4_same_spawn": {
+    "early_air_then_restore_control": {
+      "seconds": 11.37,
+      "charges": 4,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 1,
+      "corrective_charge_ids": [
+        3
+      ],
+      "avoidable_charges_relative_to_prepared_order": 2,
+      "avoidable_charge_ids": [
+        3,
+        4
+      ],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 1,
+      "chained_interactions": 0,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 2,
+      "rebounds": 0,
+      "endpoints": [
+        "(283.8044, 305.9253)",
+        "(432.7217, 305.9984)",
+        "(172.9181, 305.9253)",
+        "(432.7215, 305.9253)"
+      ]
+    },
+    "preserve_rotation_then_chain": {
+      "seconds": 8.55,
+      "charges": 2,
+      "unnecessary_can_charges_annotated": 0,
+      "unnecessary_charge_ids": [],
+      "corrective_repositionings_annotated": 0,
+      "corrective_charge_ids": [],
+      "avoidable_charges_relative_to_prepared_order": 0,
+      "avoidable_charge_ids": [],
+      "useful_cover_losses": 1,
+      "rotor_state_recreations": 0,
+      "chained_interactions": 1,
+      "meaningful_order_decisions_annotated": 1,
+      "hits": 0,
+      "rebounds": 0,
+      "endpoints": [
+        "(283.8044, 305.9253)",
+        "(432.7217, 305.9984)"
+      ]
+    }
+  },
+  "known_solution_totals_seconds_excluding_transitions": {
+    "separate_steps": 30.26,
+    "prepared": 25.88
+  },
+  "human_perceptibility_confirmed": false,
+  "first_time_duration_seconds": null,
+  "independent_learning_observed": false
+}

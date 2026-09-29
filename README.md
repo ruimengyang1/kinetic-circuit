@@ -1,105 +1,99 @@
-# Foundry / Future States — Intent and Consequence
+# Foundry — Final Gameplay Rescue
 
-Four short factory levels about manipulating the same dangerous charging
-machine: **How → Consequence → Anticipation → Planning**. Your position chooses
-its intent; its force, final position and time spent on machinery change the
-next decision. The same Can routine and Player abilities apply throughout.
+Four rooms build **Direction → End Position → Timing → Planning** using the
+same Can, pressure, optical and platform rules. This rescue fixes the actual
+L2 missing endpoint reward, misleading direction forecasts and a reproduced
+L3 late-reaction solution, while preserving deliberate first-pass boarding.
+No new player ability or major mechanic was added.
 
-Open in **Godot 4.7** and press Run. Default scene:
-`scenes/final_demo.tscn`, 640×360, displayed at 1280×720.
+Open `project.godot` in Godot 4.7.2 and Run. The default scene is
+`scenes/final_demo.tscn`, 640×360 displayed at 1280×720.
 
 | Action | Keyboard | Gamepad |
 |---|---|---|
 | Move | A/D or arrows | Left stick / D-pad |
-| Jump / automatic descending rebound | Space | A / Cross |
-| Airborne stomp | J / X | X / Square |
-| Retry current level | R | Y / Triangle |
-| Fresh demo / replay after victory | Shift+R / R after victory | Y after victory |
+| Jump | Space | A / Cross |
+| Optional airborne stomp | J / X | X / Square |
+| Retry room | R | Y / Triangle |
+| Fresh campaign | Shift+R / R at victory | Y at victory |
 | Pause | Escape | Start |
 | Recall controls | H | — |
 
-Can previews for 0.20 seconds, locks for 0.35 seconds, then commits at 230 px/s.
-The first 0.10 seconds accelerates to that same maximum.
-It sees the worker inside a 52-pixel vertical lane. Movement after lock cannot
-redirect it. Rebounding during a charge preserves its motion; an ordinary
-stomp staggers it for 0.28 seconds; impact recovery is 0.20 seconds with no extra
-cooldown. Player movement has quicker ground acceleration/braking, 0.11-second
-coyote time, 0.12-second buffering and strong air control throughout. Buffered
-landings launch on contact; jump/stomp presses survive major impact pauses.
-Descending top rebounds use forgiving swept contact and a fixed launch height.
+Can: stationary search → 0.50 s tracking telegraph → 0.12 s fixed white lock
+→ 300 px/s charge with a 248 px distance budget → impact → 0.32 s recovery.
+Real contact stops it early; its endpoint marker predicts collision, and visual
+recoil does not alter position. It can reliably depart either end bumper.
+All rooms share actor tuning, 0.11 s coyote time and 0.12 s jump buffering.
+Normal jumps suffice; bounce stays optional and thin platforms accept jumps
+from below. Death restores control in about 0.27 s; R keeps prior completions.
 
-Boulder rolls under signed force, blocks airflow and beams, and can become a
-traversal step. Fan already runs; solids across its nozzle obstruct the jet.
-There are no pressure-to-Fan circuits in the demo. L1 requires two Can
-predictions and retains a service-lift alternative; choosing the opening also
-chooses Can's next position. L2 starts from the right: moving Boulder left opens
-airflow while spending its protection against a visible stationary Laser.
-Prepare on the broad shelf before that change. Solid beams are active; faint
-dashed continuations show space currently protected by a heavy blocker.
+- **L1:** two opposite deliberate lures; learn direction and commitment.
+- **L2:** door-first works in three charges. Boarding-first works in two: the
+  next impact opens the door and leaves useful crossing weight while your
+  occupied lift rises. Looking ahead saves a complete future charge.
+- **L3:** two separate optical setups. Secure play freezes boarding, boards,
+  returns Can and freezes the crossing. Flow play boards the first passing
+  beam and prepares the final withdrawal without an extra return cycle.
+  Reacting only at the first target no longer happens to freeze the second.
+  Directional stop forecasts show both choices before acquisition, then the
+  selected/committed one; amber points left and mint points right.
+- **L4:** apply those setups while planning early or final shutter clearance.
+  Different return origins change withdrawal timing. Final Can weight must
+  also supply the exit lift; alignment and an open shutter alone are insufficient.
 
-A weight-held rotator turns continuously; leaving freezes its actual angle.
-L3 rotates at 18°/s and L4 at 16°/s inside visible mechanical limits. Broad heat
-collectors wind platforms through beam contact, coasting for 0.28 seconds through
-brief interruptions. Actual optical windows are about 1.74 s / 1.69 s. Begin
-repositioning before the desired beam state; the stopping preview follows Can's
-remaining windup and clearance distance, without snapping or auto-aiming.
-L3 also needs the useful Boulder landing left by its placement charge.
+The later challenge is phase prediction and preserving useful state, with
+broad surfaces and unchanged charge/jump tuning. Exits remain physical floors
+and doorways without mechanism-completion flags. Boulders/Fans are absent
+from the current curriculum; historical scenes and actor implementations remain.
 
-L4 uses only those known systems. Clearing Boulder first works, but spends
-cover and leaves Can needing a return trip. A prepared order keeps Boulder
-until Laser is aimed away from the low lane, then combines withdrawal, Boulder
-force and nozzle clearance in one charge. The automatic Can lift is removed;
-Player decides when to spend rotor occupancy. High observation and low bait
-shelves make that choice readable. Entering airflow still ramps lift over 0.18 s.
+[Pre-edit audit and plan](FINAL_RESCUE_PLAN.md) records native inspection and
+critical findings. [Final rescue report](FINAL_RESCUE_REPORT.md) explains the
+physical learning transfers, alternative orders and evidence limits.
 
-Walk into each visible high exit after landing. Death rebuilds only the current
-level in about 0.25 seconds; success changes levels after 0.65 seconds. R quickly
-recovers an inconvenient configuration. Earlier completions remain intact.
+Native full recordings with sound and victory:
+[correct intended run](artifacts/final_rescue/full_intended_playthrough.mp4),
+[reactive novice style](artifacts/final_rescue/full_novice_playthrough.mp4),
+[predictive expert style](artifacts/final_rescue/full_expert_playthrough.mp4).
+These are normal-input rehearsals, not first-time human trials. Fresh human
+judgment of fun, smoothness and perceived difficulty remains open.
 
-[STRATEGIC_DEPTH_REDESIGN_PLAN.md](STRATEGIC_DEPTH_REDESIGN_PLAN.md) contains the
-preimplementation audit of every level.
-[STRATEGIC_DEPTH_REPORT.md](STRATEGIC_DEPTH_REPORT.md) records the redesign,
-three reusable heuristics, strategic choices, measured evidence and acceptance
-gaps. The 4–5 minute first-time target is **unmeasured**. Blind first/second-run
-learning and subjective fun remain pending; desktop capture/input permissions
-were unavailable. Rehearsed routes establish consequences and completion.
+## Current verification
 
-[REBALANCE_PLAN.md](REBALANCE_PLAN.md) and
-[REBALANCE_REPORT.md](REBALANCE_REPORT.md) preserve the preceding version's
-audit and evidence; its duct and automatic lift are historical.
-
-[POLISH_PLAN.md](POLISH_PLAN.md) records the feel audit before polish edits.
-[POLISH_REPORT.md](POLISH_REPORT.md) gives final before/after tuning, preserved
-baseline failures, flow evidence and outstanding human checks. The full-room
-camera keeps its framing; impacts use small impulses and bounded effects/audio.
-`scenes/polish_sandbox.tscn` is an objective-free Player + Can practice fixture
-outside the four-level progression. Run it directly to judge the 30-second loop.
-
-## Verification
+Replace `godot` with the executable path if needed.
 
 ```sh
-godot --headless --path . --fixed-fps 60 --script res://tests/polish_feel.gd
-godot --headless --path . --fixed-fps 60 --script res://tests/strategic_systems.gd
-godot --headless --path . --fixed-fps 60 --script res://tests/strategic_audit.gd
-godot --headless --path . --fixed-fps 60 --script res://tests/strategic_route.gd
-godot --headless --path . --fixed-fps 60 --script res://tests/strategic_route.gd -- --expert
-godot --headless --path . --fixed-fps 60 --script res://tests/strategic_route.gd -- --level=1 --upper
-godot --headless --path . --fixed-fps 60 --script res://tests/strategic_route.gd -- --level=4 --expert --lead=20
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_systems.gd
+godot --headless --path . --fixed-fps 60 --script res://tests/precision_audit.gd -- --output=res://artifacts/final_rescue
+godot --headless --path . --fixed-fps 60 --script res://tests/precision_dependencies.gd -- --output=res://artifacts/final_rescue
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_route.gd
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_route.gd -- --expert --flow
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_route.gd -- --expert --flow --equal-inspection
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_route.gd -- --expert --level=4 --early-gate
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_learning.gd
+godot --headless --path . --fixed-fps 60 --script res://tests/final_rescue_recovery.gd
+godot --headless --path . --fixed-fps 60 --script res://tests/precision_replay.gd -- --output=res://artifacts/final_rescue
+python3 tests/final_rescue_compare.py
 ```
 
-Each `--level=1`, `2`, `3`, `4` also starts fresh in that level. Completion
-recordings only apply player inputs after spawn; controlled system/recovery
-fixtures are explicitly separate. Current evidence is under
-`artifacts/strategic_depth/`, including session baseline source/layouts and
-`comparison.json`. `--lead=8`, `14`, `20`, `24` exercise distinct early L4 starts;
-explicit margin runs write separate evidence folders. With graphics, add
-`--capture` to route runs or run `tests/strategic_inspect.gd` for layouts.
+`--level=1` through `4` starts fresh in that room; `--capture` saves native
+views. `--offset=-4` / `4` shifts departure decisions four degrees. Secure and
+flow L3 plans and secure, early-gate and flow L4 plans were checked at both
+margins. Completion/recovery routes use only player inputs after spawn.
+Fixtures explicitly label assigned world states. Replay applies saved inputs
+without adapting. Passing checks establish behavior, not enjoyment.
 
-Old demo/rebalance/polish route and layout harnesses preserve historical
-expectations, including removed duct/button/lift arrangements. Use the strategic
-suite for current design; `polish_feel.gd` remains a current regression check.
-Historical evidence stays under `artifacts/final_demo/`, `artifacts/rebalance/`
-and `artifacts/polish/`, with its corresponding reports.
+Current evidence is under `artifacts/final_rescue/`, including both failed
+and corrected L3 observations. Its `baseline/` preserves the pre-rescue source
+and the reproduced accidental timing solution. Previous precision evidence
+remains under `artifacts/precision_progression/`; its reports describe that
+historical layout. `scenes/polish_sandbox.tscn` uses the same actors for feel
+practice. No active campaign room contains an unnecessary Boulder or Fan.
+
+Earlier passes remain documented in
+[PRECISION_PROGRESSION_REPORT.md](PRECISION_PROGRESSION_REPORT.md),
+[LEVEL_PROGRESSION_REDESIGN_REPORT.md](LEVEL_PROGRESSION_REDESIGN_REPORT.md),
+[STRATEGIC_DEPTH_REPORT.md](STRATEGIC_DEPTH_REPORT.md),
+[POLISH_REPORT.md](POLISH_REPORT.md), and [REBALANCE_REPORT.md](REBALANCE_REPORT.md).
 
 ## Preserved prototypes
 

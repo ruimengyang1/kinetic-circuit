@@ -1,0 +1,41 @@
+{
+	"checks": [
+		"ground movement reaches full useful speed within 100 ms",
+		"direction reverses within 100 ms",
+		"ground braking stops without a slippery tail",
+		"jump press before landing remains buffered",
+		"prelanding input launches on contact without a landing lockout",
+		"held buffered jump is consumed once",
+		"jump release makes a shorter readable arc",
+		"late ledge jump uses the real coyote window",
+		"coyote grace expires rather than creating an extra air jump",
+		"impact pause freezes simulation while keeping input capture active",
+		"press and release wholly inside hit-stop produce a short jump on resume",
+		"airborne stomp pressed during hit-stop executes on resume",
+		"descending corner rebound is consistent at 25 px/s and preserves charge",
+		"descending corner rebound is consistent at 180 px/s and preserves charge",
+		"descending corner rebound is consistent at 390 px/s and preserves charge",
+		"fast diagonal top crossing is caught by swept contact",
+		"rising platform Can catches relative descending top contact",
+		"side and underside contact cannot become a free rebound",
+		"ascending jump cannot rebound before descending",
+		"Can is available for another decision within 0.24 s of recovery",
+		"weighted rotor moves continuously",
+		"leaving stops both beam angle and moving lead immediately",
+		"withdrawal preview reflects at visible mechanical limits",
+		"Fan entry ramps into strong continuous lift rather than instantly launching",
+		"airflow ramp clears as soon as the player exits",
+		"death rebuilds current level in under 0.3 s and preserves progress",
+		"quick R clears old hit-stop and returns current-level control",
+		"held movement resumes after a short transition without replaying a stale jump",
+		"repeat feedback stays within particle and audio node budgets"
+	],
+	"controlled_fixtures": true,
+	"failures": [],
+	"measurements": {
+		"death_to_control": 0.266666666666667,
+		"recovery_to_preview": 0.233333333333333,
+		"stop_distance": 5.05555725097656,
+		"transition_to_control": 0.65
+	}
+}
