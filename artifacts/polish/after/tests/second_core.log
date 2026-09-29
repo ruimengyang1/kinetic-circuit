@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CORE TUNING: anticipation=0.55s speed=230 bounce=-305 stagger=0.38s impact recovery=0.20s Cart step=80px/0.40s
+SECOND CORE PASS: objective-free bait / commitment / continued rebound / impact / fast reuse / actual hard-wall grounding

@@ -1,0 +1,3255 @@
+{
+	"bounded_input_attempts": [
+		{
+			"behavior": "forward",
+			"boulder": "(0.0, 0.0)",
+			"can": "(475.1449, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 0,
+				"charges": 3,
+				"charging_rebounds": 0,
+				"deaths": 1,
+				"events": [
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(148.7999, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(132.8611, 308.9253)",
+						"previous_feet": 317.925262451172,
+						"seconds": 0.18,
+						"sensor": false,
+						"velocity_before_hit": "(155.0, 0.0)"
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(140.3999, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(117.7772, 284.9253)",
+						"seconds": 0.42,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(140.3999, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(303.7771, 281.9054)",
+						"seconds": 1.63,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(140.3999, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(360.6107, 308.9253)",
+						"seconds": 2.0,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(212.3709, 305.9253)",
+						"can_state": "charging",
+						"event": "shutter moving",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"seconds": 2.33,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(212.3709, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"seconds": 2.33,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(212.3709, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"seconds": 2.82,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(212.3709, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"seconds": 3.18,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(387.8411, 305.9253)",
+						"can_state": "charging",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"previous_feet": 317.996368408203,
+						"seconds": 3.95,
+						"sensor": false,
+						"velocity_before_hit": "(0.0, 0.0)"
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.6744, 305.9253)",
+						"can_state": "charging",
+						"event": "freight moving",
+						"laser_angle": 0,
+						"player": "(403.9252, 304.6336)",
+						"seconds": 3.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.6744, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(403.9252, 304.6336)",
+						"seconds": 3.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.6744, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(411.0086, 284.9253)",
+						"seconds": 4.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.6744, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(491.924, 308.9973)",
+						"seconds": 5.25,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.6744, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(491.924, 308.9973)",
+						"seconds": 5.62,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(475.1449, 305.9253)",
+						"can_state": "charging",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(491.924, 308.9973)",
+						"previous_feet": 317.997344970703,
+						"seconds": 5.98,
+						"sensor": false,
+						"velocity_before_hit": "(0.0, 0.0)"
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(475.1449, 305.9253)",
+						"can_state": "charging",
+						"event": "death",
+						"laser_angle": 0,
+						"player": "(491.924, 308.9973)",
+						"seconds": 5.98,
+						"sensor": false
+					}
+				],
+				"hits": 3,
+				"idle_seconds": 2.4,
+				"impacts": 2,
+				"level": 1,
+				"rebounds": 2,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 5.98,
+				"sensor_activations": 0
+			},
+			"deaths": 2,
+			"level": 1,
+			"player": "(491.924, 308.9973)"
+		},
+		{
+			"behavior": "forward_jump",
+			"boulder": "(0.0, 0.0)",
+			"can": "(478.3116, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 0,
+				"charges": 3,
+				"charging_rebounds": 1,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(147.3999, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(202.4821, 293.8837)",
+						"seconds": 0.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(147.3999, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(225.9253, 271.8412)",
+						"seconds": 1.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(215.5376, 305.9253)",
+						"can_state": "charging",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(225.9253, 284.9253)",
+						"seconds": 1.35,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(215.5376, 305.9253)",
+						"can_state": "charging",
+						"event": "shutter moving",
+						"laser_angle": 0,
+						"player": "(225.9253, 284.9253)",
+						"seconds": 1.35,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(215.5376, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(225.9253, 284.9253)",
+						"seconds": 1.35,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(215.5376, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(305.342, 308.9253)",
+						"seconds": 2.38,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(215.5376, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(362.1761, 268.4383)",
+						"seconds": 2.75,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.0078, 305.9253)",
+						"can_state": "charging",
+						"event": "freight moving",
+						"laser_angle": 0,
+						"player": "(403.9253, 270.5415)",
+						"seconds": 3.53,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.0078, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(403.9253, 270.5415)",
+						"seconds": 3.53,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.0078, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(462.676, 281.7994)",
+						"seconds": 4.02,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(391.0078, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(491.9253, 277.0633)",
+						"seconds": 4.38,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(491.9253, 276.0832)",
+						"seconds": 4.78,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 5.2,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 6.12,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 7.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 7.95,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 8.87,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 9.78,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 10.7,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(478.3116, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(491.9253, 284.9253)",
+						"seconds": 11.62,
+						"sensor": false
+					}
+				],
+				"hits": 0,
+				"idle_seconds": 0.316666666666667,
+				"impacts": 3,
+				"level": 1,
+				"rebounds": 9,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 12.52,
+				"sensor_activations": 0
+			},
+			"deaths": 0,
+			"level": 1,
+			"player": "(491.9253, 278.5502)"
+		},
+		{
+			"behavior": "one_bait_forward",
+			"boulder": "(0.0, 0.0)",
+			"can": "(212.3709, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 0,
+				"charges": 1,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(148.7999, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(132.8611, 308.9253)",
+						"previous_feet": 317.925262451172,
+						"seconds": 0.18,
+						"sensor": false,
+						"velocity_before_hit": "(155.0, 0.0)"
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(140.3999, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(117.7772, 284.9253)",
+						"seconds": 0.42,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(140.3999, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(303.7771, 281.9054)",
+						"seconds": 1.63,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(140.3999, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(360.6107, 308.9253)",
+						"seconds": 2.0,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(212.3709, 305.9253)",
+						"can_state": "charging",
+						"event": "shutter moving",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"seconds": 2.33,
+						"sensor": false
+					},
+					{
+						"boulder": "(0.0, 0.0)",
+						"can": "(212.3709, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(403.9991, 308.9964)",
+						"seconds": 2.33,
+						"sensor": false
+					}
+				],
+				"hits": 1,
+				"idle_seconds": 0.05,
+				"impacts": 1,
+				"level": 1,
+				"rebounds": 1,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 2.33,
+				"sensor_activations": 0
+			},
+			"deaths": 2,
+			"level": 1,
+			"player": "(403.9991, 308.9964)"
+		},
+		{
+			"behavior": "forward",
+			"boulder": "(440.0, 302.0)",
+			"can": "(616.0, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 0,
+				"charges": 1,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(587.8006, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(633.9944, 308.9964)",
+						"seconds": 0.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(587.8006, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(633.9944, 308.9964)",
+						"seconds": 1.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(633.9944, 308.9964)",
+						"previous_feet": 317.996368408203,
+						"seconds": 1.43,
+						"sensor": false,
+						"velocity_before_hit": "(0.0, 0.0)"
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 1.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 2.58,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 3.5,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 4.42,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 5.33,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 6.25,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 7.17,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 8.08,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 9.0,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 9.92,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 10.83,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 11.75,
+						"sensor": false
+					}
+				],
+				"hits": 1,
+				"idle_seconds": 1.35,
+				"impacts": 0,
+				"level": 2,
+				"rebounds": 12,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 12.52,
+				"sensor_activations": 0
+			},
+			"deaths": 0,
+			"level": 2,
+			"player": "(633.9252, 246.2725)"
+		},
+		{
+			"behavior": "forward_jump",
+			"boulder": "(440.0, 302.0)",
+			"can": "(616.0, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 0,
+				"charges": 1,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(587.8006, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(633.9252, 293.885)",
+						"seconds": 0.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(587.8006, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(633.9252, 271.9166)",
+						"seconds": 1.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 1.4,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 2.32,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 3.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 4.15,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 5.07,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 5.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 6.9,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 7.82,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 8.73,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 9.65,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 10.57,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 11.48,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(616.0, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(633.9252, 284.9253)",
+						"seconds": 12.4,
+						"sensor": false
+					}
+				],
+				"hits": 0,
+				"idle_seconds": 0.35,
+				"impacts": 0,
+				"level": 2,
+				"rebounds": 13,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 12.52,
+				"sensor_activations": 0
+			},
+			"deaths": 0,
+			"level": 2,
+			"player": "(633.9252, 254.3975)"
+		},
+		{
+			"behavior": "one_bait_forward",
+			"boulder": "(204.0044, 301.9977)",
+			"can": "(232.0101, 305.9901)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 7,
+				"charges": 7,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(561.2001, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(579.0179, 293.6933)",
+						"previous_feet": 303.565521240234,
+						"seconds": 0.17,
+						"sensor": false,
+						"velocity_before_hit": "(-155.0, -52.33333)"
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(572.4003, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(583.7678, 284.9253)",
+						"seconds": 0.48,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(572.4003, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(426.1638, 279.0473)",
+						"seconds": 1.5,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(572.4003, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(369.2678, 308.9253)",
+						"seconds": 1.87,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(473.596, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(366.0085, 308.9725)",
+						"seconds": 2.32,
+						"sensor": false
+					},
+					{
+						"boulder": "(380.6833, 301.9335)",
+						"can": "(414.3392, 305.9253)",
+						"can_state": "charging",
+						"event": "duct moving",
+						"laser_angle": 0,
+						"player": "(363.9644, 308.924)",
+						"seconds": 2.63,
+						"sensor": false
+					},
+					{
+						"boulder": "(380.6833, 301.9335)",
+						"can": "(414.3392, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(363.9644, 308.924)",
+						"seconds": 2.63,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(315.8369, 305.9253)",
+						"can_state": "recover",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(228.5895, 308.924)",
+						"seconds": 3.28,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(315.8369, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(214.0525, 308.9963)",
+						"seconds": 3.55,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(315.8369, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(214.0525, 308.9963)",
+						"seconds": 3.92,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(266.8662, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(214.0525, 308.9963)",
+						"seconds": 4.15,
+						"sensor": false
+					},
+					{
+						"boulder": "(209.8896, 301.934)",
+						"can": "(244.8877, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(193.686, 308.924)",
+						"seconds": 4.32,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(237.221, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(192.1845, 308.924)",
+						"seconds": 4.4,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 5.6,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 5.97,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 5.97,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 6.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 6.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 7.65,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 8.02,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 8.02,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 8.08,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 8.08,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 9.7,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 10.07,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 10.07,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 10.13,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 10.13,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 11.75,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.12,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.12,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.18,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.18,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 13.8,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 14.17,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 14.17,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 14.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0101, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 14.23,
+						"sensor": false
+					}
+				],
+				"hits": 1,
+				"idle_seconds": 1.93333333333333,
+				"impacts": 7,
+				"level": 2,
+				"rebounds": 1,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 15.62,
+				"sensor_activations": 0
+			},
+			"deaths": 0,
+			"level": 2,
+			"player": "(187.8782, 308.924)"
+		},
+		{
+			"behavior": "left",
+			"boulder": "(204.0044, 301.9977)",
+			"can": "(232.0102, 305.9901)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 6,
+				"charges": 6,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(561.2001, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": 0,
+						"player": "(578.7499, 308.9253)",
+						"previous_feet": 317.925262451172,
+						"seconds": 0.17,
+						"sensor": false,
+						"velocity_before_hit": "(-155.0, 0.0)"
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(571.0003, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": 0,
+						"player": "(593.8337, 284.9253)",
+						"seconds": 0.4,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(571.0003, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(443.6049, 276.9881)",
+						"seconds": 1.42,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(571.0003, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(386.6738, 300.4513)",
+						"seconds": 1.78,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(472.196, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(366.0071, 308.9963)",
+						"seconds": 2.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(380.6833, 301.9335)",
+						"can": "(414.3444, 305.9253)",
+						"can_state": "charging",
+						"event": "duct moving",
+						"laser_angle": 0,
+						"player": "(365.3145, 308.924)",
+						"seconds": 2.55,
+						"sensor": false
+					},
+					{
+						"boulder": "(380.6833, 301.9335)",
+						"can": "(414.3444, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(365.3145, 308.924)",
+						"seconds": 2.55,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(315.8374, 305.9253)",
+						"can_state": "recover",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(225.9468, 308.924)",
+						"seconds": 3.2,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(315.8374, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(194.0067, 308.9966)",
+						"seconds": 3.47,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(315.8374, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(194.0067, 308.9966)",
+						"seconds": 3.83,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(266.8667, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(194.0067, 308.9966)",
+						"seconds": 4.07,
+						"sensor": false
+					},
+					{
+						"boulder": "(209.8896, 301.934)",
+						"can": "(244.8878, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(193.6853, 308.924)",
+						"seconds": 4.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(237.2211, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(188.8173, 308.924)",
+						"seconds": 4.32,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 5.52,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 5.88,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 5.88,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 5.95,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 5.95,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 7.57,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 7.93,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 7.93,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 8.0,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 8.0,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 9.62,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 9.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 9.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 10.05,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(191.8448, 308.924)",
+						"seconds": 10.05,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 11.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.1,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(187.8782, 308.924)",
+						"seconds": 12.1,
+						"sensor": false
+					}
+				],
+				"hits": 1,
+				"idle_seconds": 1.43333333333333,
+				"impacts": 6,
+				"level": 2,
+				"rebounds": 1,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 12.52,
+				"sensor_activations": 0
+			},
+			"deaths": 0,
+			"level": 2,
+			"player": "(191.8448, 308.924)"
+		},
+		{
+			"behavior": "left_jump",
+			"boulder": "(204.0044, 301.9977)",
+			"can": "(232.0102, 305.9901)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 6,
+				"charges": 6,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(559.8001, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(501.5184, 293.8849)",
+						"seconds": 0.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(559.8001, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(444.6843, 271.8411)",
+						"seconds": 1.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(440.0, 302.0)",
+						"can": "(472.4959, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(382.6841, 297.0078)",
+						"seconds": 1.43,
+						"sensor": false
+					},
+					{
+						"boulder": "(380.6833, 301.9335)",
+						"can": "(414.3523, 305.9253)",
+						"can_state": "charging",
+						"event": "duct moving",
+						"laser_angle": 0,
+						"player": "(363.2414, 277.7578)",
+						"seconds": 1.75,
+						"sensor": false
+					},
+					{
+						"boulder": "(380.6833, 301.9335)",
+						"can": "(414.3523, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(363.2414, 277.7578)",
+						"seconds": 1.75,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(304.3381, 305.9253)",
+						"can_state": "recover",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(230.4627, 260.967)",
+						"seconds": 2.4,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(304.3381, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(129.7129, 284.9253)",
+						"seconds": 3.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(304.3381, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(72.8789, 244.4383)",
+						"seconds": 3.4,
+						"sensor": false
+					},
+					{
+						"boulder": "(236.0538, 301.9253)",
+						"can": "(266.8673, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(44.46223, 256.9661)",
+						"seconds": 3.58,
+						"sensor": false
+					},
+					{
+						"boulder": "(209.8896, 301.934)",
+						"can": "(244.8878, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(28.96224, 273.0078)",
+						"seconds": 3.75,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(237.2211, 305.9253)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(23.79557, 279.7994)",
+						"seconds": 3.83,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(6.07474, 281.0414)",
+						"seconds": 5.08,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(6.07474, 279.7595)",
+						"seconds": 5.45,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(6.07474, 279.7595)",
+						"seconds": 5.45,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(6.07474, 279.7595)",
+						"seconds": 5.52,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(6.07474, 279.7595)",
+						"seconds": 5.52,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(6.074749, 268.8845)",
+						"seconds": 7.13,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(6.07474, 303.8706)",
+						"seconds": 7.5,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(6.07474, 303.8706)",
+						"seconds": 7.5,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(6.07474, 303.8706)",
+						"seconds": 7.57,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(6.07474, 303.8706)",
+						"seconds": 7.57,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(6.07474, 281.8706)",
+						"seconds": 9.18,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(6.074741, 277.1346)",
+						"seconds": 9.55,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(6.074741, 277.1346)",
+						"seconds": 9.55,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(6.074741, 277.1346)",
+						"seconds": 9.62,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(6.074741, 277.1346)",
+						"seconds": 9.62,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 0,
+						"player": "(6.07474, 300.3845)",
+						"seconds": 11.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 0,
+						"player": "(6.074749, 268.8845)",
+						"seconds": 11.6,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": 0,
+						"player": "(6.074749, 268.8845)",
+						"seconds": 11.6,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder force transfer",
+						"laser_angle": 0,
+						"player": "(6.074749, 268.8845)",
+						"seconds": 11.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(204.0044, 301.9977)",
+						"can": "(232.0102, 305.9901)",
+						"can_state": "charging",
+						"event": "Boulder settled",
+						"laser_angle": 0,
+						"player": "(6.074749, 268.8845)",
+						"seconds": 11.67,
+						"sensor": false
+					}
+				],
+				"hits": 0,
+				"idle_seconds": 0.966666666666668,
+				"impacts": 6,
+				"level": 2,
+				"rebounds": 0,
+				"resets": 0,
+				"rotator_hold_seconds": 0.0,
+				"seconds": 12.52,
+				"sensor_activations": 0
+			},
+			"deaths": 0,
+			"level": 2,
+			"player": "(6.074748, 269.7595)"
+		},
+		{
+			"behavior": "forward",
+			"boulder": "(428.8018, 301.9338)",
+			"can": "(355.0, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 1,
+				"charges": 11,
+				"charging_rebounds": 1,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(78.79999, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": -48.0,
+						"player": "(61.24999, 308.9253)",
+						"previous_feet": 317.925262451172,
+						"seconds": 0.17,
+						"sensor": false,
+						"velocity_before_hit": "(155.0, 0.0)"
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(68.99998, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": -48.0,
+						"player": "(46.1661, 284.9253)",
+						"seconds": 0.4,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(68.99998, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -48.0,
+						"player": "(201.166, 308.9253)",
+						"seconds": 1.42,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(68.99998, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -48.0,
+						"player": "(257.9992, 308.9253)",
+						"seconds": 1.78,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(271.3044, 305.9253)",
+						"can_state": "charging",
+						"event": "hurt",
+						"laser_angle": -48.0,
+						"player": "(287.9977, 308.9964)",
+						"previous_feet": 317.996368408203,
+						"seconds": 2.67,
+						"sensor": false,
+						"velocity_before_hit": "(0.0, 0.0)"
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(278.9711, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": -48.0,
+						"player": "(287.9333, 302.7586)",
+						"seconds": 2.72,
+						"sensor": false
+					},
+					{
+						"boulder": "(314.5864, 301.9333)",
+						"can": "(281.9977, 305.9983)",
+						"can_state": "charging",
+						"event": "rotator on",
+						"laser_angle": -48.0,
+						"player": "(287.9333, 301.0641)",
+						"seconds": 2.78,
+						"sensor": false
+					},
+					{
+						"boulder": "(355.485, 301.9338)",
+						"can": "(316.4975, 305.9253)",
+						"can_state": "charging",
+						"event": "rebound",
+						"laser_angle": -45.0,
+						"player": "(295.0166, 284.9253)",
+						"seconds": 2.95,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(324.1642, 305.9253)",
+						"can_state": "idle",
+						"event": "Boulder settled",
+						"laser_angle": -32.7,
+						"player": "(378.9253, 229.6475)",
+						"seconds": 3.63,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(324.1642, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -26.7,
+						"player": "(406.726, 308.9974)",
+						"seconds": 3.97,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(324.1642, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -20.1,
+						"player": "(406.726, 308.9974)",
+						"seconds": 4.33,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -9.59999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 4.97,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": -8.69999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.0,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor on",
+						"laser_angle": -8.69999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.0,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -2.99999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.33,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 4.80000000000005,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.82,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 11.4000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.18,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 19.2000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.67,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": 21.9000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.82,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor off",
+						"laser_angle": 21.9000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.82,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 25.8000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 7.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 30.5,
+						"player": "(406.726, 308.9974)",
+						"seconds": 7.52,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 23.9,
+						"player": "(406.726, 308.9974)",
+						"seconds": 7.88,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": 17.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.3,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor on",
+						"laser_angle": 17.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.3,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 16.1,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.37,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 9.49999999999997,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.73,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 1.69999999999997,
+						"player": "(406.726, 308.9974)",
+						"seconds": 9.22,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -4.90000000000003,
+						"player": "(406.726, 308.9974)",
+						"seconds": 9.58,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -12.7,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.07,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": -13.6,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.12,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor off",
+						"laser_angle": -13.6,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.12,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -19.3,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.43,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -27.1000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.92,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -33.7000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 11.28,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -41.5000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 11.77,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -48.1000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 12.13,
+						"sensor": false
+					}
+				],
+				"hits": 2,
+				"idle_seconds": 9.26666666666671,
+				"impacts": 1,
+				"level": 3,
+				"rebounds": 2,
+				"resets": 0,
+				"rotator_hold_seconds": 9.7333333333334,
+				"seconds": 12.52,
+				"sensor_activations": 2
+			},
+			"deaths": 0,
+			"level": 3,
+			"player": "(406.726, 308.9974)"
+		},
+		{
+			"behavior": "forward_jump",
+			"boulder": "(428.8018, 301.9338)",
+			"can": "(355.0, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 1,
+				"charges": 12,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(80.19999, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -48.0,
+						"player": "(138.4821, 293.8849)",
+						"seconds": 0.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(80.19999, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -48.0,
+						"player": "(195.3159, 271.8411)",
+						"seconds": 1.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(278.6711, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": -48.0,
+						"player": "(327.8622, 268.805)",
+						"seconds": 1.92,
+						"sensor": false
+					},
+					{
+						"boulder": "(314.5864, 301.9333)",
+						"can": "(281.9979, 305.9982)",
+						"can_state": "charging",
+						"event": "rotator on",
+						"laser_angle": -48.0,
+						"player": "(330.4456, 269.2216)",
+						"seconds": 1.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(335.6643, 305.9253)",
+						"can_state": "windup",
+						"event": "Boulder settled",
+						"laser_angle": -32.7,
+						"player": "(459.6134, 282.7831)",
+						"seconds": 2.83,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(335.6643, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -32.1,
+						"player": "(467.3634, 295.2415)",
+						"seconds": 2.87,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(335.6643, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -25.5,
+						"player": "(524.1974, 276.0078)",
+						"seconds": 3.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -15.9,
+						"player": "(606.864, 305.1883)",
+						"seconds": 3.82,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -9.29999999999995,
+						"player": "(633.9252, 268.6744)",
+						"seconds": 4.18,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "crossing moving",
+						"laser_angle": -8.69999999999995,
+						"player": "(633.9252, 269.0911)",
+						"seconds": 4.25,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "sensor on",
+						"laser_angle": -8.69999999999995,
+						"player": "(633.9252, 269.0911)",
+						"seconds": 4.25,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -1.49999999999995,
+						"player": "(633.9252, 289.2915)",
+						"seconds": 4.67,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 5.10000000000005,
+						"player": "(633.9252, 272.6388)",
+						"seconds": 5.03,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 12.9000000000001,
+						"player": "(633.9252, 277.8289)",
+						"seconds": 5.52,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 19.5000000000001,
+						"player": "(633.9252, 281.0373)",
+						"seconds": 5.88,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "crossing moving",
+						"laser_angle": 21.9000000000001,
+						"player": "(633.9252, 300.3846)",
+						"seconds": 6.07,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "sensor off",
+						"laser_angle": 21.9000000000001,
+						"player": "(633.9252, 300.3846)",
+						"seconds": 6.07,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 27.3000000000001,
+						"player": "(633.9252, 270.8844)",
+						"seconds": 6.37,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 30.2,
+						"player": "(633.9252, 293.9539)",
+						"seconds": 6.73,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "hurt",
+						"laser_angle": 28.4,
+						"player": "(633.924, 308.9956)",
+						"previous_feet": 316.537261962891,
+						"seconds": 6.87,
+						"sensor": false,
+						"velocity_before_hit": "(28.33333, -129.25)"
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 22.4,
+						"player": "(633.9252, 299.9539)",
+						"seconds": 7.22,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": 17.0,
+						"player": "(633.924, 308.9985)",
+						"seconds": 7.5,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor on",
+						"laser_angle": 17.0,
+						"player": "(633.924, 308.9985)",
+						"seconds": 7.5,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 15.8,
+						"player": "(633.9252, 298.3318)",
+						"seconds": 7.58,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 7.99999999999997,
+						"player": "(633.9252, 273.9568)",
+						"seconds": 8.07,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 1.39999999999997,
+						"player": "(633.9252, 284.1623)",
+						"seconds": 8.43,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -6.40000000000003,
+						"player": "(633.9252, 283.2595)",
+						"seconds": 8.92,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -13.0,
+						"player": "(633.9252, 274.5094)",
+						"seconds": 9.28,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "crossing moving",
+						"laser_angle": -13.6,
+						"player": "(633.9252, 273.1205)",
+						"seconds": 9.37,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "sensor off",
+						"laser_angle": -13.6,
+						"player": "(633.9252, 273.1205)",
+						"seconds": 9.37,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -20.8,
+						"player": "(633.9252, 297.0789)",
+						"seconds": 9.77,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -27.4000000000001,
+						"player": "(633.9252, 269.3705)",
+						"seconds": 10.13,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -35.2000000000001,
+						"player": "(633.9255, 305.2595)",
+						"seconds": 10.62,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -41.8000000000001,
+						"player": "(633.9252, 268.7456)",
+						"seconds": 10.98,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -49.6000000000001,
+						"player": "(633.9252, 289.2872)",
+						"seconds": 11.47,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -47.8,
+						"player": "(633.9252, 272.6344)",
+						"seconds": 11.83,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -40.0,
+						"player": "(633.9252, 277.8289)",
+						"seconds": 12.32,
+						"sensor": false
+					}
+				],
+				"hits": 1,
+				"idle_seconds": 0.683333333333334,
+				"impacts": 1,
+				"level": 3,
+				"rebounds": 0,
+				"resets": 0,
+				"rotator_hold_seconds": 10.5333333333334,
+				"seconds": 12.52,
+				"sensor_activations": 2
+			},
+			"deaths": 0,
+			"level": 3,
+			"player": "(633.9252, 268.7456)"
+		},
+		{
+			"behavior": "one_bait_forward",
+			"boulder": "(428.8018, 301.9338)",
+			"can": "(355.0, 305.9253)",
+			"completed": false,
+			"current": {
+				"boulder_impacts": 1,
+				"charges": 14,
+				"charging_rebounds": 0,
+				"deaths": 0,
+				"events": [
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(78.79999, 305.9253)",
+						"can_state": "idle",
+						"event": "hurt",
+						"laser_angle": -48.0,
+						"player": "(60.98204, 293.6933)",
+						"previous_feet": 303.565521240234,
+						"seconds": 0.17,
+						"sensor": false,
+						"velocity_before_hit": "(155.0, -52.33333)"
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(67.59998, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": -48.0,
+						"player": "(56.23205, 284.9253)",
+						"seconds": 0.48,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(67.59998, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -48.0,
+						"player": "(213.8153, 308.9253)",
+						"seconds": 1.5,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(67.59998, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -48.0,
+						"player": "(270.6486, 308.9253)",
+						"seconds": 1.87,
+						"sensor": false
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(273.7378, 305.9253)",
+						"can_state": "charging",
+						"event": "hurt",
+						"laser_angle": -48.0,
+						"player": "(287.9346, 293.0713)",
+						"previous_feet": 302.763000488281,
+						"seconds": 2.77,
+						"sensor": false,
+						"velocity_before_hit": "(0.0, -41.5)"
+					},
+					{
+						"boulder": "(310.0, 302.0)",
+						"can": "(277.5711, 305.9253)",
+						"can_state": "charging",
+						"event": "force",
+						"laser_angle": -48.0,
+						"player": "(287.9342, 288.7797)",
+						"seconds": 2.8,
+						"sensor": false
+					},
+					{
+						"boulder": "(314.5864, 301.9333)",
+						"can": "(281.9808, 305.9524)",
+						"can_state": "charging",
+						"event": "rotator on",
+						"laser_angle": -48.0,
+						"player": "(287.9342, 286.9047)",
+						"seconds": 2.87,
+						"sensor": false
+					},
+					{
+						"boulder": "(378.7425, 301.9338)",
+						"can": "(324.1473, 305.9253)",
+						"can_state": "stagger",
+						"event": "rebound",
+						"laser_angle": -42.9,
+						"player": "(310.5176, 284.9253)",
+						"seconds": 3.15,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(324.1473, 305.9253)",
+						"can_state": "idle",
+						"event": "Boulder settled",
+						"laser_angle": -32.7,
+						"player": "(378.9253, 218.4669)",
+						"seconds": 3.72,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(324.1473, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -24.6,
+						"player": "(406.726, 308.9974)",
+						"seconds": 4.17,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(324.1473, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -18.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 4.53,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": -8.69999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.08,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor on",
+						"laser_angle": -8.69999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.08,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -7.49999999999995,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.17,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -0.899999999999951,
+						"player": "(406.726, 308.9974)",
+						"seconds": 5.53,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 6.90000000000004,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.02,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 13.5000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.38,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 21.3000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.87,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": 21.9000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.9,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor off",
+						"laser_angle": 21.9000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 6.9,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 27.9000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 7.23,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 28.4,
+						"player": "(406.726, 308.9974)",
+						"seconds": 7.72,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 21.8,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.08,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": 17.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.38,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor on",
+						"laser_angle": 17.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.38,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": 14.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.57,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": 7.39999999999997,
+						"player": "(406.726, 308.9974)",
+						"seconds": 8.93,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -0.40000000000003,
+						"player": "(406.726, 308.9974)",
+						"seconds": 9.42,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -7.00000000000003,
+						"player": "(406.726, 308.9974)",
+						"seconds": 9.78,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "crossing moving",
+						"laser_angle": -13.6,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.2,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "sensor off",
+						"laser_angle": -13.6,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.2,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -14.8,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.27,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -21.4,
+						"player": "(406.726, 308.9974)",
+						"seconds": 10.63,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -29.2000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 11.12,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -35.8000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 11.48,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -43.6000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 11.97,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -50.2000000000001,
+						"player": "(406.726, 308.9974)",
+						"seconds": 12.33,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -46.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 12.82,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -39.4,
+						"player": "(406.726, 308.9974)",
+						"seconds": 13.18,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -31.6,
+						"player": "(406.726, 308.9974)",
+						"seconds": 13.67,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -25.0,
+						"player": "(406.726, 308.9974)",
+						"seconds": 14.03,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -17.2,
+						"player": "(406.726, 308.9974)",
+						"seconds": 14.52,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "charging",
+						"event": "charge",
+						"laser_angle": -10.5999999999999,
+						"player": "(406.726, 308.9974)",
+						"seconds": 14.88,
+						"sensor": false
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "crossing moving",
+						"laser_angle": -8.79999999999994,
+						"player": "(406.726, 308.9974)",
+						"seconds": 15.02,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "recover",
+						"event": "sensor on",
+						"laser_angle": -8.79999999999994,
+						"player": "(406.726, 308.9974)",
+						"seconds": 15.02,
+						"sensor": true
+					},
+					{
+						"boulder": "(428.8018, 301.9338)",
+						"can": "(355.0, 305.9253)",
+						"can_state": "windup",
+						"event": "locked",
+						"laser_angle": -2.79999999999994,
+						"player": "(406.726, 308.9974)",
+						"seconds": 15.37,
+						"sensor": true
+					}
+				],
+				"hits": 2,
+				"idle_seconds": 12.1000000000002,
+				"impacts": 1,
+				"level": 3,
+				"rebounds": 2,
+				"resets": 0,
+				"rotator_hold_seconds": 12.7000000000002,
+				"seconds": 15.57,
+				"sensor_activations": 3
+			},
+			"deaths": 0,
+			"level": 3,
+			"player": "(406.726, 308.9974)"
+		}
+	],
+	"failures": []
+}

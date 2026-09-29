@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+{ "f": 300, "level": 1, "mode": "play", "p": (102.6935, 308.9253), "v": (0.0, 0.0), "can": (278.5974, 305.9253), "state": "charging", "health": 3, "platforms": [], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+{ "f": 600, "level": 1, "mode": "play", "p": (322.7638, 308.9253), "v": (155.0, 0.0), "can": (35.49987, 305.9253), "state": "charging", "health": 3, "platforms": [], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+{ "f": 900, "level": 1, "mode": "play", "p": (454.5284, 216.5225), "v": (121.6667, -34.16668), "can": (450.4038, 305.9253), "state": "idle", "health": 3, "platforms": [], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+{ "f": 1200, "level": 1, "mode": "play", "p": (66.81893, 286.5632), "v": (155.0, -159.1667), "can": (138.1376, 305.9253), "state": "charging", "health": 3, "platforms": [], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+{ "f": 1500, "level": 1, "mode": "play", "p": (395.0141, 308.9253), "v": (-155.0, 0.0), "can": (162.6003, 305.9253), "state": "windup", "health": 3, "platforms": [], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+{ "f": 1800, "level": 1, "mode": "play", "p": (102.5982, 301.6336), "v": (0.0, -213.3333), "can": (162.6001, 305.9253), "state": "windup", "health": 3, "platforms": [], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+POLISH SANDBOX { "charges": 12, "impacts": 0, "boulder_impacts": 0, "rebounds": 2, "charging_rebounds": 0, "hits": 0, "resets": 0, "deaths": 0, "sensor_activations": 0, "idle_seconds": 5.23333333333332, "rotator_hold_seconds": 0.0 } failures []

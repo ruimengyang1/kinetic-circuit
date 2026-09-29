@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+BEAT Sparks: bait, evade, fracture / room1 P(45.0, 291.0) Can(55.0, 290.0)/idle Cart(105.0, 284.0)/0>0 modeplay frame168
+BEAT Crossroads: forward C roof after bridge change / room2 P(45.0, 291.0) Can(55.0, 290.0)/idle Cart(105.0, 284.0)/0>0 modeplay frame492
+TRACE room2 P(251.5918, 290.9253) Can(105.6, 290.0)/recover Cart(148.3333, 284.0)/0>1 modeplay frame600
+BEAT Press: Cart moves through shield/weight to forward roof / room3 P(45.0, 291.0) Can(55.0, 290.0)/idle Cart(265.0, 284.0)/2>2 modeplay frame729
+BEAT Freeform: reverse C to B for lasting support / room3 P(176.981, 248.0954) Can(231.7334, 290.0)/idle Cart(185.0, 284.0)/1>1 modeplay frame972
+SECOND ROUTE cart METRICS: {"cart_impacts":5,"charges":8,"completion_seconds":18.08,"deaths":0,"environmental_stuns":0,"idle_seconds":2.1,"rebounds":4,"resets":0,"reversals":1,"rooms":[{"bridge":false,"broken":true,"cart":0,"room":"SPARKS","stats":{"cart_impacts":0,"charges":1,"deaths":0,"environmental_stuns":0,"rebounds":0,"resets":0,"reversals":0},"time":2.51666666666666},{"bridge":false,"broken":false,"cart":2,"room":"CROSSROADS","stats":{"cart_impacts":2,"charges":4,"deaths":0,"environmental_stuns":0,"rebounds":2,"resets":0,"reversals":0},"time":7.93333333333331},{"bridge":false,"broken":false,"cart":2,"room":"THE PRESS","stats":{"cart_impacts":4,"charges":6,"deaths":0,"environmental_stuns":0,"rebounds":3,"resets":0,"reversals":0},"time":11.9000000000002},{"bridge":true,"broken":false,"cart":1,"room":"FREEFORM","stats":{"cart_impacts":5,"charges":8,"deaths":0,"environmental_stuns":0,"rebounds":4,"resets":0,"reversals":1},"time":18.0833333333336}]}
+SECOND FRESH ROUTE PASS: cart — input-only, all four encounters

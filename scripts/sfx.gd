@@ -1,6 +1,8 @@
 extends Node
 
 var samples: Dictionary = {}
+var voices: Array[AudioStreamPlayer] = []
+var next_voice := 0
 
 func _ready() -> void:
 	samples["jump"] = _make_sound(370.0, 0.085, 0.15, false)
@@ -13,6 +15,12 @@ func _ready() -> void:
 	samples["telegraph"] = _make_sound(285.0, 0.28, 0.13, false)
 	samples["switch"] = _make_sound(590.0, 0.22, 0.16, false)
 	samples["alarm"] = _make_sound(185.0, 0.32, 0.15, true)
+	if DisplayServer.get_name() != "headless":
+		for i in 8:
+			var voice := AudioStreamPlayer.new()
+			voice.volume_db = -8
+			add_child(voice)
+			voices.append(voice)
 
 func play(kind: String) -> void:
 	# Accelerated headless physics does not advance the real-time audio mixer.
@@ -21,11 +29,11 @@ func play(kind: String) -> void:
 		return
 	if not samples.has(kind):
 		return
-	var player := AudioStreamPlayer.new()
+	var player := voices[next_voice]
+	next_voice = (next_voice + 1) % voices.size()
+	# Eight reusable voices bound repeated feedback without creating nodes.
+	player.stop()
 	player.stream = samples[kind]
-	player.volume_db = -8.0
-	add_child(player)
-	player.finished.connect(player.queue_free)
 	player.play()
 
 func _make_sound(frequency: float, duration: float, amplitude: float, rough: bool) -> AudioStreamWAV:

@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS T L1 ordinary forward/jump cannot bypass machinery
+PASS U L1 airborne doorway grazing cannot win
+PASS physical exit floor, no invisible completion prerequisite L1
+PASS T L2 ordinary forward/jump cannot bypass machinery
+PASS U L2 airborne doorway grazing cannot win
+PASS physical exit floor, no invisible completion prerequisite L2
+PASS T L3 ordinary forward/jump cannot bypass machinery
+PASS U L3 airborne doorway grazing cannot win
+PASS physical exit floor, no invisible completion prerequisite L3
+PASS T L4 ordinary forward/jump cannot bypass machinery
+PASS U L4 airborne doorway grazing cannot win
+PASS physical exit floor, no invisible completion prerequisite L4
+PASS V R restores only current level, preserving earlier progress
+PASS W death recovery under one second preserves progression
+FINAL RECOVERY 14 checks; failures []

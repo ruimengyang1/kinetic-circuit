@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+{ "f": 300, "level": 1, "mode": "play", "p": (526.9261, 202.9253), "v": (155.0, 0.0), "can": (392.4077, 305.9253), "state": "idle", "health": 3, "platforms": [(72.0, 323.0), (241.0, 180.0), (536.0, 263.0)], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+LEVEL 1 COMPLETE 5.93333333333332s; { "charges": 2, "impacts": 2, "boulder_impacts": 0, "rebounds": 1, "charging_rebounds": 0, "hits": 0, "resets": 0, "deaths": 0, "sensor_activations": 0, "idle_seconds": 0.51666666666667, "rotator_hold_seconds": 0.0 }
+{ "f": 600, "level": 2, "mode": "play", "p": (422.4992, 301.6328), "v": (-155.0, -213.3333), "can": (384.7279, 305.9253), "state": "charging", "health": 2, "platforms": [], "B": (223.1982, 301.9338), "angle": 0, "sensor": false }
+LEVEL 2 COMPLETE 6.73333333333331s; { "charges": 2, "impacts": 1, "boulder_impacts": 1, "rebounds": 0, "charging_rebounds": 0, "hits": 1, "resets": 0, "deaths": 0, "sensor_activations": 0, "idle_seconds": 0.06666666666667, "rotator_hold_seconds": 0.0 }
+{ "f": 900, "level": 3, "mode": "play", "p": (195.4175, 271.8411), "v": (155.0, -72.50003), "can": (82.99999, 305.9253), "state": "windup", "health": 3, "platforms": [(423.0, 227.0)], "B": (310.0, 302.0), "angle": -48.0, "sensor": false }
+{ "f": 1200, "level": 3, "mode": "play", "p": (420.6759, 270.4661), "v": (-76.66667, 219.9999), "can": (79.67561, 305.9253), "state": "recover", "health": 3, "platforms": [(521.0, 227.0)], "B": (428.8018, 301.9338), "angle": 2.70000000000005, "sensor": true }
+LEVEL 3 COMPLETE 8.26666666666666s; { "charges": 2, "impacts": 1, "boulder_impacts": 1, "rebounds": 0, "charging_rebounds": 0, "hits": 0, "resets": 0, "deaths": 0, "sensor_activations": 1, "idle_seconds": 1.61666666666667, "rotator_hold_seconds": 2.81666666666666 }
+{ "f": 1500, "level": 4, "mode": "play", "p": (355.5872, 269.8175), "v": (155.0, -213.3333), "can": (313.9971, 305.9271), "state": "charging", "health": 3, "platforms": [(436.0, 227.0)], "B": (346.5864, 301.9338), "angle": 59.3999999999999, "sensor": false }
+{ "f": 1800, "level": 4, "mode": "play", "p": (230.0139, 238.9253), "v": (0.0, 0.0), "can": (288.67, 305.9253), "state": "idle", "health": 2, "platforms": [(436.0, 227.0)], "B": (579.6031, 301.9338), "angle": 47.9333333333333, "sensor": false }
+{ "f": 2100, "level": 4, "mode": "play", "p": (397.8197, 181.3824), "v": (155.0, 89.99997), "can": (548.4735, 305.9253), "state": "idle", "health": 2, "platforms": [(542.0, 227.0)], "B": (579.6031, 301.9338), "angle": -1.66666666666668, "sensor": true }
+LEVEL 4 COMPLETE 14.3000000000003s; { "charges": 4, "impacts": 2, "boulder_impacts": 2, "rebounds": 0, "charging_rebounds": 0, "hits": 1, "resets": 0, "deaths": 0, "sensor_activations": 1, "idle_seconds": 2.6, "rotator_hold_seconds": 4.16666666666666 }
+REBALANCE ROUTE sequential frames 2232 failures []

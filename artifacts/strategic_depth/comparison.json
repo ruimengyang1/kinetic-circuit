@@ -1,0 +1,237 @@
+{
+  "evidence_type": "rehearsed normal-input strategies, not blind playtests",
+  "levels": [
+    {
+      "level": 1,
+      "sequential": {
+        "seconds": 5.93,
+        "charges": 2,
+        "boulder_impacts": 0,
+        "rebounds": 1,
+        "hits": 0,
+        "deaths": 0,
+        "resets": 0
+      },
+      "prepared": {
+        "seconds": 5.93,
+        "charges": 2,
+        "boulder_impacts": 0,
+        "rebounds": 1,
+        "hits": 0,
+        "deaths": 0,
+        "resets": 0
+      },
+      "sequential_events": [
+        "locked",
+        "charge",
+        "shutter moving",
+        "force",
+        "locked",
+        "charge",
+        "freight moving",
+        "force",
+        "rebound",
+        "exit"
+      ],
+      "prepared_events": [
+        "locked",
+        "charge",
+        "shutter moving",
+        "force",
+        "locked",
+        "charge",
+        "freight moving",
+        "force",
+        "rebound",
+        "exit"
+      ]
+    },
+    {
+      "level": 2,
+      "sequential": {
+        "seconds": 6.73,
+        "charges": 2,
+        "boulder_impacts": 1,
+        "rebounds": 0,
+        "hits": 1,
+        "deaths": 0,
+        "resets": 0
+      },
+      "prepared": {
+        "seconds": 6.18,
+        "charges": 2,
+        "boulder_impacts": 1,
+        "rebounds": 0,
+        "hits": 0,
+        "deaths": 0,
+        "resets": 0
+      },
+      "sequential_events": [
+        "locked",
+        "charge",
+        "force",
+        "beam cover removed",
+        "locked",
+        "Boulder settled",
+        "hurt",
+        "charge",
+        "exit"
+      ],
+      "prepared_events": [
+        "locked",
+        "charge",
+        "force",
+        "beam cover removed",
+        "locked",
+        "Boulder settled",
+        "charge",
+        "exit"
+      ]
+    },
+    {
+      "level": 3,
+      "sequential": {
+        "seconds": 8.27,
+        "charges": 2,
+        "boulder_impacts": 1,
+        "rebounds": 0,
+        "hits": 0,
+        "deaths": 0,
+        "resets": 0
+      },
+      "prepared": {
+        "seconds": 7.83,
+        "charges": 2,
+        "boulder_impacts": 1,
+        "rebounds": 0,
+        "hits": 0,
+        "deaths": 0,
+        "resets": 0
+      },
+      "sequential_events": [
+        "locked",
+        "charge",
+        "force",
+        "rotator on",
+        "Boulder settled",
+        "crossing moving",
+        "sensor on",
+        "locked",
+        "charge",
+        "rotator off",
+        "exit"
+      ],
+      "prepared_events": [
+        "locked",
+        "charge",
+        "force",
+        "rotator on",
+        "Boulder settled",
+        "locked",
+        "crossing moving",
+        "sensor on",
+        "charge",
+        "rotator off",
+        "exit"
+      ]
+    },
+    {
+      "level": 4,
+      "sequential": {
+        "seconds": 14.3,
+        "charges": 4,
+        "boulder_impacts": 2,
+        "rebounds": 0,
+        "hits": 1,
+        "deaths": 0,
+        "resets": 0
+      },
+      "prepared": {
+        "seconds": 11.23,
+        "charges": 3,
+        "boulder_impacts": 1,
+        "rebounds": 0,
+        "hits": 0,
+        "deaths": 0,
+        "resets": 0
+      },
+      "sequential_events": [
+        "locked",
+        "charge",
+        "rotator on",
+        "beam cover removed",
+        "force",
+        "rotator off",
+        "Boulder settled",
+        "locked",
+        "charge",
+        "hurt",
+        "force",
+        "Boulder settled",
+        "locked",
+        "charge",
+        "rotator on",
+        "crossing moving",
+        "sensor on",
+        "locked",
+        "charge",
+        "rotator off",
+        "exit"
+      ],
+      "prepared_events": [
+        "locked",
+        "charge",
+        "locked",
+        "charge",
+        "rotator on",
+        "beam cover removed",
+        "crossing moving",
+        "sensor on",
+        "locked",
+        "charge",
+        "force",
+        "rotator off",
+        "Boulder settled",
+        "exit"
+      ]
+    }
+  ],
+  "l4_margin_runs": [
+    {
+      "lead_degrees": 8,
+      "seconds": 11.6,
+      "charges": 3,
+      "boulder_impacts": 1,
+      "rebounds": 0,
+      "hits": 0,
+      "deaths": 0,
+      "resets": 0
+    },
+    {
+      "lead_degrees": 20,
+      "seconds": 10.85,
+      "charges": 3,
+      "boulder_impacts": 1,
+      "rebounds": 0,
+      "hits": 0,
+      "deaths": 0,
+      "resets": 0
+    },
+    {
+      "lead_degrees": 24,
+      "seconds": 10.6,
+      "charges": 3,
+      "boulder_impacts": 1,
+      "rebounds": 0,
+      "hits": 0,
+      "deaths": 0,
+      "resets": 0
+    }
+  ],
+  "unchanged_actor_scripts": {
+    "scripts/demo_can.gd": true,
+    "scripts/demo_player.gd": true,
+    "scripts/demo_boulder.gd": true,
+    "scripts/demo_platform.gd": true
+  }
+}

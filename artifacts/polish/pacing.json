@@ -1,0 +1,58 @@
+{
+  "method": "15-frame samples of normal-input rehearsed routes; equal player position and equal mechanical state/positions/angle. Visual/audio changes and human decision-making cannot be inferred.",
+  "results": {
+    "before": [
+      {
+        "level": 1,
+        "longest_stationary_player_sampled_seconds": 0.5,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      },
+      {
+        "level": 2,
+        "longest_stationary_player_sampled_seconds": 0.5,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      },
+      {
+        "level": 3,
+        "longest_stationary_player_sampled_seconds": 0.75,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      },
+      {
+        "level": 4,
+        "longest_stationary_player_sampled_seconds": 0,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      }
+    ],
+    "after": [
+      {
+        "level": 1,
+        "longest_stationary_player_sampled_seconds": 0.5,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      },
+      {
+        "level": 2,
+        "longest_stationary_player_sampled_seconds": 0.5,
+        "longest_unchanged_world_sampled_seconds": 0.25,
+        "dead_time_over_2s": []
+      },
+      {
+        "level": 3,
+        "longest_stationary_player_sampled_seconds": 0.75,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      },
+      {
+        "level": 4,
+        "longest_stationary_player_sampled_seconds": 0.75,
+        "longest_unchanged_world_sampled_seconds": 0,
+        "dead_time_over_2s": []
+      }
+    ]
+  },
+  "evidence": "Baseline and final headless sequential route JSONs; 15 physics-frame samples."
+}

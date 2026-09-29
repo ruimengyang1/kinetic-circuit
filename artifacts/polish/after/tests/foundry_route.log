@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ROUTE BEAT react P (387.8941, 197.2993) / Can (354.7335, 290.0) stunned / Cart (720.0, 284.0) 0->0 / mode play / frame 203
+ROUTE BEAT knowledge transfer P (1118.924, 252.0314) / Can (1115.0, 290.0) recover / Cart (968.0, 284.0) 1->2 / mode play / frame 1641
+ROUTE PROGRESS P (1464.304, 290.9253) / Can (1239.569, 290.0) charging / Cart (968.0, 284.0) 1->2 / mode play / frame 1800
+ROUTE BEAT world affects Can P (1587.1, 200.2993) / Can (1480.207, 290.0) stunned / Cart (970.0, 284.0) 1->2 / mode play / frame 2133
+ROUTE BEAT preserve roof before transport P (1775.084, 186.2992) / Can (1645.912, 290.0) stunned / Cart (1780.0, 284.0) 2->2 / mode play / frame 3121
+ROUTE PROGRESS P (1951.925, 271.2161) / Can (1775.118, 290.0) charging / Cart (1990.0, 284.0) 3->3 / mode play / frame 3600
+ROUTE BEAT preserve weight then latch route P (2214.068, 290.9973) / Can (2001.853, 290.0) charging / Cart (2300.0, 284.0) 4->4 / mode play / frame 3817
+ROUTE PROGRESS P (124.6423, 290.9253) / Can (1489.203, 290.0) stunned / Cart (2638.0, 284.0) 4->5 / mode play / frame 5400
+ROUTE PROGRESS P (124.6423, 290.9253) / Can (348.3183, 290.0) charging / Cart (2638.0, 284.0) 4->5 / mode play / frame 7200
+ROUTE BEAT return with knowledge P (57.93066, 270.0077) / Can (123.0667, 290.0) recover / Cart (2640.0, 284.0) 4->5 / mode play / frame 7317
+ROUTE PROGRESS P (2932.774, 290.9253) / Can (1399.546, 290.0) idle / Cart (2810.0, 284.0) 5->5 / mode play / frame 9000
+ROUTE PROGRESS P (2916.343, 253.841) / Can (2782.451, 290.0) windup / Cart (2950.0, 284.0) 6->6 / mode play / frame 10800
+ROUTE BEAT mastery: durable route P (3170.586, 290.9973) / Can (2940.852, 290.0) windup / Cart (3230.0, 284.0) 7->7 / mode play / frame 11006
+ROUTE STATES: react | knowledge transfer | world affects Can | preserve roof before transport | preserve weight then latch route | return with knowledge | mastery: durable route
+ROUTE TIME: 190.0 simulated seconds; 7 impacts; 3 stomps
+FOUNDRY FRESH ROUTE PASS: real player inputs, every beat, one persistent Can/Cart, full completion

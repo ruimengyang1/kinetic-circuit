@@ -9,7 +9,7 @@ const Effects = preload("res://scripts/effects.gd")
 const Sound = preload("res://scripts/sfx.gd")
 const PixelUI = preload("res://scripts/pixel_ui.gd")
 const InputSetup = preload("res://scripts/foundry.gd")
-const TITLES := ["1 — REDIRECT", "2 — WEIGHT", "3 — TIMING", "4 — COMBINE"]
+const TITLES := ["1 — HOW", "2 — CONSEQUENCE", "3 — ANTICIPATE", "4 — PLAN"]
 
 @export var start_level := 0
 var level_index := 0
@@ -46,7 +46,10 @@ var overlay: Label
 var font: Font
 
 func _ready() -> void:
-	get_window().title = "Foundry / Future States — Learn the Can"
+	# Apply impact pauses at a frame boundary, before moving supports. Freezing
+	# midway through a force-transfer callback can strand Boulder on a panel.
+	process_physics_priority = -20
+	get_window().title = "Foundry / Future States — Intent and Consequence"
 	get_window().content_scale_size = Vector2i(640, 360)
 	var setup := InputSetup.new()
 	setup._setup_inputs()
@@ -54,9 +57,10 @@ func _ready() -> void:
 	font = PixelUI.make_font()
 	sound = Sound.new()
 	add_child(sound)
-	for item in [["commit", 105, 0.12, true], ["lock", 740, 0.06, false], ["clunk", 90, 0.19, true], ["roll", 126, 0.15, true], ["motor", 240, 0.11, true], ["light", 810, 0.16, false]]:
+	for item in [["commit", 105, 0.12, true], ["lock", 740, 0.06, false], ["clunk", 90, 0.14, true], ["roll", 126, 0.15, true], ["motor", 240, 0.11, true], ["light", 810, 0.16, false], ["telegraph", 325, 0.48, true], ["engage", 210, 0.09, true], ["stop", 160, 0.06, true], ["transfer", 68, 0.16, true]]:
 		sound.samples[item[0]] = sound._make_sound(item[1], item[2], 0.20, item[3])
 	effects = Effects.new()
+	effects.particle_limit = 128
 	effects.z_index = 9
 	add_child(effects)
 	camera = Camera2D.new()
@@ -81,42 +85,40 @@ func _build_level(index: int) -> void:
 	events.clear()
 	pause_frames = 0
 	shake = 0
+	camera.offset = Vector2.ZERO
 	effects.particles.clear()
 	_block(Rect2(-20, -10, 20, 410))
 	_block(Rect2(640, -10, 20, 410))
 	_block(Rect2(0, 50, 640, 10))
-	if index == 3:
-		_block(Rect2(0, 318, 245, 60))
-		_block(Rect2(317, 318, 323, 60))
-		_block(Rect2(245, 350, 72, 28))
-	else: _block(Rect2(0, 318, 640, 60))
+	_block(Rect2(0, 318, 640, 60))
 	match index:
 		0: _redirect()
 		1: _weight()
 		2: _timing()
 		3: _combine()
 	player = Player.new()
-	player.position = Vector2(46, 309)
+	player.position = Vector2(110 if index == 0 else (594 if index == 1 else 46), 309)
 	player.air_acceleration = 1700
 	player.jumped.connect(func(_at: Vector2) -> void: sound.play("jump"))
 	player.rebounded.connect(func(at: Vector2) -> void:
 		stats.rebounds += 1
 		if can.state == "charging": stats.charging_rebounds += 1
 		_record("rebound")
-		_feedback(at, "bounce", Color("fff1b3"), 10, 2)
+		_feedback(at, "bounce", Color("fff1b3"), 10, 0, 0.7)
 	)
 	player.health_changed.connect(func(value: int) -> void:
 		if value < 3:
 			stats.hits += 1
 			_record("hurt")
-			_feedback(player.position, "hit", Color("ff9470"), 8, 0)
+			_feedback(player.position, "hit", Color("ff9470"), 8, 0, 1.2)
 	)
 	player.died.connect(_death)
 	room.add_child(player)
 	player.strike_shape.size = Vector2(22, 14)
 	can = Can.new()
-	can.position = Vector2(90, 306)
-	can.rail_right = [526.0, 278.0, 355.0, 610.0][index]
+	can.position = Vector2(160 if index == 0 else (550 if index == 1 else 90), 306)
+	can.rail_left = 90 if index == 1 else 24
+	can.rail_right = [526.0, 616.0, 355.0, 610.0][index]
 	can.telegraphed.connect(func() -> void: sound.play("telegraph"))
 	can.direction_locked.connect(func(_side: int) -> void:
 		sound.play("lock")
@@ -130,9 +132,9 @@ func _build_level(index: int) -> void:
 	can.impacted.connect(func(object: Node2D, _momentum: float) -> void:
 		stats.impacts += 1
 		_record("force")
-		_feedback(object.position, "roll" if object == boulder else "clunk", Color("edb374"), 15, 3)
+		_feedback(_impact_point(can, object), "roll" if object == boulder else "clunk", Color("edb374"), 15, 3)
 	)
-	can.wall_impacted.connect(func(at: Vector2) -> void: _feedback(at, "hit", Color("edb374"), 6, 2))
+	can.wall_impacted.connect(func(at: Vector2) -> void: _feedback(at, "clunk", Color("edb374"), 8, 3, 1.2))
 	room.add_child(can)
 	exit_rect = Rect2(601, exit_floor - 37, 33, 37)
 	mode = "play"
@@ -141,49 +143,69 @@ func _build_level(index: int) -> void:
 	queue_redraw()
 
 func _redirect() -> void:
-	# Worker service gap = 20 px; Can body = 24 px. Force opens the Can lane.
-	_platform("shutter", Rect2(232, 160, 18, 138), [Vector2(241, 99)], 210, true)
-	_platform("freight", Rect2(451, 300, 76, 18), [Vector2(489, 199)], 180, true)
-	_block(Rect2(360, 262, 52, 8), true)
-	_block(Rect2(423, 229, 52, 8), true)
-	_block(Rect2(566, 168, 74, 12), true)
-	exit_floor = 168
+	# The opening has two understandable force directions. The rightward
+	# shutter keeps Can near freight; the service route changes its height.
+	var service := _platform("service", Rect2(26, 318, 92, 10), [Vector2(105, 323), Vector2(105, 225)], 140, true)
+	service.force_direction = -1
+	_platform("shutter", Rect2(232, 240, 18, 78), [Vector2(241, 180)], 210, true)
+	_platform("freight", Rect2(410, 216, 76, 102), [Vector2(536, 263)], 180, true)
+	_block(Rect2(145, 220, 285, 8), true)
+	_block(Rect2(410, 248, 56, 8), true)
+	_block(Rect2(566, 174, 74, 12), true)
+	exit_floor = 174
 
 func _weight() -> void:
-	_add_boulder(Vector2(200, 302))
-	var button := _machine("button", "button", Rect2(288, 313, 76, 9))
-	var fan := _machine("fan", "fan", Rect2(376, 82, 66, 236))
-	var shuttle := _platform("shuttle", Rect2(552, 198, 66, 14), [Vector2(409, 205), Vector2(327, 205)], 160)
-	shuttle.hazard = true
-	button.targets.assign([fan, shuttle])
-	_block(Rect2(450, 146, 90, 9), true)
+	# The obstruction is doing two jobs before the first impact: sealing the
+	# nozzle and protecting the lower approach. Bait from the staging shelf to
+	# spend cover safely; leftward force also parks Can away from the ascent.
+	_add_boulder(Vector2(342, 302))
+	var laser := _machine("laser", "laser", Rect2(255, 303, 16, 9))
+	laser.mast_height = 0
+	laser.angle = 0
+	var fan := _machine("fan", "fan", Rect2(309, 82, 66, 236))
+	fan.set_power(true)
+	_block(Rect2(385, 280, 105, 8), true)
+	_block(Rect2(195, 146, 345, 9), true)
 	_block(Rect2(574, 124, 66, 12), true)
 	exit_floor = 124
 
 func _timing() -> void:
-	_machine("rotator", "rotator", Rect2(325, 312, 60, 9))
-	var sensor := _machine("sensor", "sensor", Rect2(471, 158, 32, 32))
+	_add_boulder(Vector2(310, 302))
+	var rotator := _machine("rotator", "rotator", Rect2(325, 312, 60, 9))
+	rotator.angle = deg_to_rad(-48)
+	rotator.rotation_rate = deg_to_rad(18)
+	rotator.sweep_min = deg_to_rad(-52)
+	rotator.sweep_max = deg_to_rad(32)
+	var sensor := _machine("sensor", "sensor", Rect2(471, 158, 32, 32), 36)
 	var crossing := _platform("crossing", Rect2(385, 222, 76, 10), [Vector2(521, 227)], 170)
 	sensor.targets.assign([crossing])
 	_block(Rect2(281, 281, 94, 8), true)
-	_block(Rect2(365, 249, 48, 8), true)
+	_block(Rect2(450, 249, 44, 8), true)
 	_block(Rect2(584, 194, 56, 12), true)
 	exit_floor = 194
 
 func _combine() -> void:
-	_add_boulder(Vector2(220, 302))
-	var button := _machine("button", "button", Rect2(304, 313, 76, 9))
-	var fan := _machine("fan", "fan", Rect2(464, 82, 66, 236))
-	button.targets.assign([fan])
-	_machine("rotator", "rotator", Rect2(240, 312, 60, 9))
-	var sensor := _machine("sensor", "sensor", Rect2(448, 162, 32, 32))
-	var lift := _platform("can_lift", Rect2(245, 318, 72, 10), [Vector2(281, 229)], 150)
-	var crossing := _platform("crossing", Rect2(400, 180, 72, 10), [Vector2(542, 185)], 170)
-	sensor.targets.assign([crossing, lift])
-	_block(Rect2(246, 199, 98, 8), true)
-	_block(Rect2(225, 280, 90, 8), true)
-	_block(Rect2(317, 224, 99, 8), true)
-	_block(Rect2(416, 206, 52, 8), true)
+	_add_boulder(Vector2(342, 302))
+	var fan := _machine("fan", "fan", Rect2(309, 82, 66, 236))
+	fan.set_power(true)
+	var rotator := _machine("rotator", "rotator", Rect2(240, 312, 60, 9))
+	rotator.mast_height = 172
+	rotator.angle = deg_to_rad(65)
+	rotator.rotation_rate = deg_to_rad(-16)
+	rotator.sweep_min = deg_to_rad(-12)
+	rotator.sweep_max = deg_to_rad(70)
+	var sensor := _machine("sensor", "sensor", Rect2(448, 144, 32, 32), 46)
+	var crossing := _platform("crossing", Rect2(400, 222, 72, 10), [Vector2(542, 227)], 170)
+	sensor.targets.assign([crossing])
+	# High observation is outside Can's acquisition lane. The low, wide shelf
+	# to the right baits a withdrawal that can also move Boulder. No automatic
+	# lift removes the weight: the player chooses when to spend Can availability.
+	_block(Rect2(180, 280, 76, 8), true)
+	_block(Rect2(180, 248, 76, 8), true)
+	_block(Rect2(374, 280, 80, 8), true)
+	_block(Rect2(317, 224, 48, 8), true)
+	_block(Rect2(446, 249, 48, 8), true)
+	_block(Rect2(574, 182, 66, 8), true)
 	_block(Rect2(588, 142, 52, 12), true)
 	exit_floor = 142
 
@@ -194,33 +216,53 @@ func _add_boulder(at: Vector2) -> void:
 		stats.boulder_impacts += 1
 	)
 	boulder.settled.connect(func() -> void:
-		_feedback(boulder.position + Vector2(0, 12), "clunk", Color("c3ad83"), 5, 0)
+		_feedback(boulder.position + Vector2(0, 12), "clunk", Color("c3ad83"), 5, 0, 0)
 		_record("Boulder settled")
 	)
+	boulder.transferred.connect(func(receiver: Node2D, _force: float) -> void:
+		_record("Boulder force transfer")
+		_feedback(_impact_point(boulder, receiver), "transfer", Color("fff1b3"), 12, 3, 1.8)
+	)
 	room.add_child(boulder)
+	if DisplayServer.get_name() != "headless":
+		boulder.roll_voice = _loop_voice(boulder, 58, 0.35, -40)
+		boulder.roll_voice.stream_paused = true
 
-func _machine(id: String, kind: String, area: Rect2) -> Node2D:
+func _machine(id: String, kind: String, area: Rect2, radius: float = 30) -> Node2D:
 	var machine := Machine.new()
 	machine.configure(kind, area)
+	machine.optical_radius = radius
+	machine.exposed.connect(func() -> void:
+		_record("beam cover removed")
+		sound.play("alarm")
+		effects.burst(machine.beam_end, Color("fff1b3"), 9)
+	)
 	machine.changed.connect(func(on: bool) -> void:
 		if kind == "button":
 			_feedback(machine.position, "clunk", Color("a9f4dd"), 7, 1)
 		elif kind == "sensor" and on:
 			stats.sensor_activations += 1
-			_feedback(machine.position, "light", Color("a9f4dd"), 8, 1)
+			_feedback(machine.position, "light", Color("a9f4dd"), 8, 0, 0.5)
+		elif kind == "rotator":
+			sound.play("engage" if on else "stop")
 		_record(id + (" on" if on else " off"))
 	)
 	room.add_child(machine)
 	machines[id] = machine
 	if kind == "fan" and DisplayServer.get_name() != "headless":
-		var stream: AudioStreamWAV = sound._make_sound(72, 0.6, 0.10, true)
-		stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
-		stream.loop_end = stream.data.size() / 2
-		machine.wind = AudioStreamPlayer.new()
-		machine.wind.stream = stream
-		machine.wind.volume_db = -17
-		machine.add_child(machine.wind)
+		machine.wind = _loop_voice(machine, 72, 0.6, -24)
 	return machine
+
+func _loop_voice(owner_node: Node, frequency: float, duration: float, gain: float) -> AudioStreamPlayer:
+	var stream: AudioStreamWAV = sound._make_sound(frequency, duration, 0.10, true)
+	stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
+	stream.loop_end = stream.data.size() / 2
+	var voice := AudioStreamPlayer.new()
+	voice.stream = stream
+	voice.volume_db = gain
+	owner_node.add_child(voice)
+	voice.play()
+	return voice
 
 func _platform(id: String, area: Rect2, path: Array[Vector2], speed: float, force: bool = false) -> Node2D:
 	var platform := Platform.new()
@@ -228,6 +270,7 @@ func _platform(id: String, area: Rect2, path: Array[Vector2], speed: float, forc
 	platform.force_operated = force
 	platform.started.connect(func() -> void: sound.play("motor"))
 	platform.arrived.connect(func() -> void: sound.play("clunk"))
+	platform.started.connect(func() -> void: _record(id + " moving"))
 	room.add_child(platform)
 	platforms[id] = platform
 	return platform
@@ -262,6 +305,10 @@ func _physics_process(delta: float) -> void:
 		overlay.text = "PAUSED\n\nESC RESUME   R RETRY LEVEL"
 		overlay.visible = mode == "paused"
 	if Input.is_action_just_pressed("hint"): controls_time = 4
+	if mode != "paused":
+		clock += delta
+		shake = maxf(0, shake - delta * 14)
+		camera.offset = Vector2(sin(clock * 83), cos(clock * 71)) * shake
 	if mode in ["clear", "dead"]:
 		delay -= delta
 		if delay <= 0:
@@ -274,14 +321,11 @@ func _physics_process(delta: float) -> void:
 	if mode != "play": return
 	elapsed += delta
 	level_time += delta
-	clock += delta
 	controls_time = maxf(0, controls_time - delta)
 	controls.visible = controls_time > 0
 	if pause_frames > 0:
 		pause_frames -= 1
-		_freeze(pause_frames > 0)
-	shake = maxf(0, shake - delta * 4)
-	camera.offset = Vector2(sin(clock * 83), cos(clock * 71)) * shake * 5
+		_freeze(pause_frames > 0, true)
 	if absf(player.velocity.x) < 8 and absf(player.velocity.y) < 8: stats.idle_seconds += delta
 	if machines.has("rotator") and machines.rotator.occupied: stats.rotator_hold_seconds += delta
 	if boulder != null and absf(boulder.velocity.x) > 35 and int(clock * 18) != int((clock - delta) * 18):
@@ -319,26 +363,41 @@ func _success() -> void:
 	sound.play("win")
 	effects.burst(player.position, Color("a9f4dd"), 16)
 
-func _freeze(value: bool) -> void:
-	if player != null: player.active = not value
+func _freeze(value: bool, impact_pause: bool = false) -> void:
+	if player != null:
+		player.impact_paused = value and impact_pause
+		player.active = not value or impact_pause
+		if value and not impact_pause:
+			player.pending_jump = false
+			player.pending_attack = false
+			player.pending_jump_release = false
 	if can != null: can.suspended = value
-	if boulder != null: boulder.suspended = value
+	if boulder != null:
+		boulder.suspended = value
+		if boulder.roll_voice != null: boulder.roll_voice.stream_paused = value or not boulder.rolling
 	for platform in platforms.values(): platform.suspended = value
 	for machine in machines.values():
 		machine.suspended = value
 		if machine.wind != null: machine.wind.stream_paused = value
 
-func _feedback(at: Vector2, cue: String, color: Color, count: int, hit_pause: int) -> void:
+func _impact_point(source: Node2D, target: Node2D) -> Vector2:
+	var bounds: Rect2 = target.impact_rect()
+	return Vector2(clampf(source.position.x, bounds.position.x, bounds.end.x), clampf(source.position.y, bounds.position.y, bounds.end.y))
+
+func _feedback(at: Vector2, cue: String, color: Color, count: int, hit_pause: int, strength: float = 2.0) -> void:
 	if sound == null: return
 	sound.play(cue)
-	effects.burst(at, color, count)
-	shake = 0.8
-	pause_frames = maxi(pause_frames, hit_pause) if hit_pause_enabled else 0
-	if hit_pause > 0 and hit_pause_enabled: _freeze(true)
+	effects.burst(at, color, count, Vector2.UP if cue == "bounce" else Vector2.ZERO)
+	shake = maxf(shake, strength)
+	pause_frames = maxi(pause_frames, hit_pause + 1) if hit_pause > 0 and hit_pause_enabled else pause_frames
 
 func _record(event: String) -> void:
 	if can == null or player == null: return
-	events.append({"event": event, "seconds": snappedf(level_time, 0.01), "player": player.position, "can": can.position, "can_state": can.state, "boulder": boulder.position if boulder != null else Vector2.ZERO, "laser_angle": rad_to_deg(machines.rotator.angle) if machines.has("rotator") else 0, "sensor": machines.sensor.active if machines.has("sensor") else false})
+	var laser: Node2D = machines.get("rotator", machines.get("laser"))
+	events.append({"event": event, "seconds": snappedf(level_time, 0.01), "player": player.position, "can": can.position, "can_state": can.state, "boulder": boulder.position if boulder != null else Vector2.ZERO, "laser_angle": rad_to_deg(laser.angle) if laser != null else 0, "beam_covered": laser.covered_by_heavy if laser != null else false, "air_blocked": machines.fan.flow_blocked if machines.has("fan") else false, "sensor": machines.sensor.active if machines.has("sensor") else false})
+	if event == "hurt":
+		events.back()["velocity_before_hit"] = player.velocity
+		events.back()["previous_feet"] = player.previous_feet
 
 func metrics() -> Dictionary:
 	var result := stats.duplicate()
@@ -380,12 +439,12 @@ func _draw() -> void:
 		draw_rect(Rect2(area.position, Vector2(area.size.x, 3)), Color("c59762"))
 		for x in range(int(area.position.x + 8), int(area.end.x), 20): draw_rect(Rect2(x, area.position.y + 1, 2, 2), Color("f0ca8a"))
 	if can != null:
-		draw_line(Vector2(24, 321), Vector2(can.rail_right, 321), Color("657e83"), 2)
-		for x in [24.0, can.rail_right]:
+		draw_line(Vector2(can.rail_left, 321), Vector2(can.rail_right, 321), Color("657e83"), 2)
+		for x in [can.rail_left, can.rail_right]:
 			draw_rect(Rect2(x - 4, 318, 8, 7), Color("e3b774"))
 		if can.state in ["windup", "charging"]:
 			var color := Color("fff1b3", 0.5) if can.intent_locked else Color("ff785e", 0.4)
-			var end := clampf(can.position.x + can.facing * 265, 24, can.rail_right)
+			var end := clampf(can.position.x + can.facing * can.remaining_charge_distance(), can.rail_left, can.rail_right)
 			for x in range(int(minf(can.position.x, end)), int(maxf(can.position.x, end)), 13):
 				draw_line(Vector2(x, can.position.y + 15), Vector2(x + 6, can.position.y + 15), color, 1)
 	if machines.has("button"):
@@ -401,8 +460,15 @@ func _draw() -> void:
 		var sensor: Node2D = machines.sensor
 		var tint := Color("a9f4dd") if sensor.active else Color("5d747c")
 		for target in sensor.targets:
-			draw_line(sensor.position + Vector2(16, 0), Vector2(target.home.x, sensor.position.y), tint, 1)
+			draw_circle(Vector2(target.home.x, sensor.position.y), 4, tint)
+			draw_line(sensor.position + Vector2(sensor.optical_radius, 0), Vector2(target.home.x, sensor.position.y), tint, 2)
 			draw_line(Vector2(target.home.x, sensor.position.y), target.home, tint, 1)
+	if level_index == 0:
+		draw_string(font, Vector2(28, 295), "← FORCE", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a"))
+		draw_string(font, Vector2(207, 232), "FORCE →", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a"))
+	if machines.has("fan"):
+		var fan: Node2D = machines.fan
+		draw_string(font, Vector2(fan.position.x - 27, 344), "AIR DUCT", HORIZONTAL_ALIGNMENT_LEFT, -1, 9, Color("edc27a") if fan.flow_blocked else Color("a9f4dd"))
 	var entry := Vector2(598, exit_floor - 38)
 	draw_rect(Rect2(entry, Vector2(38, 38)), Color("416d83"))
 	draw_rect(Rect2(entry + Vector2(5, 5), Vector2(28, 33)), Color("a9f4dd"))

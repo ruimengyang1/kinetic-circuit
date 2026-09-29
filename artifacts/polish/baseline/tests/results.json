@@ -1,0 +1,194 @@
+[
+  {
+    "test": "dash.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.65
+  },
+  {
+    "test": "demo_inspect.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.57
+  },
+  {
+    "test": "demo_learning.gd",
+    "code": 1,
+    "errors": false,
+    "seconds": 1.56
+  },
+  {
+    "test": "demo_recovery.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.88
+  },
+  {
+    "test": "demo_route.gd",
+    "code": 1,
+    "errors": false,
+    "seconds": 0.58
+  },
+  {
+    "test": "demo_systems.gd",
+    "code": "timeout",
+    "errors": true,
+    "seconds": 40.01
+  },
+  {
+    "test": "foundry_depth.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.56
+  },
+  {
+    "test": "foundry_route.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 5.19
+  },
+  {
+    "test": "foundry_rules.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.46
+  },
+  {
+    "test": "interactions.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.47
+  },
+  {
+    "test": "kinetic.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.36
+  },
+  {
+    "test": "kinetic_route.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.38
+  },
+  {
+    "test": "rebalance_audit.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 2.97
+  },
+  {
+    "test": "rebalance_inspect.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.67
+  },
+  {
+    "test": "rebalance_route.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.04
+  },
+  {
+    "test": "rebalance_systems.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.53
+  },
+  {
+    "test": "rebound.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.27
+  },
+  {
+    "test": "route.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.56
+  },
+  {
+    "test": "second_core.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.37
+  },
+  {
+    "test": "second_route.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.75
+  },
+  {
+    "test": "second_systems.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.5
+  },
+  {
+    "test": "smoke.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.47
+  },
+  {
+    "test": "third_route.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.66
+  },
+  {
+    "test": "third_sandbox.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.58
+  },
+  {
+    "test": "third_systems.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.63
+  },
+  {
+    "test": "capture.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 2.21
+  },
+  {
+    "test": "capture_foundry.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.16
+  },
+  {
+    "test": "capture_kinetic.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.2
+  },
+  {
+    "test": "capture_second.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.95
+  },
+  {
+    "test": "capture_third.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 1.29
+  },
+  {
+    "test": "capture_yard_initial.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.83
+  },
+  {
+    "test": "demo_capture_properties.gd",
+    "code": 0,
+    "errors": false,
+    "seconds": 0.94
+  }
+]

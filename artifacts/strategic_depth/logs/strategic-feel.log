@@ -1,0 +1,34 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS ground movement reaches full useful speed within 100 ms
+PASS direction reverses within 100 ms
+PASS ground braking stops without a slippery tail
+PASS jump press before landing remains buffered
+PASS prelanding input launches on contact without a landing lockout
+PASS held buffered jump is consumed once
+PASS jump release makes a shorter readable arc
+PASS late ledge jump uses the real coyote window
+PASS coyote grace expires rather than creating an extra air jump
+PASS impact pause freezes simulation while keeping input capture active
+PASS press and release wholly inside hit-stop produce a short jump on resume
+PASS airborne stomp pressed during hit-stop executes on resume
+PASS descending corner rebound is consistent at 25 px/s and preserves charge
+PASS descending corner rebound is consistent at 180 px/s and preserves charge
+PASS descending corner rebound is consistent at 390 px/s and preserves charge
+PASS fast diagonal top crossing is caught by swept contact
+PASS rising platform Can catches relative descending top contact
+PASS side and underside contact cannot become a free rebound
+PASS ascending jump cannot rebound before descending
+PASS Can is available for another decision within 0.24 s of recovery
+PASS weighted rotor moves continuously
+PASS leaving stops both beam angle and moving lead immediately
+PASS withdrawal preview reflects at visible mechanical limits
+PASS Fan entry ramps into strong continuous lift rather than instantly launching
+PASS airflow ramp clears as soon as the player exits
+PASS death rebuilds current level in under 0.3 s and preserves progress
+PASS quick R clears old hit-stop and returns current-level control
+PASS held movement resumes after a short transition without replaying a stale jump
+PASS repeat feedback stays within particle and audio node budgets
+POLISH FEEL 29 checks; failures []

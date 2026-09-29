@@ -1,0 +1,1448 @@
+{
+	"completed": [
+		{
+			"boulder_impacts": 2,
+			"charges": 4,
+			"charging_rebounds": 1,
+			"deaths": 0,
+			"events": [
+				{
+					"boulder": "(342.0, 302.0)",
+					"can": "(82.99999, 305.9253)",
+					"can_state": "windup",
+					"event": "locked",
+					"laser_angle": 8.0,
+					"player": "(141.167, 293.8825)",
+					"seconds": 0.67,
+					"sensor": false
+				},
+				{
+					"boulder": "(342.0, 302.0)",
+					"can": "(82.99999, 305.9253)",
+					"can_state": "charging",
+					"event": "charge",
+					"laser_angle": 8.0,
+					"player": "(198.0008, 269.9117)",
+					"seconds": 1.03,
+					"sensor": false
+				},
+				{
+					"boulder": "(342.0, 302.0)",
+					"can": "(231.6378, 305.9253)",
+					"can_state": "charging",
+					"event": "rotator on",
+					"laser_angle": 8.0,
+					"player": "(298.7514, 231.6463)",
+					"seconds": 1.68,
+					"sensor": false
+				},
+				{
+					"boulder": "(342.0, 302.0)",
+					"can": "(308.3043, 305.924)",
+					"can_state": "charging",
+					"event": "force",
+					"laser_angle": 2.4,
+					"player": "(353.0022, 203.0494)",
+					"seconds": 2.03,
+					"sensor": false
+				},
+				{
+					"boulder": "(342.0, 302.0)",
+					"can": "(312.1376, 305.924)",
+					"can_state": "charging",
+					"event": "rotator off",
+					"laser_angle": 2.4,
+					"player": "(353.0022, 203.0494)",
+					"seconds": 2.03,
+					"sensor": false
+				},
+				{
+					"boulder": "(364.0292, 301.9338)",
+					"can": "(329.3304, 305.924)",
+					"can_state": "charging",
+					"event": "beam cover removed",
+					"laser_angle": 2.4,
+					"player": "(365.9189, 198.8133)",
+					"seconds": 2.17,
+					"sensor": false
+				},
+				{
+					"boulder": "(458.3985, 301.9338)",
+					"can": "(340.8303, 305.9253)",
+					"can_state": "windup",
+					"event": "locked",
+					"laser_angle": 2.4,
+					"player": "(416.7107, 308.978)",
+					"seconds": 2.82,
+					"sensor": false
+				},
+				{
+					"boulder": "(460.8018, 301.9338)",
+					"can": "(340.8303, 305.9253)",
+					"can_state": "windup",
+					"event": "Boulder settled",
+					"laser_angle": 2.4,
+					"player": "(416.7107, 308.978)",
+					"seconds": 2.95,
+					"sensor": false
+				},
+				{
+					"boulder": "(460.8018, 301.9338)",
+					"can": "(340.8303, 305.9253)",
+					"can_state": "charging",
+					"event": "charge",
+					"laser_angle": 2.4,
+					"player": "(398.9884, 308.9253)",
+					"seconds": 3.18,
+					"sensor": false
+				},
+				{
+					"boulder": "(460.8018, 301.9338)",
+					"can": "(382.1344, 305.9253)",
+					"can_state": "charging",
+					"event": "hurt",
+					"laser_angle": 2.4,
+					"player": "(398.9884, 308.9253)",
+					"previous_feet": 317.925262451172,
+					"seconds": 3.37,
+					"sensor": false,
+					"velocity_before_hit": "(0.0, 0.0)"
+				},
+				{
+					"boulder": "(460.8018, 301.9338)",
+					"can": "(397.4677, 305.9253)",
+					"can_state": "charging",
+					"event": "beam cover removed",
+					"laser_angle": 2.4,
+					"player": "(405.3224, 301.0633)",
+					"seconds": 3.43,
+					"sensor": false
+				},
+				{
+					"boulder": "(460.8018, 301.9338)",
+					"can": "(428.1342, 305.9253)",
+					"can_state": "charging",
+					"event": "force",
+					"laser_angle": 2.4,
+					"player": "(417.7669, 293.9383)",
+					"seconds": 3.58,
+					"sensor": false
+				},
+				{
+					"boulder": "(465.3882, 301.9338)",
+					"can": "(431.9675, 305.9253)",
+					"can_state": "charging",
+					"event": "rebound",
+					"laser_angle": 2.4,
+					"player": "(418.4474, 284.9253)",
+					"seconds": 3.65,
+					"sensor": false
+				},
+				{
+					"boulder": "(491.0108, 301.9338)",
+					"can": "(455.7909, 305.9253)",
+					"can_state": "charging",
+					"event": "beam cover removed",
+					"laser_angle": 2.4,
+					"player": "(419.4058, 258.2169)",
+					"seconds": 3.75,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(548.4732, 306.0265)",
+					"can_state": "recover",
+					"event": "Boulder settled",
+					"laser_angle": 2.4,
+					"player": "(419.4058, 260.967)",
+					"seconds": 4.5,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(548.4732, 306.0265)",
+					"can_state": "idle",
+					"event": "hurt",
+					"laser_angle": 2.4,
+					"player": "(419.4058, 293.6336)",
+					"previous_feet": 297.42529296875,
+					"seconds": 4.6,
+					"sensor": false,
+					"velocity_before_hit": "(0.0, 312.5)"
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(548.4732, 306.0265)",
+					"can_state": "windup",
+					"event": "locked",
+					"laser_angle": 2.4,
+					"player": "(438.1836, 278.6475)",
+					"seconds": 4.82,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(548.4732, 306.0265)",
+					"can_state": "windup",
+					"event": "beam cover removed",
+					"laser_angle": 2.4,
+					"player": "(425.2808, 287.8836)",
+					"seconds": 4.98,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(548.4732, 306.0265)",
+					"can_state": "charging",
+					"event": "charge",
+					"laser_angle": 2.4,
+					"player": "(394.2802, 301.6328)",
+					"seconds": 5.18,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(543.2662, 305.9253)",
+					"can_state": "charging",
+					"event": "beam cover removed",
+					"laser_angle": 2.4,
+					"player": "(391.6968, 298.2578)",
+					"seconds": 5.2,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(307.8366, 305.924)",
+					"can_state": "charging",
+					"event": "rotator on",
+					"laser_angle": 2.4,
+					"player": "(290.4464, 229.6204)",
+					"seconds": 6.23,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 305.9253)",
+					"can_state": "recover",
+					"event": "beam cover removed",
+					"laser_angle": -0.53333333333333,
+					"player": "(292.3351, 219.2157)",
+					"seconds": 6.4,
+					"sensor": false
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 305.9253)",
+					"can_state": "idle",
+					"event": "crossing moving",
+					"laser_angle": -13.8666666666667,
+					"player": "(344.5159, 214.9253)",
+					"seconds": 7.23,
+					"sensor": true
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 305.9253)",
+					"can_state": "idle",
+					"event": "can_lift moving",
+					"laser_angle": -13.8666666666667,
+					"player": "(344.5159, 214.9253)",
+					"seconds": 7.23,
+					"sensor": true
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 305.9253)",
+					"can_state": "idle",
+					"event": "sensor on",
+					"laser_angle": -13.8666666666667,
+					"player": "(344.5159, 214.9253)",
+					"seconds": 7.23,
+					"sensor": true
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 295.9253)",
+					"can_state": "idle",
+					"event": "rotator off",
+					"laser_angle": -24.0,
+					"player": "(344.5159, 214.9253)",
+					"seconds": 7.88,
+					"sensor": true
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 231.9995)",
+					"can_state": "windup",
+					"event": "locked",
+					"laser_angle": -24.0,
+					"player": "(326.7658, 189.9253)",
+					"seconds": 8.6,
+					"sensor": true
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(288.67, 231.9995)",
+					"can_state": "charging",
+					"event": "charge",
+					"laser_angle": -24.0,
+					"player": "(382.1832, 150.2994)",
+					"seconds": 8.97,
+					"sensor": true
+				},
+				{
+					"boulder": "(579.6031, 301.9338)",
+					"can": "(548.4744, 305.9253)",
+					"can_state": "idle",
+					"event": "exit",
+					"laser_angle": -24.0,
+					"player": "(601.0594, 132.9253)",
+					"seconds": 12.02,
+					"sensor": true
+				}
+			],
+			"hits": 2,
+			"idle_seconds": 1.23333333333333,
+			"impacts": 2,
+			"level": 4,
+			"rebounds": 1,
+			"resets": 0,
+			"rotator_hold_seconds": 2.0,
+			"seconds": 12.02,
+			"sensor_activations": 1
+		}
+	],
+	"current": {
+		"boulder_impacts": 2,
+		"charges": 4,
+		"charging_rebounds": 1,
+		"deaths": 0,
+		"events": [
+			{
+				"boulder": "(342.0, 302.0)",
+				"can": "(82.99999, 305.9253)",
+				"can_state": "windup",
+				"event": "locked",
+				"laser_angle": 8.0,
+				"player": "(141.167, 293.8825)",
+				"seconds": 0.67,
+				"sensor": false
+			},
+			{
+				"boulder": "(342.0, 302.0)",
+				"can": "(82.99999, 305.9253)",
+				"can_state": "charging",
+				"event": "charge",
+				"laser_angle": 8.0,
+				"player": "(198.0008, 269.9117)",
+				"seconds": 1.03,
+				"sensor": false
+			},
+			{
+				"boulder": "(342.0, 302.0)",
+				"can": "(231.6378, 305.9253)",
+				"can_state": "charging",
+				"event": "rotator on",
+				"laser_angle": 8.0,
+				"player": "(298.7514, 231.6463)",
+				"seconds": 1.68,
+				"sensor": false
+			},
+			{
+				"boulder": "(342.0, 302.0)",
+				"can": "(308.3043, 305.924)",
+				"can_state": "charging",
+				"event": "force",
+				"laser_angle": 2.4,
+				"player": "(353.0022, 203.0494)",
+				"seconds": 2.03,
+				"sensor": false
+			},
+			{
+				"boulder": "(342.0, 302.0)",
+				"can": "(312.1376, 305.924)",
+				"can_state": "charging",
+				"event": "rotator off",
+				"laser_angle": 2.4,
+				"player": "(353.0022, 203.0494)",
+				"seconds": 2.03,
+				"sensor": false
+			},
+			{
+				"boulder": "(364.0292, 301.9338)",
+				"can": "(329.3304, 305.924)",
+				"can_state": "charging",
+				"event": "beam cover removed",
+				"laser_angle": 2.4,
+				"player": "(365.9189, 198.8133)",
+				"seconds": 2.17,
+				"sensor": false
+			},
+			{
+				"boulder": "(458.3985, 301.9338)",
+				"can": "(340.8303, 305.9253)",
+				"can_state": "windup",
+				"event": "locked",
+				"laser_angle": 2.4,
+				"player": "(416.7107, 308.978)",
+				"seconds": 2.82,
+				"sensor": false
+			},
+			{
+				"boulder": "(460.8018, 301.9338)",
+				"can": "(340.8303, 305.9253)",
+				"can_state": "windup",
+				"event": "Boulder settled",
+				"laser_angle": 2.4,
+				"player": "(416.7107, 308.978)",
+				"seconds": 2.95,
+				"sensor": false
+			},
+			{
+				"boulder": "(460.8018, 301.9338)",
+				"can": "(340.8303, 305.9253)",
+				"can_state": "charging",
+				"event": "charge",
+				"laser_angle": 2.4,
+				"player": "(398.9884, 308.9253)",
+				"seconds": 3.18,
+				"sensor": false
+			},
+			{
+				"boulder": "(460.8018, 301.9338)",
+				"can": "(382.1344, 305.9253)",
+				"can_state": "charging",
+				"event": "hurt",
+				"laser_angle": 2.4,
+				"player": "(398.9884, 308.9253)",
+				"previous_feet": 317.925262451172,
+				"seconds": 3.37,
+				"sensor": false,
+				"velocity_before_hit": "(0.0, 0.0)"
+			},
+			{
+				"boulder": "(460.8018, 301.9338)",
+				"can": "(397.4677, 305.9253)",
+				"can_state": "charging",
+				"event": "beam cover removed",
+				"laser_angle": 2.4,
+				"player": "(405.3224, 301.0633)",
+				"seconds": 3.43,
+				"sensor": false
+			},
+			{
+				"boulder": "(460.8018, 301.9338)",
+				"can": "(428.1342, 305.9253)",
+				"can_state": "charging",
+				"event": "force",
+				"laser_angle": 2.4,
+				"player": "(417.7669, 293.9383)",
+				"seconds": 3.58,
+				"sensor": false
+			},
+			{
+				"boulder": "(465.3882, 301.9338)",
+				"can": "(431.9675, 305.9253)",
+				"can_state": "charging",
+				"event": "rebound",
+				"laser_angle": 2.4,
+				"player": "(418.4474, 284.9253)",
+				"seconds": 3.65,
+				"sensor": false
+			},
+			{
+				"boulder": "(491.0108, 301.9338)",
+				"can": "(455.7909, 305.9253)",
+				"can_state": "charging",
+				"event": "beam cover removed",
+				"laser_angle": 2.4,
+				"player": "(419.4058, 258.2169)",
+				"seconds": 3.75,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(548.4732, 306.0265)",
+				"can_state": "recover",
+				"event": "Boulder settled",
+				"laser_angle": 2.4,
+				"player": "(419.4058, 260.967)",
+				"seconds": 4.5,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(548.4732, 306.0265)",
+				"can_state": "idle",
+				"event": "hurt",
+				"laser_angle": 2.4,
+				"player": "(419.4058, 293.6336)",
+				"previous_feet": 297.42529296875,
+				"seconds": 4.6,
+				"sensor": false,
+				"velocity_before_hit": "(0.0, 312.5)"
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(548.4732, 306.0265)",
+				"can_state": "windup",
+				"event": "locked",
+				"laser_angle": 2.4,
+				"player": "(438.1836, 278.6475)",
+				"seconds": 4.82,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(548.4732, 306.0265)",
+				"can_state": "windup",
+				"event": "beam cover removed",
+				"laser_angle": 2.4,
+				"player": "(425.2808, 287.8836)",
+				"seconds": 4.98,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(548.4732, 306.0265)",
+				"can_state": "charging",
+				"event": "charge",
+				"laser_angle": 2.4,
+				"player": "(394.2802, 301.6328)",
+				"seconds": 5.18,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(543.2662, 305.9253)",
+				"can_state": "charging",
+				"event": "beam cover removed",
+				"laser_angle": 2.4,
+				"player": "(391.6968, 298.2578)",
+				"seconds": 5.2,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(307.8366, 305.924)",
+				"can_state": "charging",
+				"event": "rotator on",
+				"laser_angle": 2.4,
+				"player": "(290.4464, 229.6204)",
+				"seconds": 6.23,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 305.9253)",
+				"can_state": "recover",
+				"event": "beam cover removed",
+				"laser_angle": -0.53333333333333,
+				"player": "(292.3351, 219.2157)",
+				"seconds": 6.4,
+				"sensor": false
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 305.9253)",
+				"can_state": "idle",
+				"event": "crossing moving",
+				"laser_angle": -13.8666666666667,
+				"player": "(344.5159, 214.9253)",
+				"seconds": 7.23,
+				"sensor": true
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 305.9253)",
+				"can_state": "idle",
+				"event": "can_lift moving",
+				"laser_angle": -13.8666666666667,
+				"player": "(344.5159, 214.9253)",
+				"seconds": 7.23,
+				"sensor": true
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 305.9253)",
+				"can_state": "idle",
+				"event": "sensor on",
+				"laser_angle": -13.8666666666667,
+				"player": "(344.5159, 214.9253)",
+				"seconds": 7.23,
+				"sensor": true
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 295.9253)",
+				"can_state": "idle",
+				"event": "rotator off",
+				"laser_angle": -24.0,
+				"player": "(344.5159, 214.9253)",
+				"seconds": 7.88,
+				"sensor": true
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 231.9995)",
+				"can_state": "windup",
+				"event": "locked",
+				"laser_angle": -24.0,
+				"player": "(326.7658, 189.9253)",
+				"seconds": 8.6,
+				"sensor": true
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(288.67, 231.9995)",
+				"can_state": "charging",
+				"event": "charge",
+				"laser_angle": -24.0,
+				"player": "(382.1832, 150.2994)",
+				"seconds": 8.97,
+				"sensor": true
+			},
+			{
+				"boulder": "(579.6031, 301.9338)",
+				"can": "(548.4744, 305.9253)",
+				"can_state": "idle",
+				"event": "exit",
+				"laser_angle": -24.0,
+				"player": "(601.0594, 132.9253)",
+				"seconds": 12.02,
+				"sensor": true
+			}
+		],
+		"hits": 2,
+		"idle_seconds": 1.23333333333333,
+		"impacts": 2,
+		"level": 4,
+		"rebounds": 1,
+		"resets": 0,
+		"rotator_hold_seconds": 2.0,
+		"seconds": 12.02,
+		"sensor_activations": 1
+	},
+	"failures": [],
+	"frames": 722,
+	"input_only": true,
+	"rehearsed": true,
+	"trace": [
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 8.0,
+			"can": "(80.19999, 305.9253)",
+			"f": 15,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(74.00031, 276.0075)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, -105.0)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 8.0,
+			"can": "(82.99999, 305.9253)",
+			"f": 30,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(112.7503, 271.4241)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(155.0, 57.49997)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 8.0,
+			"can": "(82.99999, 305.9253)",
+			"f": 45,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(151.5003, 307.4658)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(155.0, 219.9999)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 8.0,
+			"can": "(82.99999, 305.9253)",
+			"f": 60,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(190.2508, 274.4383)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(155.0, -94.1667)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 8.0,
+			"can": "(128.1375, 305.9253)",
+			"f": 75,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(229.0007, 270.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 8.0,
+			"can": "(185.6377, 305.9253)",
+			"f": 90,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(267.7513, 234.2297)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -83.33337)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 6.93333333333333,
+			"can": "(243.1378, 305.924)",
+			"f": 105,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(306.5015, 235.063)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, 79.16663)"
+		},
+		{
+			"B": "(342.0, 302.0)",
+			"angle": 2.93333333333334,
+			"can": "(300.6376, 305.9253)",
+			"f": 120,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(345.2522, 207.7578)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(155.0, -115.8334)"
+		},
+		{
+			"B": "(380.0276, 301.9338)",
+			"angle": 2.4,
+			"can": "(340.8303, 305.9253)",
+			"f": 135,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(376.2523, 198.6744)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "recover",
+			"v": "(155.0, 14.16663)"
+		},
+		{
+			"B": "(427.1568, 301.9338)",
+			"angle": 2.4,
+			"can": "(340.8303, 305.9253)",
+			"f": 150,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(411.2107, 223.8828)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "idle",
+			"v": "(90.0, 176.6666)"
+		},
+		{
+			"B": "(453.9735, 301.9337)",
+			"angle": 2.4,
+			"can": "(340.8303, 305.9253)",
+			"f": 165,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(416.7107, 289.7161)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(0.0, 339.1667)"
+		},
+		{
+			"B": "(460.8018, 301.9338)",
+			"angle": 2.4,
+			"can": "(340.8303, 305.9253)",
+			"f": 180,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(416.2107, 308.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(-30.0, 0.0)"
+		},
+		{
+			"B": "(460.8018, 301.9338)",
+			"angle": 2.4,
+			"can": "(352.1386, 305.9253)",
+			"f": 195,
+			"health": 3,
+			"level": 4,
+			"mode": "play",
+			"p": "(398.9884, 308.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(460.8018, 301.9338)",
+			"angle": 2.4,
+			"can": "(408.9676, 305.9253)",
+			"f": 210,
+			"health": 2,
+			"level": 4,
+			"mode": "play",
+			"p": "(410.0724, 297.0633)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(95.0, -69.16666)"
+		},
+		{
+			"B": "(486.9661, 301.9338)",
+			"angle": 2.4,
+			"can": "(451.9576, 305.9253)",
+			"f": 225,
+			"health": 2,
+			"level": 4,
+			"mode": "play",
+			"p": "(419.4058, 262.2169)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, -250.8333)"
+		},
+		{
+			"B": "(538.1577, 301.9338)",
+			"angle": 2.4,
+			"can": "(507.3722, 305.927)",
+			"f": 240,
+			"health": 2,
+			"level": 4,
+			"mode": "play",
+			"p": "(419.4058, 221.1753)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, -88.33334)"
+		},
+		{
+			"B": "(569.0367, 301.9338)",
+			"angle": 2.4,
+			"can": "(539.5931, 305.989)",
+			"f": 255,
+			"health": 2,
+			"level": 4,
+			"mode": "play",
+			"p": "(419.4058, 220.7586)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(0.0, 74.16666)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(548.4732, 306.0265)",
+			"f": 270,
+			"health": 2,
+			"level": 4,
+			"mode": "play",
+			"p": "(419.4058, 260.967)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "recover",
+			"v": "(0.0, 236.6666)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(548.4732, 306.0265)",
+			"f": 285,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(432.0725, 280.8003)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(95.0, -58.33332)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(548.4732, 306.0265)",
+			"f": 300,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(425.2808, 287.8836)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "windup",
+			"v": "(-155.0, 104.1667)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(537.1648, 305.9253)",
+			"f": 315,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(386.5301, 292.0494)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(-155.0, -180.8334)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(480.3357, 305.9253)",
+			"f": 330,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(347.78, 258.8884)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(-155.0, -162.6235)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(422.836, 305.9253)",
+			"f": 345,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(309.0298, 212.3287)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(-155.0, -133.3334)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.4,
+			"can": "(365.3363, 305.9253)",
+			"f": 360,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(272.3769, 200.6621)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(-94.16667, 29.16664)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": 2.13333333333334,
+			"can": "(307.8366, 305.924)",
+			"f": 375,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(290.4464, 229.6204)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "charging",
+			"v": "(48.33334, 191.6666)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -1.86666666666666,
+			"can": "(288.67, 305.9253)",
+			"f": 390,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(304.8907, 207.7574)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "recover",
+			"v": "(155.0, -115.8334)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -5.86666666666666,
+			"can": "(288.67, 305.9253)",
+			"f": 405,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(343.6409, 200.4657)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "idle",
+			"v": "(155.0, 46.66663)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -9.86666666666666,
+			"can": "(288.67, 305.9253)",
+			"f": 420,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(338.1826, 214.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": false,
+			"state": "idle",
+			"v": "(-91.66667, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -13.8666666666667,
+			"can": "(288.67, 305.9253)",
+			"f": 435,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(344.5159, 214.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(436.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -17.8666666666667,
+			"can": "(288.67, 305.9253)",
+			"f": 450,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(344.5159, 214.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(478.5002, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -21.8666666666667,
+			"can": "(288.67, 305.9253)",
+			"f": 465,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(344.5159, 214.9253)",
+			"platforms": [
+				"(281.0, 323.0)",
+				"(521.0002, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(0.0, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(288.67, 280.9253)",
+			"f": 480,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(337.2935, 198.0491)",
+			"platforms": [
+				"(281.0, 295.5)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(-143.3333, -180.8334)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(288.67, 243.4253)",
+			"f": 495,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(330.9185, 174.3435)",
+			"platforms": [
+				"(281.0, 258.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(155.0, -18.33337)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(288.67, 231.9995)",
+			"f": 510,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(329.3908, 189.9252)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "windup",
+			"v": "(-144.1667, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(288.67, 231.9995)",
+			"f": 525,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(346.0164, 176.0633)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "windup",
+			"v": "(155.0, -191.6667)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(293.877, 231.9253)",
+			"f": 540,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(384.7665, 149.8133)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "charging",
+			"v": "(155.0, -29.1667)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(349.1408, 234.7387)",
+			"f": 555,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(403.086, 164.1883)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "charging",
+			"v": "(-93.33333, 133.3333)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(406.641, 269.9471)",
+			"f": 570,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(396.1832, 180.9253)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "charging",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(464.141, 305.9253)",
+			"f": 585,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(434.9337, 161.2161)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "charging",
+			"v": "(155.0, -170.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(521.6408, 305.9253)",
+			"f": 600,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(473.5033, 140.3828)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "charging",
+			"v": "(144.1667, -7.500033)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 615,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(463.0172, 160.1744)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "recover",
+			"v": "(-105.0, 155.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 630,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(482.9206, 186.2577)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(155.0, -202.5)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 645,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(521.6706, 157.2994)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(155.0, -40.00003)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 660,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(542.3232, 168.9661)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(-75.83333, 122.5)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 675,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(551.0591, 170.9253)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(155.0, 0.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 690,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(589.8094, 151.2161)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(155.0, -170.0)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 705,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(612.2676, 129.4811)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(-64.99999, -7.500033)"
+		},
+		{
+			"B": "(579.6031, 301.9338)",
+			"angle": -24.0,
+			"can": "(548.4744, 305.9253)",
+			"f": 720,
+			"health": 1,
+			"level": 4,
+			"mode": "play",
+			"p": "(598.6011, 132.9253)",
+			"platforms": [
+				"(281.0, 249.0)",
+				"(542.0, 185.0)"
+			],
+			"sensor": true,
+			"state": "idle",
+			"v": "(117.5, 0.0)"
+		}
+	]
+}

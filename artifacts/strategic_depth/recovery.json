@@ -1,0 +1,19 @@
+{
+	"checks": [
+		"T L1 ordinary forward/jump cannot bypass machinery",
+		"U L1 airborne doorway grazing cannot win",
+		"physical exit floor, no invisible completion prerequisite L1",
+		"T L2 ordinary forward/jump cannot bypass machinery",
+		"U L2 airborne doorway grazing cannot win",
+		"physical exit floor, no invisible completion prerequisite L2",
+		"T L3 ordinary forward/jump cannot bypass machinery",
+		"U L3 airborne doorway grazing cannot win",
+		"physical exit floor, no invisible completion prerequisite L3",
+		"T L4 ordinary forward/jump cannot bypass machinery",
+		"U L4 airborne doorway grazing cannot win",
+		"physical exit floor, no invisible completion prerequisite L4",
+		"V R restores only current level, preserving earlier progress",
+		"W death recovery under one second preserves progression"
+	],
+	"failures": []
+}

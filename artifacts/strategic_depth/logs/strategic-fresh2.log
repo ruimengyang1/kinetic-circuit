@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+{ "f": 300, "level": 2, "mode": "play", "p": (391.888, 132.1487), "v": (155.0, 115.8333), "can": (561.0611, 305.9253), "state": "idle", "health": 2, "platforms": [], "B": (223.1982, 301.9338), "angle": 0, "sensor": false }
+LEVEL 2 COMPLETE 6.73333333333331s; { "charges": 2, "impacts": 1, "boulder_impacts": 1, "rebounds": 0, "charging_rebounds": 0, "hits": 1, "resets": 0, "deaths": 0, "sensor_activations": 0, "idle_seconds": 0.06666666666667, "rotator_hold_seconds": 0.0 }
+REBALANCE ROUTE sequential_L2 frames 405 failures []

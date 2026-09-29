@@ -1,0 +1,31 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS L1 forward needs deliberate follow-up
+PASS L1 forward_jump needs deliberate follow-up
+PASS L1 one_bait_forward needs deliberate follow-up
+PASS L2 forward needs deliberate follow-up
+PASS L2 forward_jump needs deliberate follow-up
+PASS L2 one_bait_forward needs deliberate follow-up
+PASS L2 left needs deliberate follow-up
+PASS L2 left_jump needs deliberate follow-up
+PASS L3 forward needs deliberate follow-up
+PASS L3 forward_jump needs deliberate follow-up
+PASS L3 one_bait_forward needs deliberate follow-up
+PASS L4 forward needs deliberate follow-up
+PASS L4 forward_jump needs deliberate follow-up
+PASS L4 one_bait_forward needs deliberate follow-up
+PASS L1 airborne door contact does not finish
+PASS L1 actual floor completes with no hidden prerequisites
+PASS L2 airborne door contact does not finish
+PASS L2 actual floor completes with no hidden prerequisites
+PASS L3 airborne door contact does not finish
+PASS L3 actual floor completes with no hidden prerequisites
+PASS L4 airborne door contact does not finish
+PASS L4 actual floor completes with no hidden prerequisites
+PASS final clear reaches the victory flow
+PASS R after victory starts a fresh demo
+PASS R preserves earlier completions
+PASS death recovery under one second preserves progression
+REBALANCE AUDIT failures []

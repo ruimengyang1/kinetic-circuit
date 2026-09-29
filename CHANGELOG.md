@@ -6,6 +6,54 @@ revisions because the repository may be moved or forked.
 
 ## Unreleased
 
+- Redesigned the current four-stage demo around How → Consequence →
+  Anticipation → Planning. Kept shared Can behavior and Player abilities;
+  raised the opening shutter, introduced Boulder laser cover and its loss in
+  L2, and broadened actual optical collection margins in L3/L4.
+- Replaced L2's duct-panel sequence with a running nozzle blocked by Boulder,
+  a visible stationary beam and a broad safe bait shelf. Moving the obstruction
+  now opens airflow while spending lower-lane cover; dashed beam projections
+  show the space that the Boulder currently protects.
+- Removed the final automatic sensor-driven Can lift and restored its ground.
+  L4 now permits preserving Boulder cover while placing Can on the rotator,
+  then combining early withdrawal, Boulder force and airflow clearance in one
+  charge, or clearing Boulder first and solving the remaining states in steps.
+- Raised and recomposed the final Laser, collector and traversal so planning
+  from the observation shelf and withdrawing toward Boulder do not require
+  crossing an exposed beam. Kept charge/Player tuning, broad landings, local
+  retries and existing impact/airflow/audio polish; renamed stages to match
+  the strategic learning progression.
+
+- Polished the existing four-room demo with quicker ground acceleration,
+  braking and reversals, same-frame buffered landings, jump/stomp input capture
+  through impact pauses, and consistent forgiving swept Can rebounds with
+  immediate air control, short compression and upward feedback.
+- Shortened Can's stomp stagger, removed its extra recovery
+  cooldown, added lock flashes and distinct rotor/force sounds, quiet Boulder
+  rolling, bounded particles/audio voices, 50 ms major impacts and smaller
+  strength-scaled camera impulses.
+- Added a physical airflow entry ramp, corrected Fan loop startup and laser
+  withdrawal previews, broadened the final receiver slightly, brightened useful
+  beam contact and approaching alignment, and shortened the warned Can lift.
+  Kept all four layouts, movement heights, charge speed, Boulder physics,
+  direct platform paths and fast current-level retry/transition flow.
+- Rebalanced the existing four demo rooms around resulting object state: two
+  useful opening force targets, Boulder momentum opening then obstructing a
+  running air duct, a prepared Boulder step during laser timing, and actual
+  Boulder laser cover in the final room. Removed the demo's pressure-to-Fan
+  circuits and waiting-for-a-hanging-sweep sequence.
+- Broadened optical receivers, slowed and bounded the laser sweep, added
+  visible alignment/stopping cues and a short cover-removal warning, and gave
+  the final Can lift 0.75 seconds of confirmation before movement. Kept fast
+  current-level retries and broad traversal margins.
+- Added reusable Boulder-to-mechanism force transfer and solid airflow
+  obstruction; strengthened Can anticipation, lock compression, short charge
+  acceleration and impact recoil without raising its maximum speed.
+- Mirrored the Momentum room's approach to require a leftward commitment,
+  kept its duct physically sealed before the chain, and shortened the final
+  Can lift so its new threat lane is separated from the exit traversal. Fixed
+  top rebounds against a rising Can and accidental jump boosts from lifts;
+  optical winches now coast for 0.28 seconds through brief beam interruptions.
 - Retuned beam/ledge clearance and Fan placement, fixed powered-path waypoint
   progression and rebound top-contact damage, and made exits require an
   intentional landing and walk into their visible alcoves. Added current-level

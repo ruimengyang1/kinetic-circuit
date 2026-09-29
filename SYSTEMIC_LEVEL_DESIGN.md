@@ -2,6 +2,14 @@
 
 ## Pre-redesign audit
 
+
+
+
+
+
+
+
+
 The active Kinetic Clockwork prototype began on a safe island. The player
 do
 
@@ -84,6 +92,15 @@ away, change the environment, recover the ram to the useful side, push the
 cart, then meet the NPC.
 
 ## Intended route
+
+
+
+
+
+
+
+
+
 
 1. Stand right of the ram, wait for the direction-lock cue, jump, and
    downward-strike it to cross the entrance trench.

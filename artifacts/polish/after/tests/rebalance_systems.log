@@ -1,0 +1,38 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS Can anticipates before committing
+PASS position chooses a visible locked direction
+PASS crossing after lock preserves intent and maximum speed
+PASS signed Can force operates the room shutter
+PASS opposite signed force produces a different settled position
+PASS initial solid duct panel seals the running nozzle
+PASS one Can impact chains through Boulder to a physical duct panel
+PASS panel motion and rolling leave Boulder at the nozzle
+PASS opening duct also obstructs its already-running airflow
+PASS Momentum room has no pressure-to-Fan key circuit
+PASS second signed force clears airflow without toggling Fan power
+PASS exposed air physically lifts Player
+PASS solid catwalk clips the visible and effective air column
+PASS supported occupancy continuously rotates at readable 18 degrees/second
+PASS leaving freezes actual angle without snapping
+PASS L3 actual unoccluded optical window has generous margins
+WINDOW { "level": 3, "minimum_degrees": -8.75, "maximum_degrees": 17.0, "width_degrees": 25.75, "seconds_at_rate": 1.43055555555556 }
+PASS L4 actual unoccluded optical window has generous margins
+WINDOW { "level": 4, "minimum_degrees": -30.25, "maximum_degrees": -13.75, "width_degrees": 16.5, "seconds_at_rate": 1.03125 }
+PASS withdrawal lead -2 gives expected planning outcome
+PASS withdrawal lead 10 gives expected planning outcome
+PASS withdrawal lead 14 gives expected planning outcome
+PASS withdrawal lead 18 gives expected planning outcome
+PASS withdrawal lead 22 gives expected planning outcome
+PASS withdrawal lead 26 gives expected planning outcome
+PASS fresh final Boulder is actual optical cover and airflow obstruction
+PASS visible Boulder protects the later beam lane
+PASS moving cover gives readable confirmation before beam damage
+PASS player-caused cover movement exposes old danger and causes recoverable failure
+PASS same movement also opens airflow
+PASS preparing a safe position removes the reversal's execution demand
+PASS successful alignment confirms for 0.55 seconds before lifting Can
+PASS same physical support carries Can into its new reachable lane
+PASS heat coast prevents the moving lift chattering its own beam circuit
+PASS wrong angle cools the winch quickly instead of latching completion
+REBALANCE SYSTEMS 33 checks; failures []

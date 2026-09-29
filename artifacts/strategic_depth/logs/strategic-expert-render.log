@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 89.4 - Compatibility - Using Device: Apple - Apple M1
+
+{ "f": 300, "level": 4, "mode": "play", "p": (228.0989, 238.9253), "v": (0.0, 0.0), "can": (283.8044, 305.9253), "state": "idle", "health": 3, "platforms": [(436.0, 227.0)], "B": (342.0, 302.0), "angle": 31.6666666666667, "sensor": false }
+{ "f": 600, "level": 4, "mode": "play", "p": (541.8303, 206.3828), "v": (122.5, 89.99997), "can": (432.7217, 305.9984), "state": "idle", "health": 3, "platforms": [(542.0, 227.0)], "B": (460.8019, 301.9338), "angle": -1.66666666666668, "sensor": true }
+LEVEL 4 COMPLETE 11.2333333333335s; { "charges": 3, "impacts": 1, "boulder_impacts": 1, "rebounds": 0, "charging_rebounds": 0, "hits": 0, "resets": 0, "deaths": 0, "sensor_activations": 1, "idle_seconds": 2.7, "rotator_hold_seconds": 4.16666666666666 }
+REBALANCE ROUTE expert_L4 frames 675 failures []

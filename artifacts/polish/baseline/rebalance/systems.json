@@ -1,0 +1,87 @@
+{
+	"checks": [
+		"Can anticipates before committing",
+		"position chooses a visible locked direction",
+		"crossing after lock preserves intent and maximum speed",
+		"signed Can force operates the room shutter",
+		"opposite signed force produces a different settled position",
+		"initial solid duct panel seals the running nozzle",
+		"one Can impact chains through Boulder to a physical duct panel",
+		"panel motion and rolling leave Boulder at the nozzle",
+		"opening duct also obstructs its already-running airflow",
+		"Momentum room has no pressure-to-Fan key circuit",
+		"second signed force clears airflow without toggling Fan power",
+		"exposed air physically lifts Player",
+		"solid catwalk clips the visible and effective air column",
+		"supported occupancy continuously rotates at readable 18 degrees/second",
+		"leaving freezes actual angle without snapping",
+		"L3 actual unoccluded optical window has generous margins",
+		"L4 actual unoccluded optical window has generous margins",
+		"withdrawal lead -2 gives expected planning outcome",
+		"withdrawal lead 10 gives expected planning outcome",
+		"withdrawal lead 14 gives expected planning outcome",
+		"withdrawal lead 18 gives expected planning outcome",
+		"withdrawal lead 22 gives expected planning outcome",
+		"withdrawal lead 26 gives expected planning outcome",
+		"fresh final Boulder is actual optical cover and airflow obstruction",
+		"visible Boulder protects the later beam lane",
+		"moving cover gives readable confirmation before beam damage",
+		"player-caused cover movement exposes old danger and causes recoverable failure",
+		"same movement also opens airflow",
+		"preparing a safe position removes the reversal's execution demand",
+		"successful alignment confirms for 0.75 seconds before lifting Can",
+		"same physical support carries Can into its new reachable lane",
+		"heat coast prevents the moving lift chattering its own beam circuit",
+		"wrong angle cools the winch quickly instead of latching completion"
+	],
+	"controlled_fixtures": true,
+	"failures": [],
+	"windows": [
+		{
+			"level": 3,
+			"maximum_degrees": 17.0,
+			"minimum_degrees": -8.75,
+			"seconds_at_rate": 1.43055555555556,
+			"width_degrees": 25.75
+		},
+		{
+			"level": 4,
+			"maximum_degrees": -15.0,
+			"minimum_degrees": -30.25,
+			"seconds_at_rate": 0.953125,
+			"width_degrees": 15.25
+		}
+	],
+	"withdrawals": [
+		{
+			"lead_degrees": -2.0,
+			"stopped_degrees": 23.4000000000001,
+			"sustained": false
+		},
+		{
+			"lead_degrees": 10.0,
+			"stopped_degrees": 11.4000000000001,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 14.0,
+			"stopped_degrees": 7.50000000000005,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 18.0,
+			"stopped_degrees": 3.30000000000005,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 22.0,
+			"stopped_degrees": -0.599999999999951,
+			"sustained": true
+		},
+		{
+			"lead_degrees": 26.0,
+			"stopped_degrees": -4.49999999999995,
+			"sustained": true
+		}
+	]
+}

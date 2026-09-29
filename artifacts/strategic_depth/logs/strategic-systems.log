@@ -1,0 +1,52 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS L1 tracking preview before lock
+PASS L1 stable position-selected lock
+PASS L1 later position cannot redirect committed charge
+PASS L1 impact uses shared recovery
+PASS L1 recovery has no added delay
+PASS L2 tracking preview before lock
+PASS L2 stable position-selected lock
+PASS L2 later position cannot redirect committed charge
+PASS L2 impact uses shared recovery
+PASS L2 recovery has no added delay
+PASS L3 tracking preview before lock
+PASS L3 stable position-selected lock
+PASS L3 later position cannot redirect committed charge
+PASS L3 impact uses shared recovery
+PASS L3 recovery has no added delay
+PASS L4 tracking preview before lock
+PASS L4 stable position-selected lock
+PASS L4 later position cannot redirect committed charge
+PASS L4 impact uses shared recovery
+PASS L4 recovery has no added delay
+PASS repeated signed force has deterministic endpoints
+PASS left force leaves Boulder left of both nozzle and emitter
+PASS L2 initial Boulder is physical beam cover and nozzle obstruction
+PASS L2 relationships require no object-to-key circuit
+PASS L2 moving cover opens the running airflow
+PASS L2 exposed beam warns before harming the lower approach
+PASS L2 preparation changes damage outcome without faster input
+PASS L2 initial Boulder is physical beam cover and nozzle obstruction
+PASS L2 relationships require no object-to-key circuit
+PASS L2 moving cover opens the running airflow
+PASS L2 exposed beam warns before harming the lower approach
+PASS L2 preparation changes damage outcome without faster input
+PASS L3 optical window remains broad after real geometry occlusion
+WINDOW { "level": 3, "minimum_degrees": -11.5, "maximum_degrees": 19.75, "width_degrees": 31.25, "seconds_at_rate": 1.73611111111111 }
+PASS L4 optical window remains broad after real geometry occlusion
+WINDOW { "level": 4, "minimum_degrees": -9.0, "maximum_degrees": 18.0, "width_degrees": 27.0, "seconds_at_rate": 1.6875 }
+PASS L3 lead -2 exposes delay with forgiving early starts
+PASS L3 lead 0 exposes delay with forgiving early starts
+PASS L3 lead 8 exposes delay with forgiving early starts
+PASS L3 lead 12 exposes delay with forgiving early starts
+PASS L3 lead 18 exposes delay with forgiving early starts
+PASS L3 lead 24 exposes delay with forgiving early starts
+PASS L3 lead 28 exposes delay with forgiving early starts
+PASS L4 retains the physical cover/nozzle relationship learned in L2
+PASS L4 does not solve withdrawal with an automatic new linkage
+PASS L4 kept Can availability continuously changes future beam state
+PASS L4 spending Can position freezes actual angle without a solved flag
+STRATEGIC SYSTEMS 45 checks; failures []

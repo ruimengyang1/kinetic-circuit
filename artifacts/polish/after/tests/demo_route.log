@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+{ "f": 300, "level": 1, "mode": "play", "p": (478.4658, 246.2728), "v": (132.5, 193.3333), "can": (479.7116, 305.9253), "state": "idle", "health": 2, "platforms": [(72.0, 323.0), (241.0, 180.0), (536.0, 263.0)], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+{ "f": 600, "level": 1, "mode": "play", "p": (491.9252, 228.1475), "v": (0.0, -131.6667), "can": (479.7116, 305.9253), "state": "idle", "health": 2, "platforms": [(72.0, 323.0), (241.0, 180.0), (536.0, 263.0)], "B": (0.0, 0.0), "angle": 0, "sensor": false }
+FAIL ["landing 489/190 / { \"f\": 648, \"level\": 1, \"mode\": \"play\", \"p\": (491.9252, 247.3003), \"v\": (0.0, -207.5), \"can\": (479.7116, 305.9253), \"state\": \"stagger\", \"health\": 2, \"platforms\": [(72.0, 323.0), (241.0, 180.0), (536.0, 263.0)], \"B\": (0.0, 0.0), \"angle\": 0, \"sensor\": false }"]
+DEMO ROUTE sequential frames 713 failures ["landing 489/190 / { \"f\": 648, \"level\": 1, \"mode\": \"play\", \"p\": (491.9252, 247.3003), \"v\": (0.0, -207.5), \"can\": (479.7116, 305.9253), \"state\": \"stagger\", \"health\": 2, \"platforms\": [(72.0, 323.0), (241.0, 180.0), (536.0, 263.0)], \"B\": (0.0, 0.0), \"angle\": 0, \"sensor\": false }"]

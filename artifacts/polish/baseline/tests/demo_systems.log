@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS A telegraph precedes charge
+PASS B visible direction locks
+FAIL C moving after lock cannot redirect charge
+PASS D signed force operates a generic physical receiver
+bounce fixture 1 velocity (0.0, -283.3333)
+PASS E generous actual falling rebound is consistent
+PASS E rebound preserves committed Can motion
+PASS normal stomp reuses Can within half a second
+FAIL F one committed force rolls Boulder without repeated impulses
+FAIL G deterministic Boulder settling position
+SCRIPT ERROR: Invalid access to property or key 'button' on a base object of type 'Dictionary'.
+          at: run (res://tests/demo_systems.gd:62)
+          GDScript backtrace (most recent call first):
+              [0] run (res://tests/demo_systems.gd:62)
+              [1] tick (res://tests/demo_systems.gd:7)
